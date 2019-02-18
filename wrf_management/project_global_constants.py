@@ -17,6 +17,9 @@ import datetime as dt
 
 # %%
 import os
+import platform
+
+PLATFORM = platform.platform()
 
 INIT_DATE = dt.datetime(2017, 12, 1)
 END_DATE = dt.datetime(2018, 6, 1)

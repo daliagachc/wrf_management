@@ -112,4 +112,10 @@ print(tar_path)
 os.path.basename(down_str)
 
 # %%
+import platform
+
+# %%
+platform.platform()
+
+# %%
 
