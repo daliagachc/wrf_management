@@ -7,8 +7,9 @@
 #       format_version: '1.2'
 #       jupytext_version: 0.8.6
 #   kernelspec:
-#     display_name: ''
-#     name: ''
+#     display_name: Python 3
+#     language: python
+#     name: python3
 # ---
 
 # %%
@@ -28,11 +29,12 @@ for k in gc.FILE_TYPES:
 
 # %%
 i=0
-ii = 5
+ii = 10
+min_date = '2018-01'
 while i < ii:
     for ftype in gc.FILE_TYPES:
         print(ftype)
-        row = ut.get_next_row_to_down(tb_name=ftype,)
+        row = ut.get_next_row_to_down(tb_name=ftype,min_date=min_date)
         down_str = ut.get_down_string_from_row(row=row,ftype=ftype)
         print(down_str)
         tar_path = ut.get_tar_path(ftype)
@@ -44,5 +46,6 @@ while i < ii:
     i=i+1
 
 # %%
+
 
 

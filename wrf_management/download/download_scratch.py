@@ -16,57 +16,14 @@
 # imports
 import pandas as pd
 from wrf_management import project_global_constants as gc
+import sqlite3 as sq
 import importlib
 importlib.reload(gc)
-
-# %%
-date_index = pd.date_range(
-    start = gc.INIT_DATE ,
-    end   = gc.END_DATE
-)
-
-df = pd.DataFrame(date_index, columns=['date'])
-df = df.reset_index()
-df = df.set_index('date')
-df = df.rename(columns={'index':'i'})
-df['downloaded'    ] = False
-df['ungribed'    ] = False
-df['metgrided'    ] = False
-df.sample(5)
-
-# %%
-tmp_path = '/tmp/path.csv'
-df.to_csv(tmp_path)
-df_readed = pd.read_csv(tmp_path)
-
-
-# %%
-gc.PATH_DATA
-
-# %%
-import os
-os.makedirs(gc.PATH_DATA,exist_ok=True)
 
 # %%
 import wrf_management.utilities as ut
 importlib.reload(gc);
 importlib.reload(ut);
-
-# %%
-os.remove(gc.PATH_DB)
-
-# %%
-ut.create_date_db(override=True)
-
-# %%
-ut.get_date_tb().sample()
-
-# %%
-down_dbs = {}
-for k in gc.FILE_TYPES:
-    print(k)
-    down_dbs[k]=ut.create_download_db(db_name=k,override=True)
-    
 
 # %%
 con = sq.connect(gc.PATH_DB)
@@ -80,7 +37,7 @@ ut.get_tb_from_name(tb_name='press').sample()
 
 # %%
 ftype = 'surf_0'
-row = ut.get_next_row_to_down(tb_name=ftype,)
+row = ut.get_next_row_to_down(tb_name=ftype,min_date='2018-01')
 row
 
 # %%
@@ -120,6 +77,7 @@ platform.platform()
 # %%
 
 
+
 # %%
 ID = None
 try:
@@ -130,4 +88,5 @@ except:
 print(ID)
 
 # %%
+
 
