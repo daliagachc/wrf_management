@@ -15,8 +15,6 @@
 import wrf_management.utilities as ut
 import wrf_management.project_global_constants as gc
 
-
-
 # %%
 ut.create_date_db(override=True)
 
@@ -30,7 +28,8 @@ for k in gc.FILE_TYPES:
 
 # %%
 i=0
-while i < 10:
+ii = 5
+while i < ii:
     for ftype in gc.FILE_TYPES:
         print(ftype)
         row = ut.get_next_row_to_down(tb_name=ftype,)
