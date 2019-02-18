@@ -28,7 +28,7 @@ for k in gc.FILE_TYPES:
 
 # %%
 i=0
-ii = 5
+ii = 10
 while i < ii:
     for ftype in gc.FILE_TYPES:
         print(ftype)
