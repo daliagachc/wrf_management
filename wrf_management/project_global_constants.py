@@ -23,25 +23,29 @@ END_DATE = dt.datetime(2018, 6, 1)
 
 PATH_DATA = '/tmp/data/'
 
-PATH_DB_FOLDER = '/tmp/db/'
+PATH_DB_FOLDER = '/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/db_folder'
+PATH_DATA = '/wrk/aliagadi/DONOTREMOVE/wrf_management_data'
 NAME_DB = 'wrf_man.sqlite'
 PATH_DB = os.path.join(PATH_DB_FOLDER, NAME_DB)
 MASTER_DATE_TB_NAME = 'master_date'
 
 FILE_TYPES = {
     'press' : {
-        'suffix'  : 'pgrbh.tar',
-        'data_tar': 'press_tar',
+        'suffix'    : 'pgrbh.tar',
+        'data_tar'  : 'press_tar',
+        'data_untar': 'press_untar',
 
     },
     'surf_0': {
-        'suffix'  : 'splgrbf.tar',
-        'data_tar': 'surf_0_tar',
+        'suffix'    : 'splgrbf.tar',
+        'data_tar'  : 'surf_0_tar',
+        'data_untar': 'surf_0_untar',
 
     },
     'surf_1': {
-        'suffix'  : 'sfluxgrbf.tar',
-        'data_tar': 'surf_1_tar',
+        'suffix'    : 'sfluxgrbf.tar',
+        'data_tar'  : 'surf_1_tar',
+        'data_untar': 'surf_1_untar',
 
     }
 }

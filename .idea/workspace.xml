@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0480013a-b76f-4086-896e-cc5c9b8c8f2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wrf_management/file_templates/download_cfs_press_template.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/file_templates/download_cfs_surf_template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/scripts/download_files.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/scripts/download_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrf_management/download/download_scratch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/download/download_scratch.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrf_management/download/download_scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/download/download_scratch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrf_management/project_global_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/project_global_constants.py" afterDir="false" />
@@ -18,70 +19,71 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="219">
-                  <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wrf_management/utilities.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2959">
-                  <caret line="220" column="28" selection-start-line="220" selection-start-column="28" selection-end-line="220" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#86#95#0" expanded="true" />
-                    <element signature="e#422#1042#0" expanded="true" />
-                    <element signature="e#1218#1528#0" expanded="true" />
-                    <element signature="e#1653#1963#0" expanded="true" />
-                    <element signature="e#2122#2538#0" expanded="true" />
-                    <element signature="e#2993#3380#0" expanded="true" />
-                    <element signature="e#3041#3152#0" expanded="true" />
-                    <element signature="e#3458#3760#0" expanded="true" />
-                    <element signature="e#3520#3601#0" expanded="true" />
-                    <element signature="e#4392#4393#0" expanded="true" />
-                    <element signature="e#4747#5249#0" />
-                    <element signature="e#4969#4970#0" expanded="true" />
-                    <element signature="e#5250#5251#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wrf_management/utilities.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="680">
-                  <caret line="232" column="46" selection-start-line="232" selection-start-column="46" selection-end-line="232" selection-end-column="46" />
-                  <folding>
-                    <element signature="e#86#95#0" expanded="true" />
-                    <element signature="e#1218#1528#0" expanded="true" />
-                    <element signature="e#1653#1963#0" expanded="true" />
-                    <element signature="e#2122#2538#0" expanded="true" />
-                    <element signature="e#2993#3380#0" expanded="true" />
-                    <element signature="e#3041#3152#0" expanded="true" />
-                    <element signature="e#3458#3760#0" expanded="true" />
-                    <element signature="e#3520#3601#0" expanded="true" />
-                    <element signature="e#4659#4938#0" />
-                    <element signature="e#5017#5567#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding>
+                <element signature="e#471#745#0" expanded="true" />
+                <element signature="e#487#559#0" expanded="true" />
+                <element signature="e#575#650#0" expanded="true" />
+                <element signature="e#666#743#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrf_management/utilities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-74">
+              <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+              <folding>
+                <element signature="e#86#95#0" expanded="true" />
+                <element signature="e#422#1042#0" expanded="true" />
+                <element signature="e#1218#1528#0" expanded="true" />
+                <element signature="e#1653#1963#0" expanded="true" />
+                <element signature="e#2122#2538#0" expanded="true" />
+                <element signature="e#2993#3380#0" expanded="true" />
+                <element signature="e#3041#3152#0" expanded="true" />
+                <element signature="e#3458#3760#0" expanded="true" />
+                <element signature="e#3520#3601#0" expanded="true" />
+                <element signature="e#3844#4146#0" expanded="true" />
+                <element signature="e#3896#3977#0" expanded="true" />
+                <element signature="e#4392#4393#0" expanded="true" />
+                <element signature="e#4747#5249#0" />
+                <element signature="e#4969#4970#0" expanded="true" />
+                <element signature="e#5250#5251#0" expanded="true" />
+                <element signature="e#6090#6206#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrf_management/scripts/download_files.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+              <folding>
+                <element signature="e#238#275#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,16 +101,18 @@
         <option value="$PROJECT_DIR$/wrf_management/download.py" />
         <option value="$PROJECT_DIR$/wrf_management/file_templates/download_cfs_surf_template.py" />
         <option value="$PROJECT_DIR$/wrf_management/download/download_scratch.py" />
-        <option value="$PROJECT_DIR$/wrf_management/project_global_constants.py" />
         <option value="$PROJECT_DIR$/wrf_management/file_templates/download_cfs_press_template.py" />
         <option value="$PROJECT_DIR$/wrf_management/utilities.py" />
+        <option value="$PROJECT_DIR$/wrf_management/scripts/download_files.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/wrf_management/project_global_constants.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1280" />
     <option name="y" value="23" />
-    <option name="width" value="1607" />
+    <option name="width" value="1280" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -136,7 +140,7 @@
               <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="file_templates" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -251,7 +255,7 @@
       <option name="presentableId" value="Default" />
       <updated>1550489172154</updated>
       <workItem from="1550489174124" duration="5091000" />
-      <workItem from="1550496068232" duration="14557000" />
+      <workItem from="1550496068232" duration="19073000" />
     </task>
     <task id="LOCAL-00001" summary="updating">
       <created>1550496177414</created>
@@ -264,17 +268,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19648000" />
+    <option name="totallyTimeSpent" value="24164000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1417" extended-state="6" />
+    <frame x="1280" y="23" width="1280" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
-      <window_info id="Structure" order="4" sideWeight="0.48233488" side_tool="true" visible="true" weight="0.09571088" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.51766515" visible="true" weight="0.09571088" />
+      <window_info id="Structure" order="4" sideWeight="0.48233488" side_tool="true" visible="true" weight="0.19466881" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.51766515" visible="true" weight="0.19466881" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32795697" />
@@ -284,7 +289,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32872504" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -298,7 +303,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="LuaJ" order="8" />
       <window_info anchor="right" id="Data View" order="9" />
-      <window_info anchor="right" x="0" y="0" width="351" height="1217" id="Documentation" order="10" side_tool="true" visible="true" weight="0.23073868" />
+      <window_info anchor="right" x="0" y="0" width="351" height="1217" id="Documentation" order="10" side_tool="true" visible="true" weight="0.16639742" />
       <window_info anchor="right" id="SciView" order="11" />
     </layout>
   </component>
@@ -358,13 +363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/file_templates/download_cfs_press_template.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -392,10 +390,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="232" column="46" selection-start-line="232" selection-start-column="46" selection-end-line="232" selection-end-column="46" />
+        <state relative-caret-position="-74">
+          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
           <folding>
             <element signature="e#86#95#0" expanded="true" />
+            <element signature="e#422#1042#0" expanded="true" />
             <element signature="e#1218#1528#0" expanded="true" />
             <element signature="e#1653#1963#0" expanded="true" />
             <element signature="e#2122#2538#0" expanded="true" />
@@ -403,8 +402,50 @@
             <element signature="e#3041#3152#0" expanded="true" />
             <element signature="e#3458#3760#0" expanded="true" />
             <element signature="e#3520#3601#0" expanded="true" />
-            <element signature="e#4659#4938#0" />
-            <element signature="e#5017#5567#0" />
+            <element signature="e#3844#4146#0" expanded="true" />
+            <element signature="e#3896#3977#0" expanded="true" />
+            <element signature="e#4392#4393#0" expanded="true" />
+            <element signature="e#4747#5249#0" />
+            <element signature="e#4969#4970#0" expanded="true" />
+            <element signature="e#5250#5251#0" expanded="true" />
+            <element signature="e#6090#6206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/scripts/create_tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="47" column="3" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/scripts/download_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#238#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="e#471#745#0" expanded="true" />
+            <element signature="e#487#559#0" expanded="true" />
+            <element signature="e#575#650#0" expanded="true" />
+            <element signature="e#666#743#0" expanded="true" />
           </folding>
         </state>
       </provider>

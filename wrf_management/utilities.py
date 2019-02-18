@@ -108,10 +108,10 @@ def create_download_db(
 ):
     date_db = get_date_tb(path_db, date_tb_name)
     date_db['downloaded'] = False
-    date_db['path'] = False
+    # date_db['tar_path'] = False
     date_db['name'] = False
-    date_db['uncompress'] = False
-    date_db['uncompress_path'] = False
+    date_db['untarred'] = False
+    # date_db['untar_path'] = False
 
     down_db = date_db.copy()
     con = sq.connect(path_db)
@@ -175,8 +175,27 @@ def update_sucess_down(
     finally:
         con.close()
 
+def update_row_name(
+        *, row, tb_name, down_string, db_path=gc.PATH_DB
+):
+    i = row.i
+    name = os.path.basename(down_string)
+    con = sq.connect(db_path)
+    try:
+        st = '''
+        update {tb} 
+        set name='{name}'
+        where i={i}
+        '''
+        st = st.format(tb=tb_name, i=i, name=name)
+        print(st)
+        c = con.cursor()
+        c.execute(st)
+        con.commit()
+    finally:
+        con.close()
 
-def down_file(
+def down_file_from_str(
         file_str, down_folder,
 ):
     import sys
@@ -231,8 +250,23 @@ def down_file(
         infile = opener.open("http://rda.ucar.edu/data/ds094.0/" + file)
         down_path = os.path.join(down_folder, ofile)
         os.makedirs(down_folder, exist_ok=True)
-        outfile = open(down_path, "wb",)
-        outfile.write(infile.read())
-        outfile.close()
-        if (verbose):
-            sys.stdout.write("done.\n")
+        is_downloaded = False
+        try:
+            outfile = open(down_path, "wb",)
+            outfile.write(infile.read())
+            outfile.close()
+            is_downloaded = True
+        except:
+            print('failed to download')
+            os.remove(down_path)
+            print('removing unfinished path')
+
+        return is_downloaded
+
+
+def get_tar_path(
+        tb_name
+    ):
+    tar_path = gc.FILE_TYPES[tb_name]['data_tar']
+    tar_path = os.path.join(gc.PATH_DATA,tar_path)
+    return tar_path

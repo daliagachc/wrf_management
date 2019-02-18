@@ -53,13 +53,13 @@ importlib.reload(gc);
 importlib.reload(ut);
 
 # %%
+os.remove(gc.PATH_DB)
+
+# %%
 ut.create_date_db(override=True)
 
 # %%
 ut.get_date_tb().sample()
-
-# %%
-ut.create_download_db(db_name='borrar')
 
 # %%
 down_dbs = {}
@@ -76,51 +76,40 @@ con = sq.connect(gc.PATH_DB)
 pd.read_sql('select * from sqlite_master',con)
 
 # %%
-ut.get_tb_from_name(tb_name='press')
+ut.get_tb_from_name(tb_name='press').sample()
 
 # %%
-row = down_dbs['press'].iloc[0]
+ftype = 'surf_0'
+row = ut.get_next_row_to_down(tb_name=ftype,)
+row
 
 # %%
-for f in gc.FILE_TYPES:
-    row = down_dbs[f].iloc[-1]
-    string = ut.get_down_string_from_row(row=row,ftype=f)
-    print(string)
-
-# %%
-import wrf_management.utilities as ut
 importlib.reload(gc);
 importlib.reload(ut);
 
 # %%
-row=ut.get_next_row_to_down(tb_name='press')
+down_str = ut.get_down_string_from_row(row=row,ftype=ftype)
+print(down_str)
+tar_path = ut.get_tar_path(ftype) 
+print(tar_path)
 
 # %%
-row.date
+res = ut.down_file_from_str(down_str,tar_path)
 
 # %%
-ut.get_down_string_from_row(row=row, ftype='press')
+if res:
+    ut.update_sucess_down(row=row,tb_name=ftype)
+    ut.update_row_name(row=row,tb_name=ftype,down_string=down_str)
 
 # %%
-ut.update_sucess_down(row=row,tb_name='press')
+ut.get_tb_from_name(tb_name=ftype)[:2]
 
 # %%
-
-
-# %%
-ut.get_tb_from_name(tb_name='press')
+tar_path = dow_dir
+print(tar_path)
 
 # %%
-import wrf_management.utilities as ut
-importlib.reload(gc);
-importlib.reload(ut);
-
-# %%
-ut.down_file('')
-
-# %%
-!ls -la
-
+os.path.basename(down_str)
 
 # %%
 
