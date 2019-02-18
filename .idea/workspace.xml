@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0480013a-b76f-4086-896e-cc5c9b8c8f2d" name="Default Changelist" comment="" />
+    <list default="true" id="0480013a-b76f-4086-896e-cc5c9b8c8f2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wrf_management/base_namelists/base_namelists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/download/download_scratch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/download/download_scratch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/download/download_scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/download/download_scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/namelist.input" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/project_global_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/project_global_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/utilities.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,16 +19,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="63" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="63" />
+            <state relative-caret-position="330">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
               <folding>
                 <element signature="e#471#745#0" expanded="true" />
                 <element signature="e#487#559#0" expanded="true" />
                 <element signature="e#575#650#0" expanded="true" />
                 <element signature="e#666#743#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrf_management/base_namelists/base_namelists.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#88#101#0" expanded="true" />
+                <element signature="e#223#252#0" expanded="true" />
+                <element signature="e#1065#1169#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrf_management/base_namelists/namelists.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#272#329#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,18 +73,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wrf_management/utilities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-74">
-              <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+            <state relative-caret-position="481">
+              <caret line="149" column="47" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
               <folding>
                 <element signature="e#86#95#0" expanded="true" />
                 <element signature="e#422#1042#0" expanded="true" />
                 <element signature="e#1218#1528#0" expanded="true" />
                 <element signature="e#1653#1963#0" expanded="true" />
                 <element signature="e#2122#2538#0" expanded="true" />
-                <element signature="e#2993#3380#0" expanded="true" />
                 <element signature="e#3041#3152#0" expanded="true" />
                 <element signature="e#3458#3760#0" expanded="true" />
                 <element signature="e#3520#3601#0" expanded="true" />
@@ -61,27 +95,6 @@
                 <element signature="e#5250#5251#0" expanded="true" />
                 <element signature="e#6090#6206#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wrf_management/scripts/download_files.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-              <folding>
-                <element signature="e#238#275#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -105,11 +118,13 @@
         <option value="$PROJECT_DIR$/wrf_management/file_templates/download_cfs_surf_template.py" />
         <option value="$PROJECT_DIR$/wrf_management/download/download_scratch.py" />
         <option value="$PROJECT_DIR$/wrf_management/file_templates/download_cfs_press_template.py" />
-        <option value="$PROJECT_DIR$/wrf_management/utilities.py" />
         <option value="$PROJECT_DIR$/wrf_management/scripts/download_files.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/wrf_management/pc_id.py" />
+        <option value="$PROJECT_DIR$/wrf_management/base_namelists/namelists.py" />
+        <option value="$PROJECT_DIR$/wrf_management/base_namelists/base_namelists.py" />
         <option value="$PROJECT_DIR$/wrf_management/project_global_constants.py" />
+        <option value="$PROJECT_DIR$/wrf_management/utilities.py" />
       </list>
     </option>
   </component>
@@ -139,12 +154,6 @@
               <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,7 +268,7 @@
       <option name="presentableId" value="Default" />
       <updated>1550489172154</updated>
       <workItem from="1550489174124" duration="5091000" />
-      <workItem from="1550496068232" duration="22213000" />
+      <workItem from="1550496068232" duration="25108000" />
     </task>
     <task id="LOCAL-00001" summary="updating">
       <created>1550496177414</created>
@@ -272,17 +281,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27304000" />
+    <option name="totallyTimeSpent" value="30199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1280" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
-      <window_info id="Structure" order="4" sideWeight="0.48233488" side_tool="true" visible="true" weight="0.19466881" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.51766515" visible="true" weight="0.19466881" />
+      <window_info id="Structure" order="4" sideWeight="0.48310292" side_tool="true" weight="0.19466881" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.5168971" weight="0.19466881" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32795697" />
@@ -292,7 +302,40 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32872504" />
+      <window_info anchor="bottom" id="DB Execution Console" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Remote Host" order="5" />
+      <window_info anchor="right" id="Mathematica REPL" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="LuaJ" order="8" />
+      <window_info anchor="right" id="Data View" order="9" />
+      <window_info anchor="right" x="0" y="0" width="351" height="1217" id="Documentation" order="10" side_tool="true" weight="0.16639742" />
+      <window_info anchor="right" id="SciView" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="DB Browser" order="2" />
+      <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
+      <window_info active="true" id="Structure" order="4" sideWeight="0.48310292" side_tool="true" visible="true" weight="0.19466881" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.5168971" visible="true" weight="0.19466881" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32795697" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32872504" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -308,7 +351,7 @@
       <window_info anchor="right" id="Data View" order="9" />
       <window_info anchor="right" x="0" y="0" width="351" height="1217" id="Documentation" order="10" side_tool="true" visible="true" weight="0.16639742" />
       <window_info anchor="right" id="SciView" order="11" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -400,8 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/scripts/download_files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="345">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
           <folding>
             <element signature="e#238#275#0" expanded="true" />
           </folding>
@@ -418,6 +461,49 @@
     <entry file="file://$PROJECT_DIR$/wrf_management/pc_id">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="e#471#745#0" expanded="true" />
+            <element signature="e#487#559#0" expanded="true" />
+            <element signature="e#575#650#0" expanded="true" />
+            <element signature="e#666#743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/base_namelists/base_namelists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#88#101#0" expanded="true" />
+            <element signature="e#223#252#0" expanded="true" />
+            <element signature="e#1065#1169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/base_namelists/namelists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#272#329#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/pc_id.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -430,15 +516,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+        <state relative-caret-position="481">
+          <caret line="149" column="47" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
           <folding>
             <element signature="e#86#95#0" expanded="true" />
             <element signature="e#422#1042#0" expanded="true" />
             <element signature="e#1218#1528#0" expanded="true" />
             <element signature="e#1653#1963#0" expanded="true" />
             <element signature="e#2122#2538#0" expanded="true" />
-            <element signature="e#2993#3380#0" expanded="true" />
             <element signature="e#3041#3152#0" expanded="true" />
             <element signature="e#3458#3760#0" expanded="true" />
             <element signature="e#3520#3601#0" expanded="true" />
@@ -449,19 +534,6 @@
             <element signature="e#4969#4970#0" expanded="true" />
             <element signature="e#5250#5251#0" expanded="true" />
             <element signature="e#6090#6206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="63" />
-          <folding>
-            <element signature="e#471#745#0" expanded="true" />
-            <element signature="e#487#559#0" expanded="true" />
-            <element signature="e#575#650#0" expanded="true" />
-            <element signature="e#666#743#0" expanded="true" />
           </folding>
         </state>
       </provider>

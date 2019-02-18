@@ -137,15 +137,17 @@ def get_next_row_to_down(
         *,
         tb_name,
         db_path=gc.PATH_DB,
+        min_date='1900-01-01 00:00:00'
 ):
     con = sq.connect(db_path)
     try:
         st = '''
         select * from {tb} 
         where downloaded = 0
+        and date>'{min_date}'
         order by date 
         limit 1
-        '''.format(tb=tb_name)
+        '''.format(tb=tb_name,min_date=min_date)
         row = pd.read_sql(st, con)
         ll = len(row)
         # print(ll)

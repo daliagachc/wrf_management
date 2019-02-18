@@ -20,7 +20,7 @@ import os
 
 ID = None
 try:
-    import wrf_management.pc_idd as pc_id
+    import wrf_management.pc_id as pc_id
     ID = pc_id.ID
 except:
     print('no pc id found. create a pc_id.py file in the root of the package with constant ID')
