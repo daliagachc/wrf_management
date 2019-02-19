@@ -34,7 +34,7 @@ PATH_DATA = '/tmp/data/'
 
 if ID == 'mac_diego':
     PATH_DB_FOLDER = '/Volumes/db_folder'
-    PATH_DATA = '/Volumes/wrf_management_data'
+PATH_DATA = '/Volumes/wrf_management_folder'
 if ID == 'taito_login':
     PATH_DB_FOLDER = '/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/db_folder'
     PATH_DATA = '/wrk/aliagadi/DONOTREMOVE/wrf_management_data'
@@ -42,7 +42,7 @@ if ID == 'taito_login':
 NAME_DB = 'wrf_man.sqlite'
 PATH_DB = os.path.join(PATH_DB_FOLDER, NAME_DB)
 MASTER_DATE_TB_NAME = 'master_date'
-
+RUN_NAME = '2018_02_19'
 FILE_TYPES = {
     'press' : {
         'suffix'    : 'pgrbh.tar',

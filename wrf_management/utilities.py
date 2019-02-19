@@ -1,3 +1,17 @@
+# ---
+# jupyter:
+#   jupytext:
+#     text_representation:
+#       extension: .py
+#       format_name: light
+#       format_version: '1.3'
+#       jupytext_version: 0.8.6
+#   kernelspec:
+#     display_name: Python 3
+#     language: python
+#     name: python3
+# ---
+
 # project name: wrf_management
 # created by diego aliaga daliaga_at_chacaltaya.edu.bo
 import os
@@ -272,3 +286,40 @@ def get_tar_path(
     tar_path = gc.FILE_TYPES[tb_name]['data_tar']
     tar_path = os.path.join(gc.PATH_DATA,tar_path)
     return tar_path
+
+
+def get_untarred_path(
+        tb_name
+    ):
+    utar_path = gc.FILE_TYPES[tb_name]['data_untar']
+    utar_path = os.path.join(gc.PATH_DATA,utar_path)
+    return utar_path
+
+
+def get_untarred_row(
+        *,
+        tb_name,
+        db_path=gc.PATH_DB,
+        date='1900-01-01',
+        comparator = '>'
+):
+    con = sq.connect(db_path)
+    try:
+        st = '''
+        select * from {tb} 
+        where downloaded = 1
+        and date{comparator}datetime('{date}')
+        and untarred = 0 
+        order by date 
+        limit 1
+        '''.format(tb=tb_name,date=date,comparator=comparator)
+        row = pd.read_sql(st, con)
+        ll = len(row)
+        # print(ll)
+        if ll < 1:
+            print('day is either not downloaded or already untarred')
+            raise SystemExit('no more rows to download')
+    finally:
+        con.close()
+    return row.iloc[0]
+
