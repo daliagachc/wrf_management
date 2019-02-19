@@ -30,7 +30,7 @@ for k in gc.FILE_TYPES:
 # %%
 i=0
 ii = 10
-min_date = '2018-01'
+min_date = '2018-02'
 while i < ii:
     for ftype in gc.FILE_TYPES:
         print(ftype)
