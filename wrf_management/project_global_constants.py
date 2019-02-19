@@ -17,7 +17,9 @@ import datetime as dt
 
 # %%
 import os
+import wrf_management
 
+PACKAGE_PATH = os.path.dirname(wrf_management.__file__)
 ID = None
 try:
     import wrf_management.pc_id as pc_id
@@ -43,6 +45,7 @@ NAME_DB = 'wrf_man.sqlite'
 PATH_DB = os.path.join(PATH_DB_FOLDER, NAME_DB)
 MASTER_DATE_TB_NAME = 'master_date'
 RUN_NAME = '2018_02_19'
+RUN_CONFIG_DIR = os.path.join(PACKAGE_PATH,'config_dir','run_'+RUN_NAME)
 FILE_TYPES = {
     'press' : {
         'suffix'    : 'pgrbh.tar',

@@ -68,4 +68,22 @@ except:
     os.remove(untar_path_dir)
 
 # %%
+import wrf_management
+
+# %%
+os.path.dirname(wrf_management.__file__)
+
+# %%
+importlib.reload(gc)
+
+# %%
+os.makedirs(gc.RUN_CONFIG_DIR)
+
+# %%
+import shutil
+
+# %%
+shutil.copyfile('../base_namelists/Vtable.CFSR',gc.RUN_CONFIG_DIR+'/Vtable.CFSR')
+
+# %%
 
