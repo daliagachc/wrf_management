@@ -18,6 +18,7 @@ import os
 import sqlite3 as sq
 import pandas as pd
 from wrf_management import project_global_constants as gc
+import datetime as dt
 
 
 def create_date_db(init_date=gc.INIT_DATE,
@@ -161,7 +162,7 @@ def get_next_row_to_down(
         and date>'{min_date}'
         order by date 
         limit 1
-        '''.format(tb=tb_name,min_date=min_date)
+        '''.format(tb=tb_name, min_date=min_date)
         row = pd.read_sql(st, con)
         ll = len(row)
         # print(ll)
@@ -191,6 +192,7 @@ def update_sucess_down(
     finally:
         con.close()
 
+
 def update_row_name(
         *, row, tb_name, down_string, db_path=gc.PATH_DB
 ):
@@ -210,6 +212,7 @@ def update_row_name(
         con.commit()
     finally:
         con.close()
+
 
 def down_file_from_str(
         file_str, down_folder,
@@ -268,7 +271,7 @@ def down_file_from_str(
         os.makedirs(down_folder, exist_ok=True)
         is_downloaded = False
         try:
-            outfile = open(down_path, "wb",)
+            outfile = open(down_path, "wb", )
             outfile.write(infile.read())
             outfile.close()
             is_downloaded = True
@@ -282,17 +285,17 @@ def down_file_from_str(
 
 def get_tar_path(
         tb_name
-    ):
+):
     tar_path = gc.FILE_TYPES[tb_name]['data_tar']
-    tar_path = os.path.join(gc.PATH_DATA,tar_path)
+    tar_path = os.path.join(gc.PATH_DATA, tar_path)
     return tar_path
 
 
 def get_untarred_path(
         tb_name
-    ):
+):
     utar_path = gc.FILE_TYPES[tb_name]['data_untar']
-    utar_path = os.path.join(gc.PATH_DATA,utar_path)
+    utar_path = os.path.join(gc.PATH_DATA, utar_path)
     return utar_path
 
 
@@ -301,7 +304,7 @@ def get_untarred_row(
         tb_name,
         db_path=gc.PATH_DB,
         date='1900-01-01',
-        comparator = '>'
+        comparator='>'
 ):
     con = sq.connect(db_path)
     try:
@@ -312,7 +315,7 @@ def get_untarred_row(
         and untarred = 0 
         order by date 
         limit 1
-        '''.format(tb=tb_name,date=date,comparator=comparator)
+        '''.format(tb=tb_name, date=date, comparator=comparator)
         row = pd.read_sql(st, con)
         ll = len(row)
         # print(ll)
@@ -323,3 +326,26 @@ def get_untarred_row(
         con.close()
     return row.iloc[0]
 
+
+def get_run_data_path(
+        root=gc.PATH_DATA,
+        rel=gc.RUN_NAME,
+        middle_name='runs'
+):
+    path = os.path.join(root, middle_name, rel)
+    return path
+
+
+def get_unique_id():
+    now = dt.datetime.now()
+    return now.strftime('%Y-%m-%dT%H-%M-%S_%f')
+
+
+def list_table_names(db_path=gc.PATH_DB):
+    con = sq.connect(db_path)
+    res = None
+    try:
+        res = pd.read_sql('select tbl_name from sqlite_master where type="table"', con)
+    finally:
+        con.close()
+    return res

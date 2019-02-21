@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0480013a-b76f-4086-896e-cc5c9b8c8f2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wrf_management/scratchs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/scratchs/scratch.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/geogrid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/scripts/mount_remotes.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/db_folder/wrf_man.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/db_folder/wrf_man.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrf_management/project_global_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/project_global_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/scratch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/scratch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/scratch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrf_management/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/utilities.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrf_management/pc_id.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="15">
               <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -32,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrf_management/utilities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="869">
-              <caret line="303" column="23" selection-start-line="303" selection-start-column="23" selection-end-line="303" selection-end-column="23" />
+            <state relative-caret-position="430">
+              <caret line="345" column="14" selection-start-line="345" selection-start-column="14" selection-end-line="345" selection-end-column="14" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#351#360#0" expanded="true" />
@@ -54,8 +57,8 @@
                 <element signature="e#5979#5980#0" expanded="true" />
                 <element signature="e#6887#7003#0" expanded="true" />
                 <element signature="e#7056#7178#0" expanded="true" />
-                <element signature="e#7309#7744#0" expanded="true" />
-                <element signature="e#7357#7498#0" expanded="true" />
+                <element signature="e#7963#8008#0" expanded="true" />
+                <element signature="e#8076#8140#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,12 +67,36 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+            <state relative-caret-position="283">
+              <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
               <folding>
-                <element signature="e#1027#1432#0" expanded="true" />
-                <element signature="e#1043#1158#0" expanded="true" />
+                <element signature="e#272#293#0" expanded="true" />
+                <element signature="e#1199#1604#0" expanded="true" />
+                <element signature="e#1215#1330#0" expanded="true" />
+                <element signature="e#1346#1465#0" expanded="true" />
+                <element signature="e#1481#1602#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrf_management/geogrid.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#87#95#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrf_management/scripts/mount_remotes.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -79,10 +106,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>master</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,16 +135,18 @@
         <option value="$PROJECT_DIR$/scratchs/scratch.py" />
         <option value="$PROJECT_DIR$/wrf_management/scratchs/scratch.py" />
         <option value="$PROJECT_DIR$/wrf_management/scratchs/scratch.ipynb" />
+        <option value="$PROJECT_DIR$/wrf_management/geogrid.py" />
+        <option value="$PROJECT_DIR$/wrf_management/scripts/mount_remotes.sh" />
         <option value="$PROJECT_DIR$/wrf_management/utilities.py" />
         <option value="$PROJECT_DIR$/wrf_management/project_global_constants.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="591" />
+    <option name="y" value="1175" />
     <option name="width" value="1280" />
-    <option name="height" value="1417" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -122,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -139,13 +174,12 @@
               <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="scratchs" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,7 +189,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -257,7 +291,8 @@
       <option name="presentableId" value="Default" />
       <updated>1550489172154</updated>
       <workItem from="1550489174124" duration="5091000" />
-      <workItem from="1550496068232" duration="28144000" />
+      <workItem from="1550496068232" duration="30420000" />
+      <workItem from="1550744589076" duration="7478000" />
     </task>
     <task id="LOCAL-00001" summary="updating">
       <created>1550496177414</created>
@@ -270,18 +305,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33235000" />
+    <option name="totallyTimeSpent" value="42989000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="23" width="1280" height="1417" extended-state="0" />
+    <frame x="591" y="1175" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
-      <window_info active="true" id="Structure" order="4" sideWeight="0.48387095" side_tool="true" visible="true" weight="0.19466881" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.516129" visible="true" weight="0.19466881" />
+      <window_info active="true" id="Structure" order="4" sideWeight="0.48489425" side_tool="true" visible="true" weight="0.19789983" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.5151057" weight="0.19789983" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32795697" />
@@ -291,7 +326,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32872504" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32779455" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -313,8 +348,8 @@
       <window_info id="UI Designer" order="1" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
-      <window_info id="Structure" order="4" sideWeight="0.48310292" side_tool="true" visible="true" weight="0.19466881" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.5168971" visible="true" weight="0.19466881" />
+      <window_info id="Structure" order="4" sideWeight="0.48489425" side_tool="true" visible="true" weight="0.19789983" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.5151057" visible="true" weight="0.19789983" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32795697" />
@@ -324,7 +359,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32779455" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -338,7 +373,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="LuaJ" order="8" />
       <window_info anchor="right" id="Data View" order="9" />
-      <window_info anchor="right" x="0" y="0" width="351" height="1217" id="Documentation" order="10" side_tool="true" weight="0.16639742" />
+      <window_info anchor="right" x="0" y="0" width="351" height="1217" id="Documentation" order="10" side_tool="true" visible="true" weight="0.16639742" />
       <window_info anchor="right" id="SciView" order="11" />
     </layout-to-restore>
   </component>
@@ -370,7 +405,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/di-python/di_python/ya_esta.py">
+    <entry file="file://$PROJECT_DIR$/../di-python/di_python/ya_esta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="49" />
@@ -423,13 +458,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/scripts/create_tables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="47" column="3" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/scripts/create_tables.py" />
     <entry file="file://$PROJECT_DIR$/wrf_management/scripts/download_files.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -447,9 +476,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/pc_id">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/pc_id" />
     <entry file="file://$PROJECT_DIR$/wrf_management/base_namelists/base_namelists.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -494,16 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/pc_id.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/utilities.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -521,10 +538,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/pc_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/geogrid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#87#95#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/scripts/mount_remotes.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
-          <caret line="303" column="23" selection-start-line="303" selection-start-column="23" selection-end-line="303" selection-end-column="23" />
+        <state relative-caret-position="430">
+          <caret line="345" column="14" selection-start-line="345" selection-start-column="14" selection-end-line="345" selection-end-column="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#351#360#0" expanded="true" />
@@ -545,19 +589,22 @@
             <element signature="e#5979#5980#0" expanded="true" />
             <element signature="e#6887#7003#0" expanded="true" />
             <element signature="e#7056#7178#0" expanded="true" />
-            <element signature="e#7309#7744#0" expanded="true" />
-            <element signature="e#7357#7498#0" expanded="true" />
+            <element signature="e#7963#8008#0" expanded="true" />
+            <element signature="e#8076#8140#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        <state relative-caret-position="283">
+          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
           <folding>
-            <element signature="e#1027#1432#0" expanded="true" />
-            <element signature="e#1043#1158#0" expanded="true" />
+            <element signature="e#272#293#0" expanded="true" />
+            <element signature="e#1199#1604#0" expanded="true" />
+            <element signature="e#1215#1330#0" expanded="true" />
+            <element signature="e#1346#1465#0" expanded="true" />
+            <element signature="e#1481#1602#0" expanded="true" />
           </folding>
         </state>
       </provider>
