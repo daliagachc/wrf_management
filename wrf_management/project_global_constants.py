@@ -40,14 +40,19 @@ if ID == 'mac_diego':
     PATH_DB_FOLDER = '/tmp/wrf_management/db_folder'
     PATH_DATA = '/Volumes/wrf_management_folder'
     PATH_DATA = '/tmp/wrf_management/data_folder'
+    PATH_APP = '/tmp/wrf_management/app_folder'
 if ID == 'taito_login':
     PATH_DB_FOLDER = os.path.join(PACKAGE_PATH, 'db_folder')
     PATH_DATA = '/wrk/aliagadi/DONOTREMOVE/wrf_management_data'
+    PATH_APP = '/homeappl/home/aliagadi/appl_taito/'
+
+PATH_WRF = os.path.join(PATH_APP,'WRF4/WRF')
+PATH_WPS = os.path.join(PATH_APP,'WRF4/WPS')
 
 NAME_DB = 'wrf_man.sqlite'
 PATH_DB = os.path.join(PATH_DB_FOLDER, NAME_DB)
 MASTER_DATE_TB_NAME = 'master_date'
-RUN_NAME = '2018_02_19'
+RUN_NAME = 'run_2019_02_20'
 RUNS_TB_NAME = 'runs_table'
 UNIQUE_ID_RUN_TB_NAME = 'run_unique_id'
 RUN_CONFIG_DIR = os.path.join(PACKAGE_PATH, 'config_dir', RUN_NAME)

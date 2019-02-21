@@ -47,11 +47,11 @@ df = pd.DataFrame(
 df=df.set_index('unique_id')
 
 # %%
-df.to_sql(gc.UNIQUE_ID_RUN_TB_NAME,con,if_exists='replace',index_label='unique_id')
+# df.to_sql(gc.UNIQUE_ID_RUN_TB_NAME,con,if_exists='replace',index_label='unique_id')
 
 # %%
 run_path = ut.get_run_data_path()
-os.makedirs(run_path)
+os.makedirs(run_path, exist_ok=True)
 
 # %%
 import datetime as dt 
@@ -120,7 +120,8 @@ new_path = '/tmp/wrf_management/data_folder/runs/2018_02_19/2019-02-21T17-29-01_
 
 # %%
 importlib.reload(ut)
-# ut.add_unique_id_run_db(unique_id=unique_id+'_ungrib',program_nm='ungrib',comment='first run')
+ut.add_unique_id_run_db(unique_id=unique_id+'_ungrib',program_nm='ungrib',comment='first run')
+con.commit()
 
 # %%
 ut.get_tb_from_name(tb_name='run_unique_id')
@@ -160,6 +161,57 @@ tfile = tarfile.TarFile(row.tar_path)
 
 # %%
 tfile.extractall(row.untar_path)
+
+# %%
+con.close()
+
+# %%
+import f90nml
+from collections import OrderedDict
+
+
+def skim_namelist(
+        input_path, output_path, *,date, prefix
+    ):
+    old_dic = f90nml.read(input_path)
+    
+    dt_object = pd.to_datetime(date)
+    d_init = dt_object.strftime('%Y-%m-%d_%T')
+    d_end = dt_object + pd.DateOffset(hours=18)
+    d_end = d_end.strftime('%Y-%m-%d_%T')
+    
+    old_dic['share']['start_date']=old_dic['share']['max_dom']*[d_init]
+    old_dic['share']['end_date']=old_dic['share']['max_dom']*[d_end]
+    old_dic['share']['interval_seconds']=6*3600
+    old_dic['ungrib']['prefix']=prefix
+    sections = ['share','ungrib']
+    drops = {}
+    new_dic = OrderedDict()
+    for s in sections:
+        new_dic[s]= old_dic[s]
+        if s in drops.keys():
+            for d in drops[s]:
+                new_dic[s].pop(d)
+    f90nml.write(new_dic, output_path)
+    return new_dic
+
+# %%
+try:os.remove('/tmp/borrar')
+except:pass    
+skim_namelist('../config_dir/2018_02_19/namelist.wps','/tmp/borrar',date=date_to_ungrib,prefix='PRESSURE')
+
+# %%
+date_to_ungrib = '2017-12-15' 
+date = date_to_ungrib
+
+# %%
+dt_object = pd.to_datetime(date)
+d_init = dt_object.strftime('%Y-%m-%d_%T')
+
+# %%
+d_end = dt_object + pd.DateOffset(hours=18)
+d_end = d_end.strftime('%Y-%m-%d_%T')
+d_end
 
 # %%
 
