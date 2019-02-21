@@ -30,6 +30,62 @@ for k in gc.FILE_TYPES:
 # %%
 i=0
 ii = 10
+min_date = '2017-12'
+while i < ii:
+    for ftype in gc.FILE_TYPES:
+        print(ftype)
+        row = ut.get_next_row_to_down(tb_name=ftype,min_date=min_date)
+        down_str = ut.get_down_string_from_row(row=row,ftype=ftype)
+        print(down_str)
+        tar_path = ut.get_tar_path(ftype)
+        print(tar_path)
+        res = ut.down_file_from_str(down_str,tar_path)
+        if res:
+            ut.update_sucess_down(row=row,tb_name=ftype)
+            ut.update_row_name(row=row,tb_name=ftype,down_string=down_str)
+    i=i+1
+
+# %%
+# %%
+i=0
+ii = 10
+min_date = '2018-01'
+while i < ii:
+    for ftype in gc.FILE_TYPES:
+        print(ftype)
+        row = ut.get_next_row_to_down(tb_name=ftype,min_date=min_date)
+        down_str = ut.get_down_string_from_row(row=row,ftype=ftype)
+        print(down_str)
+        tar_path = ut.get_tar_path(ftype)
+        print(tar_path)
+        res = ut.down_file_from_str(down_str,tar_path)
+        if res:
+            ut.update_sucess_down(row=row,tb_name=ftype)
+            ut.update_row_name(row=row,tb_name=ftype,down_string=down_str)
+    i=i+1
+
+# %%
+# %%
+i=0
+ii = 10
+min_date = '2018-02'
+while i < ii:
+    for ftype in gc.FILE_TYPES:
+        print(ftype)
+        row = ut.get_next_row_to_down(tb_name=ftype,min_date=min_date)
+        down_str = ut.get_down_string_from_row(row=row,ftype=ftype)
+        print(down_str)
+        tar_path = ut.get_tar_path(ftype)
+        print(tar_path)
+        res = ut.down_file_from_str(down_str,tar_path)
+        if res:
+            ut.update_sucess_down(row=row,tb_name=ftype)
+            ut.update_row_name(row=row,tb_name=ftype,down_string=down_str)
+    i=i+1
+
+# %%
+i=0
+ii = 10
 min_date = '2018-03'
 while i < ii:
     for ftype in gc.FILE_TYPES:
