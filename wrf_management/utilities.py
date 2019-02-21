@@ -108,7 +108,7 @@ def get_tb_from_name(*,
     con = sq.connect(path_db)
     try:
         st = 'select * from {}'.format(tb_name)
-        df = pd.read_sql_query(st, con, index_col='date')
+        df = pd.read_sql_query(st, con)
     finally:
         con.close()
     return df
@@ -336,9 +336,9 @@ def get_run_data_path(
     return path
 
 
-def get_unique_id():
+def get_unique_id(program):
     now = dt.datetime.now()
-    return now.strftime('%Y-%m-%dT%H-%M-%S_%f')
+    return now.strftime('%Y-%m-%dT%H-%M-%S_%f_'+program)
 
 
 def list_table_names(db_path=gc.PATH_DB):
@@ -349,3 +349,43 @@ def list_table_names(db_path=gc.PATH_DB):
     finally:
         con.close()
     return res
+
+
+def get_new_unique_path_for_program(
+        *,
+        father_run=gc.RUN_NAME,
+        data_path=gc.PATH_DATA,
+        unique_id
+):
+    path = os.path.join(data_path, 'runs',father_run, unique_id)
+    return path
+
+
+def add_unique_id_run_db(
+        *,
+        unique_id,
+        db_path=gc.PATH_DB,
+        tb_name=gc.UNIQUE_ID_RUN_TB_NAME,
+        program_nm,
+        parent_name=gc.RUN_NAME,
+        comment='',
+):
+    con = sq.connect(db_path)
+    sql = '''
+    insert into {tb_name}
+    (comments, program, run_name, unique_id)
+    values 
+    ('{comment}', '{program_nm}', '{parent_name}', '{unique_id}')
+    '''
+    sql = sql.format(unique_id=unique_id,
+                     program_nm=program_nm,
+                     comment=comment,
+                     parent_name=parent_name,
+                     tb_name=tb_name)
+    print(sql)
+    try:
+        cu = con.cursor()
+        cu.execute(sql)
+        con.commit()
+    finally:
+        con.close()

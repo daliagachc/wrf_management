@@ -50,7 +50,7 @@ MASTER_DATE_TB_NAME = 'master_date'
 RUN_NAME = '2018_02_19'
 RUNS_TB_NAME = 'runs_table'
 UNIQUE_ID_RUN_TB_NAME = 'run_unique_id'
-RUN_CONFIG_DIR = os.path.join(PACKAGE_PATH, 'config_dir', 'run_' + RUN_NAME)
+RUN_CONFIG_DIR = os.path.join(PACKAGE_PATH, 'config_dir', RUN_NAME)
 FILE_TYPES = {
     'press' : {
         'suffix'    : 'pgrbh.tar',

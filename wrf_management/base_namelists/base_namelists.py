@@ -18,8 +18,8 @@ def sanity_check(*,
     wps_df = pd.DataFrame(wps_dic)
     wrf_df = pd.DataFrame(wrf_dic)
 
-    df_full = wrf_df.join(wps_df, how='outer')
-    df_joined = wrf_df.join(wps_df, how='inner')
+    df_full = wrf_df.join(wps_df, how='outer', lsuffix='_l', rsuffix='_r')
+    df_joined = wrf_df.join(wps_df, how='inner', lsuffix='_l', rsuffix='_r')
 
     df_drop = df_joined.dropna(how='all').dropna(how='all', axis=1)
 
@@ -29,9 +29,11 @@ def sanity_check(*,
         d1 = dd.iloc[0]
         d2 = dd.iloc[1]
         #     print(k)
-        if k in ['dx', 'dy']:
-            d1 = float(d1[0])
-            d2 = float(d2)
+        if (k in ['dx', 'dy']) and type(d1) != type(d2):
+            if type(d1) != int:
+                d1 = d1[0]
+            if type(d2) != int:
+                d2 = d2[0]
 
         df_pass[k] = {
             'pass': d1 == d2,
