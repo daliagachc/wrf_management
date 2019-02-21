@@ -87,3 +87,4 @@ shutil.copyfile('../base_namelists/Vtable.CFSR',gc.RUN_CONFIG_DIR+'/Vtable.CFSR'
 
 # %%
 
+
