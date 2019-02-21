@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0480013a-b76f-4086-896e-cc5c9b8c8f2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wrf_management/project_global_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/project_global_constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/scratch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/scratch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/scratch.py" afterDir="false" />
-    </list>
+    <list default="true" id="0480013a-b76f-4086-896e-cc5c9b8c8f2d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +250,7 @@
       <option name="presentableId" value="Default" />
       <updated>1550489172154</updated>
       <workItem from="1550489174124" duration="5091000" />
-      <workItem from="1550496068232" duration="29912000" />
+      <workItem from="1550496068232" duration="30420000" />
     </task>
     <task id="LOCAL-00001" summary="updating">
       <created>1550496177414</created>
@@ -267,7 +263,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35003000" />
+    <option name="totallyTimeSpent" value="35511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1280" height="1417" extended-state="0" />
