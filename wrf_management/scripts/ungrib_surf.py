@@ -5,7 +5,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 0.8.6
+#       jupytext_version: 1.0.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -37,8 +37,8 @@ import subprocess as su
 print(gc.RUN_NAME)
 job = 'ungrib_surf'
 file_types = ['surf_0', 'surf_1']
-job = 'ungrib_press'
-file_types = ['press']
+# job = 'ungrib_press'
+# file_types = ['press']
 real = False
 
 LIST_S_LINKS = [
@@ -87,7 +87,7 @@ if gc.ID == 'taito_login':
     un.copy_hard_links(conf_path, job_path, LIST_H_LINKS)
     un.copy_soft_links(gc.PATH_WPS, job_path, LIST_S_LINKS)
     importlib.reload(un)
-    un.untar_the_files(type_rows, job_path)
+    un.untar_the_files(type_rows, job_path, job_row=job_row)
 
 run_script = \
     """#!/bin/bash
@@ -102,6 +102,8 @@ bs_path = os.path.join(job_path, 'run_me.sh')
 bs_file = open(bs_path, 'w')
 bs_file.write(run_script)
 bs_file.close()
+
+# %%
 if gc.ID == 'taito_login':
     res = su.run(['/bin/bash', bs_path], stdout=su.PIPE, stderr=su.PIPE)
 
