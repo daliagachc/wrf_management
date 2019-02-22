@@ -141,4 +141,33 @@ print(job_row)
 
 
 # %%
+import tarfile
+r = type_rows.iloc[0]
+data_path = gc.PATH_DATA
+date = un.date_file_format(job_row.date)
+untar_path = os.path.join(job_path, 'untar', date)
+_type = r.type
+source_tar_path = gc.FILE_TYPES[_type]['data_tar']
+source_tar_path = os.path.join(
+    data_path,
+    source_tar_path,
+    r['name']
+)
+print(source_tar_path)
+tf = tarfile.TarFile(source_tar_path)
+# tf.extractall(untar_path)
+
+# %%
+members = tf.getmembers()
+for m in members:
+    name = m.name
+    if name == 'cdas1.t18z.splgrbf06.grib2':
+        print(name)
+        tf.extract(m,untar_path)
+    
+
+# %%
+untar_path
+
+# %%
 

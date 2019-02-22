@@ -42,6 +42,7 @@ def get_next_row(*, job, run_name=gc.RUN_NAME, i_max=1):
         con.close()
     return job_row
 
+
 def get_prev_row(*, job, run_name=gc.RUN_NAME, job_row):
     day_bef = pd.to_datetime(job_row.date) - pd.to_timedelta(1, "D")
     day_bef = str(day_bef)
@@ -59,6 +60,7 @@ def get_prev_row(*, job, run_name=gc.RUN_NAME, job_row):
         con.close()
     # print(job_row)
     return job_row
+
 
 def getmk_job_path(run_row, job_row, job):
     date = date_file_format(job_row.date)
@@ -93,6 +95,34 @@ def get_type_row(file_type, job_row):
     finally:
         con.close()
     return type_row
+
+
+def untar_the_files_prev(
+        type_rows,
+        job_path,
+        *,
+        data_path=gc.PATH_DATA,
+        job_row,
+):
+    for l, r in type_rows.iterrows():
+        date = date_file_format(job_row.date)
+        untar_path = os.path.join(job_path, 'untar', date)
+        _type = r.type
+        source_tar_path = gc.FILE_TYPES[_type]['data_tar']
+        source_tar_path = os.path.join(
+            data_path,
+            source_tar_path,
+            r['name']
+        )
+        print(source_tar_path)
+        tf = tarfile.TarFile(source_tar_path)
+        # tf.extractall(untar_path)
+        members = tf.getmembers()
+        for m in members:
+            name = m.name
+            if name == 'cdas1.t18z.splgrbf06.grib2':
+                print(name)
+                tf.extract(m, untar_path)
 
 
 def untar_the_files(
