@@ -73,7 +73,7 @@ name_list = un.skim_namelist_copy(
 )
 print(name_list)
 
-if gc.ID=='taito_login'
+if gc.ID=='taito_login':
     un.copy_hard_links(conf_path,job_path,LIST_H_LINKS)
     un.copy_soft_links(gc.PATH_WPS,job_path,LIST_S_LINKS)
     importlib.reload(un)
