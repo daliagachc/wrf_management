@@ -44,12 +44,16 @@ def get_next_row(*, job, run_name=gc.RUN_NAME):
 
 
 def getmk_job_path(run_row, job_row, job):
-    date = pd.to_datetime(job_row.date).strftime('%Y_%m_%d')
+    date = date_file_format(job_row.date)
     job_path = os.path.join(
         gc.PATH_DATA, run_row.data_path, date, job
     )
     os.makedirs(job_path, exist_ok=True)
     return job_path
+
+
+def date_file_format(date):
+    return pd.to_datetime(date).strftime('%Y_%m_%d')
 
 
 def get_conf_path(run_row):
@@ -74,17 +78,18 @@ def get_type_row(file_type, job_row):
     return type_row
 
 
-def untar_the_files(type_rows, untar_path,data_path=gc.PATH_DATA):
-    for l,r in type_rows.iterrows():
-        type = r.type
-        source_tar_path = gc.FILE_TYPES[type]['data_tar']
+def untar_the_files(type_rows, job_path, data_path=gc.PATH_DATA):
+    for l, r in type_rows.iterrows():
+        untar_path = os.path.join(job_path, 'untar')
+        _type = r.type
+        source_tar_path = gc.FILE_TYPES[_type]['data_tar']
         source_tar_path = os.path.join(
             data_path,
             source_tar_path,
             r['name']
         )
         print(source_tar_path)
-        tf=tarfile.TarFile(source_tar_path)
+        tf = tarfile.TarFile(source_tar_path)
         tf.extractall(untar_path)
 
 
@@ -145,3 +150,29 @@ def skim_namelist_copy(
         force=True
     )
     return new_dic
+
+
+def update_run_table(
+        *,
+        run_name=gc.RUN_NAME,
+        val,
+        job,
+        date,
+        path_db = gc.PATH_DB
+):
+    # val = job_row[job]+1
+    # print(val)
+    sql = """
+    update {tb}
+    set {job} = {val}
+    where date('{dt}')=date(date)
+    """.format(dt=date, tb=run_name, val=val, job=job)
+    # print(sql)
+
+    con = sq.connect(path_db)
+    try:
+        cu = con.cursor()
+        cu.execute(sql)
+        con.commit()
+    finally:
+        con.close()
