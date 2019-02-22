@@ -1,0 +1,29 @@
+run_2019_02_20
+index                             1
+run_name             run_2019_02_20
+metgrid_path                geogrid
+config_path          run_2019_02_20
+data_path       runs/run_2019_02_20
+Name: 0, dtype: object
+date            2018-03-02 00:00:00
+ungrib_surf                       0
+ungrib_press                      0
+ungrib_lake                       0
+Name: 0, dtype: object
+/wrk/aliagadi/DONOTREMOVE/wrf_management_data/runs/run_2019_02_20/2018_03_02/ungrib_press
+/wrk/aliagadi/DONOTREMOVE/wrf_management_data/runs/run_2019_02_20/2018_03_02/ungrib_press/untar
+/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/config_dir/run_2019_02_20
+                  date   i  ...    untarred   type
+0  2018-03-02 00:00:00  91  ...           0  press
+
+[1 rows x 6 columns]
+OrderedDict([('share', Namelist([('wrf_core', 'ARW'), ('max_dom', 4), ('start_date', ['2018-03-02_00:00:00', '2018-03-02_00:00:00', '2018-03-02_00:00:00', '2018-03-02_00:00:00']), ('end_date', ['2018-03-02_18:00:00', '2018-03-02_18:00:00', '2018-03-02_18:00:00', '2018-03-02_18:00:00']), ('interval_seconds', 21600), ('io_form_geogrid', 2)])), ('ungrib', Namelist([('out_format', 'WPS'), ('prefix', 'ungrib_press')]))])
+Vtable
+env_WRFv4.bash
+unilinking
+ungrib.exe
+unilinking
+link_grib.csh
+unilinking
+ungrib
+/wrk/aliagadi/DONOTREMOVE/wrf_management_data/press_tar/cdas1.20180302.pgrbh.tar

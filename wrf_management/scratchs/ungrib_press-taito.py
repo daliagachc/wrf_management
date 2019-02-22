@@ -49,7 +49,7 @@ LIST_H_LINKS = [
 
 
 # %%
-con = sq.connect(gc.PATH_DB)
+#con = sq.connect(gc.PATH_DB)
 gc.PATH_DB
 
 # %%

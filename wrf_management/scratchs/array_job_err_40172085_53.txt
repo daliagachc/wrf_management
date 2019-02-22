@@ -1,0 +1,2 @@
+slurmstepd: error: Could not run slurm task_prolog [/etc/slurm/taskprolog]: No such file or directory
+slurmstepd: error: Could not run slurm task_epilog [/etc/slurm/taskepilog]: access denied
