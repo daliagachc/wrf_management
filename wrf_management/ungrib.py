@@ -101,6 +101,10 @@ def copy_soft_links(source_path, target_path, list_files):
             print('unilinking')
             os.unlink(target_file_path)
 
+        if os.path.isdir(target_file_path):
+            print('unilinking')
+            os.unlink(target_file_path)
+
         os.symlink(
             os.path.join(source_path, f, ),
             target_file_path
