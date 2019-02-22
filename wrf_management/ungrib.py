@@ -30,8 +30,8 @@ def get_run_row(run_name=gc.RUN_NAME):
 def get_next_row(*, job, run_name=gc.RUN_NAME):
     sql: str = '''
     select * from {rn}
-    where {job}<100
-    order by date,'{job}'
+    where {job}<50
+    order by '{job}',date
     limit 1
     '''
     sql = sql.format(rn=run_name, job=job)
