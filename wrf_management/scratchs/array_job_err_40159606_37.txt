@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "ungrib_press-taito.py", line 120, in <module>
-    date=job_row['date']
-  File "/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/ungrib.py", line 179, in update_run_table
-    cu.execute(sql)
-sqlite3.OperationalError: unable to open database file
