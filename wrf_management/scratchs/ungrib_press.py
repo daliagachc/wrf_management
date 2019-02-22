@@ -26,6 +26,7 @@ import pandas as pd
 import wrf_management.base_namelists.base_namelists as bn
 importlib.reload(bn);
 import f90nml
+import tarfile
 
 # %%
 print(gc.RUN_NAME)
@@ -55,12 +56,14 @@ print(run_row)
 
 job_row = un.get_next_row(job=job)
 print(job_row)
-
+un.update_run_table(val=job_row[job]+1,
+                    job=job,
+                    date=job_row['date']
+                   )
 job_path = un.getmk_job_path(run_row,job_row,job)
 print(job_path)
 
 untar_path = os.path.join(job_path,'untar')
-print(untar_path)
 
 conf_path = un.get_conf_path(run_row)
 print(conf_path)
@@ -77,17 +80,51 @@ if gc.ID=='taito_login':
     un.copy_hard_links(conf_path,job_path,LIST_H_LINKS)
     un.copy_soft_links(gc.PATH_WPS,job_path,LIST_S_LINKS)
     importlib.reload(un)
-    un.untar_the_files(type_rows,untar_path)
+    un.untar_the_files(type_rows,joba_path)
 
 # %%
-gc.ID
+r = type_rows.iloc[0]
+type_ = r.type
+source_tar_path = gc.FILE_TYPES[type_]['data_tar']
+source_tar_path = os.path.join(
+    gc.PATH_DATA,
+    source_tar_path,
+    r['name']
+)
+
 
 # %%
-import subprocess as su
-res = su.run(['ls','-l'],stdout=su.PIPE,stderr=su.PIPE)
+tf=tarfile.TarFile(source_tar_path)
 
 # %%
-res.returncode
+tf.getmembers()
+
+# %%
+importlib.reload(un)
+date_formated=un.date_file_format(job_row.date)
+
+# %%
+job_row
+
+# %%
+val = job_row[job]+1
+print(val)
+sql = """
+update {tb}
+set {job} = {val}
+where date('{dt}')=date(date)
+""".format(dt=job_row.date,tb=gc.RUN_NAME,val=val,job=job)
+print(sql)
+
+# %%
+con = sq.connect(gc.PATH_DB)
+try: 
+    cu = con.cursor()
+    cu.execute(sql)
+    con.commit()
+finally: 
+    con.close()
+
 
 # %%
 
