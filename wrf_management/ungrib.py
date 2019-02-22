@@ -31,7 +31,7 @@ def get_next_row(*, job, run_name=gc.RUN_NAME):
     sql: str = '''
     select * from {rn}
     where {job}<50
-    order by '{job}',date
+    order by {job},date
     limit 1
     '''
     sql = sql.format(rn=run_name, job=job)
