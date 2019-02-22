@@ -42,6 +42,23 @@ def get_next_row(*, job, run_name=gc.RUN_NAME, i_max=1):
         con.close()
     return job_row
 
+def get_prev_row(*, job, run_name=gc.RUN_NAME, job_row):
+    day_bef = pd.to_datetime(job_row.date) - pd.to_timedelta(1, "D")
+    day_bef = str(day_bef)
+    run_name = gc.RUN_NAME
+    sql: str = '''
+    select * from {rn}
+    where date(date)=date('{dt}')
+    limit 1
+    '''
+    sql = sql.format(rn=run_name, dt=day_bef)
+    con = sq.connect(gc.PATH_DB)
+    try:
+        job_row = pd.read_sql(sql, con).iloc[0]
+    finally:
+        con.close()
+    # print(job_row)
+    return job_row
 
 def getmk_job_path(run_row, job_row, job):
     date = date_file_format(job_row.date)
