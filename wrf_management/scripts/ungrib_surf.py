@@ -88,6 +88,12 @@ if gc.ID == 'taito_login':
     un.copy_soft_links(gc.PATH_WPS, job_path, LIST_S_LINKS)
     importlib.reload(un)
     un.untar_the_files(type_rows, job_path, job_row=job_row)
+    
+    # in case we need to download the day before
+    if job == 'ungrib_surf':
+        pre_row = un.get_prev_row(jon,job_row)
+        trs = pd.DataFrame([un.get_type_row(ft, pre_row) for ft in file_types])
+        un.untar_the_files(trs, job_path)
 
 run_script = \
     """#!/bin/bash
