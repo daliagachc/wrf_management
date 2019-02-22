@@ -93,7 +93,7 @@ if gc.ID == 'taito_login':
     if job == 'ungrib_surf':
         pre_row = un.get_prev_row(jon,job_row)
         trs = pd.DataFrame([un.get_type_row(ft, pre_row) for ft in file_types])
-        un.untar_the_files(trs, job_path)
+        un.untar_the_files_prev(trs, job_path)
 
 run_script = \
     """#!/bin/bash
