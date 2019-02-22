@@ -91,14 +91,14 @@ if gc.ID == 'taito_login':
     
     # in case we need to download the day before
     if job == 'ungrib_surf':
-        pre_row = un.get_prev_row(jon,job_row)
+        pre_row = un.get_prev_row(job=job,job_row=job_row)
         trs = pd.DataFrame([un.get_type_row(ft, pre_row) for ft in file_types])
-        un.untar_the_files_prev(trs, job_path)
+        un.untar_the_files_prev(trs, job_path, job_row=pre_row)
 
 run_script = \
     """#!/bin/bash
     cd {job_path}
-    ./link_grib.csh ./untar/*
+    ./link_grib.csh ./untar/*/*
     source ./env_WRFv4.bash 
     ./ungrib.exe
     exit $?
@@ -120,54 +120,3 @@ if gc.ID == 'taito_login' and res.returncode == 0:
                         )
 
 # %%
-day_bef = pd.to_datetime(job_row.date) - pd.to_timedelta(1, "D")
-day_bef = str(day_bef)
-
-# %%
-run_name = gc.RUN_NAME
-sql: str = '''
-select * from {rn}
-where date(date)=date('{dt}')
-limit 1
-'''
-sql = sql.format(rn=run_name, dt=day_bef)
-con = sq.connect(gc.PATH_DB)
-try:
-    job_row = pd.read_sql(sql, con).iloc[0]
-finally:
-    con.close()
-print(job_row)
-# return job_row
-
-
-# %%
-import tarfile
-r = type_rows.iloc[0]
-data_path = gc.PATH_DATA
-date = un.date_file_format(job_row.date)
-untar_path = os.path.join(job_path, 'untar', date)
-_type = r.type
-source_tar_path = gc.FILE_TYPES[_type]['data_tar']
-source_tar_path = os.path.join(
-    data_path,
-    source_tar_path,
-    r['name']
-)
-print(source_tar_path)
-tf = tarfile.TarFile(source_tar_path)
-# tf.extractall(untar_path)
-
-# %%
-members = tf.getmembers()
-for m in members:
-    name = m.name
-    if name == 'cdas1.t18z.splgrbf06.grib2':
-        print(name)
-        tf.extract(m,untar_path)
-    
-
-# %%
-untar_path
-
-# %%
-
