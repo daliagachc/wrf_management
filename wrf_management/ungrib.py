@@ -27,14 +27,14 @@ def get_run_row(run_name=gc.RUN_NAME):
     return run_row
 
 
-def get_next_row(*, job, run_name=gc.RUN_NAME):
+def get_next_row(*, job, run_name=gc.RUN_NAME, i_max=1):
     sql: str = '''
     select * from {rn}
-    where {job}<50
+    where {job}<={i_max}
     order by {job},date
     limit 1
     '''
-    sql = sql.format(rn=run_name, job=job)
+    sql = sql.format(rn=run_name, job=job, i_max=i_max)
     con = sq.connect(gc.PATH_DB)
     try:
         job_row = pd.read_sql(sql, con).iloc[0]
@@ -78,9 +78,16 @@ def get_type_row(file_type, job_row):
     return type_row
 
 
-def untar_the_files(type_rows, job_path, data_path=gc.PATH_DATA):
+def untar_the_files(
+        type_rows,
+        job_path,
+        *,
+        data_path=gc.PATH_DATA,
+        job_row,
+):
     for l, r in type_rows.iterrows():
-        untar_path = os.path.join(job_path, 'untar')
+        date = date_file_format(job_row.date)
+        untar_path = os.path.join(job_path, 'untar', date)
         _type = r.type
         source_tar_path = gc.FILE_TYPES[_type]['data_tar']
         source_tar_path = os.path.join(
@@ -119,6 +126,8 @@ def copy_hard_links(source_path, target_path, list_files):
         if os.path.isfile(target_file_path):
             os.remove(target_file_path)
 
+        if os.path.isdir(target_file_path):
+            os.remove(target_file_path)
         shutil.copy2(
             os.path.join(source_path, f, ),
             target_file_path
@@ -162,7 +171,7 @@ def update_run_table(
         val,
         job,
         date,
-        path_db = gc.PATH_DB
+        path_db=gc.PATH_DB
 ):
     # val = job_row[job]+1
     # print(val)
