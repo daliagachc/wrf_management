@@ -1,0 +1,40 @@
+run_2019_02_20
+index                             1
+run_name             run_2019_02_20
+metgrid_path                geogrid
+config_path          run_2019_02_20
+data_path       runs/run_2019_02_20
+Name: 0, dtype: object
+date            2017-12-06 00:00:00
+ungrib_surf                       0
+ungrib_press                    100
+ungrib_lake                       0
+Name: 0, dtype: object
+/wrk/aliagadi/DONOTREMOVE/wrf_management_data/runs/run_2019_02_20/2017_12_06/ungrib_surf
+/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/config_dir/run_2019_02_20
+                  date  i   ...    untarred    type
+0  2017-12-06 00:00:00  5   ...           0  surf_0
+0  2017-12-06 00:00:00  5   ...           0  surf_1
+
+[2 rows x 6 columns]
+OrderedDict([('share', Namelist([('wrf_core', 'ARW'), ('max_dom', 4), ('start_date', ['2017-12-06_00:00:00', '2017-12-06_00:00:00', '2017-12-06_00:00:00', '2017-12-06_00:00:00']), ('end_date', ['2017-12-06_18:00:00', '2017-12-06_18:00:00', '2017-12-06_18:00:00', '2017-12-06_18:00:00']), ('interval_seconds', 21600), ('io_form_geogrid', 2)])), ('ungrib', Namelist([('out_format', 'WPS'), ('prefix', 'ungrib_surf')]))])
+Vtable
+env_WRFv4.bash
+unilinking
+ungrib.exe
+unilinking
+link_grib.csh
+unilinking
+ungrib
+/wrk/aliagadi/DONOTREMOVE/wrf_management_data/surf_0_tar/cdas1.20171206.splgrbf.tar
+/wrk/aliagadi/DONOTREMOVE/wrf_management_data/surf_1_tar/cdas1.20171206.sfluxgrbf.tar
+/wrk/aliagadi/DONOTREMOVE/wrf_management_data/surf_0_tar/cdas1.20171205.splgrbf.tar
+cdas1.t18z.splgrbf06.grib2
+/wrk/aliagadi/DONOTREMOVE/wrf_management_data/surf_1_tar/cdas1.20171205.sfluxgrbf.tar
+#!/bin/bash
+    cd /wrk/aliagadi/DONOTREMOVE/wrf_management_data/runs/run_2019_02_20/2017_12_06/ungrib_surf
+    ./link_grib.csh ./untar/*/*
+    source ./env_WRFv4.bash 
+    ./ungrib.exe
+    exit $?
+    
