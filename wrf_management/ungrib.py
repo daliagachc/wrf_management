@@ -120,7 +120,7 @@ def untar_the_files_prev(
         members = tf.getmembers()
         for m in members:
             name = m.name
-            if name == 'cdas1.t18z.splgrbf06.grib2':
+            if 't18z' in name:
                 print(name)
                 tf.extract(m, untar_path)
 
