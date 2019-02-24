@@ -57,7 +57,7 @@ print(path)
 
 fs = os.listdir(path)
 df = pd.DataFrame(fs,columns=['file'])
-df = df[df.file.str.startswith('met_em.d01')]
+df = df[df.file.str.startswith('met_em.d03')]
 df
 
 file =df.iloc[0].file
@@ -67,7 +67,9 @@ print(file)
 
 vm,vM = 260,280
 xa = xr.open_dataset(file)
-xa.SKINTEMP.plot(levels=10, vmin=vm,vmax=vM)
+xa.SKINTEMP.plot(levels=10, 
+#                  vmin=vm,vmax=vM
+                )
 
 
 # %%
@@ -90,40 +92,56 @@ for i in range(len(pls)):
     xa[pls[i]].plot.hist()
 
 # %%
-x1 = xa['TT'].mean('num_metgrid_levels')[0]
+x1 = xa['TT'][0,0]
 x1
 x1.plot()
 
 # %%
-path1 = os.path.join('/Users/diego/wrf_management/wrf_management/tucu-april-rm-data')
-print(path1)
-
-fs = os.listdir(path1)
-df = pd.DataFrame(fs,columns=['file'])
-df = df[df.file.str.startswith('met_em.d03')]
-df
-
-file =df.iloc[1].file
-file = os.path.join(path1,file)
-print(file)
-
-os.path.isfile(file)
-
-xa = xr.open_dataset(file)
-xa.SKINTEMP.plot(levels=10,  vmin=vm,vmax=vM)
+path = os.path.join(gc.PATH_DATA,'runs/run_2019_02_20/2017_12_10/ungrib_lake/')
+fs = os.listdir(path)
+dff = pd.DataFrame(fs,columns=['file'])
+dff = dff[dff.file.str.startswith('wrfinput')]
+dff =dff.sort_values('file')
+f =dff.iloc[2].file
+po = os.path.join
+p = po(path,f)
+xa = xr.open_dataset(p)
+# ye.partition(list(xa.variables),5)
+fig,ax = plt.subplots()
+xa.SST.plot()
+fig,ax = plt.subplots()
+xa.TSLB[0,3].plot(x='XLONG',y='XLAT',levels=6)
 
 # %%
-
+tslb = xa.TSLB[0,3].where(
+    (xa.LAKEMASK==1) &
+    (xa.XLAT>-17) & 
+    (xa.XLONG<-68)  
+        
+    
+)
+fig,ax=plt.subplots()
+tslb.plot()
+fig,ax=plt.subplots()
+tslb.plot.hist();
 
 # %%
-xa
+ye.partition(list(xa.variables),5)
 
 # %%
-st='cdas1.t18z.splgrbf06.grib2'
+path = os.path.join(gc.PATH_DATA,'runs/run_2019_02_20/2017_12_10/ungrib_lake/')
+fs = os.listdir(path)
+dff = pd.DataFrame(fs,columns=['file'])
+dff = dff[dff.file.str.startswith('wrfbdy')]
+dff =dff.sort_values('file')
+f =dff.iloc[0].file
+po = os.path.join
+p = po(path,f)
+xa = xr.open_dataset(p)
+# ye.partition(list(xa.variables),5)
 
 # %%
-'t18' in st
-
+xa.T_BTXE
 
 # %%
 

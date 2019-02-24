@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/wrf_management.iml" filepath="$PROJECT_DIR$/wrf_management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/wrf_management.iml" filepath="$PROJECT_DIR$/.idea/wrf_management.iml" />
     </modules>
   </component>
 </project>
