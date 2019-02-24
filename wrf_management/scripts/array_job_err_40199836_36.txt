@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "ungrib_surf.py", line 119, in <module>
-    date=job_row['date']
-  File "/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/ungrib.py", line 236, in update_run_table
-    con.commit()
-sqlite3.OperationalError: disk I/O error
