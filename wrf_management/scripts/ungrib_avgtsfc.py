@@ -28,21 +28,22 @@ import wrf_management.base_namelists.base_namelists as bn
 importlib.reload(bn);
 import f90nml
 import subprocess as su
+import pathlib
 # %%
 print(gc.RUN_NAME)
-job = 'ungrib_surf'
-file_types = ['surf_0', 'surf_1']
-real = False
+job = 'ungrib_avgtsfc'
+ungrib_source_dirs = ['ungrib_surf', 'ungrib_press']
+real = True
 
 LIST_S_LINKS = [
-    'ungrib.exe',
-    'link_grib.csh',
-    'ungrib'
+    'avg_tsfc.exe',
+#     'link_grib.csh',
+#     'ungrib'
 ]
 
 LIST_H_LINKS = [
-    'Vtable',
-    'env_WRFv4.bash'
+#     'Vtable',
+#     'env_WRFv4.bash'
 ]
 
 
@@ -55,10 +56,13 @@ importlib.reload(un)
 run_row = un.get_run_row()
 print(run_row)
 
+# %%
 job_row = un.get_next_row(job=job)
 print(job_row)
 
-un.update_run_table(val=job_row[job]+1,
+# %%
+if real:
+    un.update_run_table(val=job_row[job]+1,
                     job=job,
                     date=job_row['date']
                    )
@@ -66,37 +70,35 @@ un.update_run_table(val=job_row[job]+1,
 job_path = un.getmk_job_path(run_row,job_row,job)
 print(job_path)
 
+# %%
 conf_path = un.get_conf_path(run_row)
 print(conf_path)
 
-type_rows = pd.DataFrame([un.get_type_row(ft, job_row) for ft in file_types])
-print(type_rows)
-
-name_list = un.skim_namelist_copy(
+# %%
+importlib.reload(un)
+name_list = un.skim_namelist_copy_avgtsfc(
     conf_path, job_path, date=job_row.date, prefix=job
 )
-print(name_list)
+pd.DataFrame(name_list)
 
 # %%
-if gc.ID=='taito_login':
-    un.copy_hard_links(conf_path,job_path,LIST_H_LINKS)
-    un.copy_soft_links(gc.PATH_WPS,job_path,LIST_S_LINKS)
-    importlib.reload(un)
-    un.untar_the_files(type_rows, job_path, job_row=job_row)
+
+importlib.reload(un)
+un.link_grub_files(ungrib_prefixes=ungrib_source_dirs, job_path=job_path)
+
+# %%
+# if gc.ID=='taito_login':
+un.copy_hard_links(conf_path,job_path,LIST_H_LINKS)
+un.copy_soft_links(gc.PATH_WPS,job_path,LIST_S_LINKS)
     
-    # in case we need to download the day before
-    if job == 'ungrib_surf':
-        pre_row = un.get_prev_row(job=job,job_row=job_row)
-        trs = pd.DataFrame([un.get_type_row(ft, pre_row) for ft in file_types])
-        un.untar_the_files_prev(trs, job_path, job_row=pre_row)
+
 
 # %%
 run_script = \
     """#!/bin/bash
     cd {job_path}
-    ./link_grib.csh ./untar/*/*
     source ./env_WRFv4.bash 
-    ./ungrib.exe
+    ./avg_tsfc.exe
     exit $?
     """.format(job_path=job_path)
 print(run_script)
@@ -116,5 +118,6 @@ if gc.ID == 'taito_login' and res.returncode == 0:
                         )
 
 # %%
+
 
 
