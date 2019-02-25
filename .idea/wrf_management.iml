@@ -13,4 +13,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Python 3.6 (wrf_management) interpreter library" level="application" />
   </component>
+  <component name="PyDocumentationSettings">
+    <option name="renderExternalDocumentation" value="true" />
+  </component>
 </module>
