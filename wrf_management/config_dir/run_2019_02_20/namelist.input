@@ -13,9 +13,9 @@
     end_hour = 6, 6, 6, 6
     interval_seconds = 21600
     input_from_file = .true., .true., .true., .true.
-    history_interval = 10, 10, 10, 10
-    frames_per_outfile = 6, 6, 6, 6
-    restart = .false.
+    history_interval = 15, 15, 15, 15
+    frames_per_outfile = 4, 4, 4, 4
+    restart = .true.
     restart_interval = 360
     io_form_history = 2
     io_form_restart = 2
@@ -81,7 +81,7 @@
     sst_update = 0
     slope_rad = 0, 0, 1, 1
     topo_shading = 0, 0, 1, 1
-    physics_suite = 'tropical'
+!    physics_suite = 'tropical'
 /
 
 &fdda
@@ -89,7 +89,7 @@
 
 &dynamics
     w_damping = 1
-    diff_opt = 1
+    diff_opt = 2
     km_opt = 4
     diff_6th_opt = 0, 0, 0, 0
     diff_6th_factor = 0.12, 0.12, 0.12, 0.12
