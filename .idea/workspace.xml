@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/real.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wrf_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wrf_management.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/ungrib.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/ungrib.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wrf_management/ungrib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="133" column="36" lean-forward="true" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#86#100#0" expanded="true" />
+                <element signature="e#2569#3408#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrf_management/metgrid.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrf_management/scripts/real.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -95,12 +108,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/wrf_management/run_utilities.py" />
-        <option value="$PROJECT_DIR$/wrf_management/ungrib.py" />
         <option value="$PROJECT_DIR$/wrf_management/metgrid.py" />
         <option value="$PROJECT_DIR$/wrf_management/scripts/metgrid.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.txt" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_20/namelist.input" />
         <option value="$PROJECT_DIR$/wrf_management/real.py" />
+        <option value="$PROJECT_DIR$/wrf_management/ungrib.py" />
       </list>
     </option>
   </component>
@@ -142,18 +155,6 @@
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="config_dir" type="462c0819:PsiDirectoryNode" />
               <item name="run_2019_02_20" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="file_templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
@@ -263,12 +264,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551050135460</updated>
       <workItem from="1551050142620" duration="982000" />
-      <workItem from="1551102477652" duration="19050000" />
+      <workItem from="1551102477652" duration="19715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20032000" />
+    <option name="totallyTimeSpent" value="20697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1024" y="23" width="1024" height="1129" extended-state="0" />
@@ -345,24 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/ungrib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="160" selection-start-line="160" selection-end-line="160" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#86#100#0" expanded="true" />
-            <element signature="e#420#499#0" expanded="true" />
-            <element signature="e#410#489#0" expanded="true" />
-            <element signature="e#2040#2351#0" expanded="true" />
-            <element signature="e#5650#6489#0" expanded="true" />
-            <element signature="e#6156#6203#0" expanded="true" />
-            <element signature="e#7118#7314#0" expanded="true" />
-            <element signature="e#7587#7967#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/metgrid.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="599">
@@ -422,6 +405,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/ungrib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="133" column="36" lean-forward="true" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#86#100#0" expanded="true" />
+            <element signature="e#2569#3408#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
