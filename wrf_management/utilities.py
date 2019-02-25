@@ -389,3 +389,7 @@ def add_unique_id_run_db(
         con.commit()
     finally:
         con.close()
+
+
+def date_file_format(date):
+    return pd.to_datetime(date).strftime('%Y_%m_%d')

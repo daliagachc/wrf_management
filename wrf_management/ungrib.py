@@ -1,86 +1,34 @@
 # project name: wrf_management
 # created by diego aliaga daliaga_at_chacaltaya.edu.bo
 import pathlib
-import shutil
 import tarfile
 from collections import OrderedDict
 
-import wrf_management.utilities as ut
 import wrf_management.project_global_constants as gc
 import os
 import sqlite3 as sq
 import pandas as pd
-import wrf_management.base_namelists.base_namelists as bn
 import f90nml
 
-
-def get_run_row(run_name=gc.RUN_NAME):
-    sql: str = '''
-    select * from '{rt}' where run_name='{rn}'
-    '''
-    sql = sql.format(rt=gc.RUNS_TB_NAME, rn=run_name)
-    con = sq.connect(gc.PATH_DB)
-
-    try:
-        run_row = pd.read_sql(sql, con).iloc[0]
-    finally:
-        con.close()
-    return run_row
+from wrf_management.utilities import date_file_format
+from wrf_management.run_utilities import get_run_row, get_next_row, get_prev_row, getmk_job_path, get_conf_path, \
+    copy_soft_links, copy_hard_links, update_run_table, relink
 
 
-def get_next_row(*, job, run_name=gc.RUN_NAME, i_max=1):
-    sql: str = '''
-    select * from {rn}
-    where {job}<={i_max}
-    order by {job},date
-    limit 1
-    '''
-    sql = sql.format(rn=run_name, job=job, i_max=i_max)
-    con = sq.connect(gc.PATH_DB)
-    try:
-        job_row = pd.read_sql(sql, con).iloc[0]
-    finally:
-        con.close()
-    return job_row
+def MIGRATED_FUNS():
+    [
+        date_file_format,
+        get_run_row,
+        get_next_row,
+        get_prev_row,
+        getmk_job_path,
+        get_conf_path,
+        copy_soft_links,
+        copy_hard_links,
+        update_run_table,
+        relink,
 
-
-def get_prev_row(*, job, run_name=gc.RUN_NAME, job_row):
-    day_bef = pd.to_datetime(job_row.date) - pd.to_timedelta(1, "D")
-    day_bef = str(day_bef)
-    run_name = gc.RUN_NAME
-    sql: str = '''
-    select * from {rn}
-    where date(date)=date('{dt}')
-    limit 1
-    '''
-    sql = sql.format(rn=run_name, dt=day_bef)
-    con = sq.connect(gc.PATH_DB)
-    try:
-        job_row = pd.read_sql(sql, con).iloc[0]
-    finally:
-        con.close()
-    # print(job_row)
-    return job_row
-
-
-def getmk_job_path(run_row, job_row, job):
-    date = date_file_format(job_row.date)
-    job_path = os.path.join(
-        gc.PATH_DATA, run_row.data_path, date, job
-    )
-    os.makedirs(job_path, exist_ok=True)
-    return job_path
-
-
-def date_file_format(date):
-    return pd.to_datetime(date).strftime('%Y_%m_%d')
-
-
-def get_conf_path(run_row):
-    conf_path = os.path.join(
-        gc.PACKAGE_PATH, 'config_dir', run_row.config_path
-    )
-    return conf_path
+    ]
 
 
 def get_type_row(file_type, job_row):
@@ -148,46 +96,6 @@ def untar_the_files(
         tf.extractall(untar_path)
 
 
-def copy_soft_links(source_path, target_path, list_files):
-    for f in list_files:
-        target_file_path = os.path.join(target_path, f)
-
-        if os.path.isfile(target_file_path):
-            print('unilinking')
-            os.unlink(target_file_path)
-
-        if os.path.isdir(target_file_path):
-            print('unilinking')
-            os.unlink(target_file_path)
-
-
-        if os.path.lexists(target_file_path):
-            print('unilinking')
-            os.remove(target_file_path)
-
-        os.symlink(
-            os.path.join(source_path, f, ),
-            target_file_path
-        )
-        print(f)
-
-
-def copy_hard_links(source_path, target_path, list_files):
-    for f in list_files:
-        target_file_path = os.path.join(target_path, f)
-
-        if os.path.isfile(target_file_path):
-            os.remove(target_file_path)
-
-        if os.path.isdir(target_file_path):
-            os.remove(target_file_path)
-        shutil.copy2(
-            os.path.join(source_path, f, ),
-            target_file_path
-        )
-        print(f)
-
-
 def skim_namelist_copy(
         input_path, output_path, *, date, prefix,
 ):
@@ -250,32 +158,6 @@ def skim_namelist_copy_avgtsfc(
     return new_dic
 
 
-def update_run_table(
-        *,
-        run_name=gc.RUN_NAME,
-        val,
-        job,
-        date,
-        path_db=gc.PATH_DB
-):
-    # val = job_row[job]+1
-    # print(val)
-    sql = """
-    update {tb}
-    set {job} = {val}
-    where date('{dt}')=date(date)
-    """.format(dt=date, tb=run_name, val=val, job=job)
-    # print(sql)
-
-    con = sq.connect(path_db)
-    try:
-        cu = con.cursor()
-        cu.execute(sql)
-        con.commit()
-    finally:
-        con.close()
-
-
 def get_ungrib_files_for_avg(
         *, job_path, pre
 ):
@@ -285,15 +167,6 @@ def get_ungrib_files_for_avg(
     import glob
     file_list = glob.glob(os.path.join(pre_path, pre + ':*'))
     return file_list
-
-
-def relink(
-        source_file_path, dest_file_path
-):
-    if os.path.lexists(dest_file_path):
-        os.remove(dest_file_path)
-
-    os.symlink(source_file_path, dest_file_path)
 
 
 def link_grub_files(
