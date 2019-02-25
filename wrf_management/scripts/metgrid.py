@@ -13,24 +13,15 @@
 # ---
 
 # %%
-import wrf_management.utilities as ut
 import importlib
-importlib.reload(ut);
 import wrf_management.project_global_constants as gc
-importlib.reload(gc)
-import wrf_management.geogrid as geo
 import wrf_management.ungrib as un
-importlib.reload(un)
 import os
-import sqlite3 as sq
 import pandas as pd
-import wrf_management.base_namelists.base_namelists as bn
-importlib.reload(bn);
-import f90nml
 import subprocess as su
-import pathlib
 import wrf_management.run_utilities as ru
 import wrf_management.metgrid as me
+
 # %%
 print(gc.RUN_NAME)
 job = 'metgrid'
@@ -40,18 +31,17 @@ real = False
 
 LIST_S_LINKS = [
     'metgrid.exe',
-#     'link_grib.csh',
+    #     'link_grib.csh',
     'metgrid'
 ]
 
 LIST_H_LINKS = [
-#     'Vtable',
+    #     'Vtable',
     'env_WRFv4.bash'
 ]
 
-
 # %%
-#con = sq.connect(gc.PATH_DB)
+# con = sq.connect(gc.PATH_DB)
 gc.PATH_DB
 
 # %%
@@ -61,17 +51,21 @@ run_row = ru.get_run_row()
 print(run_row)
 
 # %%
+run_path = os.path.join(gc.PATH_DATA, run_row.data_path)
+print(run_path)
+
+# %%
 job_row = ru.get_next_row(job=job)
 print(job_row)
 
 # %%
 if real:
-    ru.update_run_table(val=job_row[job]+1,
-                    job=job,
-                    date=job_row['date']
-                   )
+    ru.update_run_table(val=job_row[job] + 1,
+                        job=job,
+                        date=job_row['date']
+                        )
 
-job_path = ru.getmk_job_path(run_row,job_row,job)
+job_path = ru.getmk_job_path(run_row, job_row, job)
 print(job_path)
 
 # %%
@@ -92,18 +86,25 @@ un.link_grub_files(ungrib_prefixes=ungrib_source_dirs, job_path=job_path)
 
 # %%
 importlib.reload(me)
-me.link_avg_file(prefix=avg_pref,job_path=job_path)
+me.get_geo_files(
+    run_path=run_path,
+    geo_rel_path=run_row.geogrid_path)
+me.link_geo_files(
+    geo_rel_path=run_row.geogrid_path,
+    run_path=run_path,
+    job_path=job_path
+)
 
-
+# %%
+importlib.reload(me)
+me.link_avg_file(prefix=avg_pref, job_path=job_path)
 
 # %%
 # if gc.ID=='taito_login':
-ru.copy_hard_links(conf_path,job_path,LIST_H_LINKS)
+ru.copy_hard_links(conf_path, job_path, LIST_H_LINKS)
 ru.copy_soft_links(
-    os.path.join(gc.PATH_WPS,''),
-    job_path,LIST_S_LINKS)
-    
-
+    os.path.join(gc.PATH_WPS, ''),
+    job_path, LIST_S_LINKS)
 
 # %%
 run_script = \
@@ -130,6 +131,3 @@ if gc.ID == 'taito_login' and res.returncode == 0:
                         )
 
 # %%
-
-
-
