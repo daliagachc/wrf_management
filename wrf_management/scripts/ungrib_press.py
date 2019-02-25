@@ -34,6 +34,7 @@ print(gc.RUN_NAME)
 job = 'ungrib_press'
 file_types=['press']
 real = False
+hours = 24
 
 LIST_S_LINKS = [
     'ungrib.exe',
@@ -74,7 +75,7 @@ type_rows = pd.DataFrame([un.get_type_row(ft, job_row) for ft in file_types])
 print(type_rows)
 
 name_list = un.skim_namelist_copy(
-    conf_path, job_path, date=job_row.date, prefix=job
+    conf_path, job_path, date=job_row.date, prefix=job, hours=hours
 )
 print(name_list)
 

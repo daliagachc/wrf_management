@@ -33,6 +33,7 @@ import subprocess as su
 print(gc.RUN_NAME)
 job = 'ungrib_surf'
 file_types = ['surf_0', 'surf_1']
+hours = 24
 real = False
 
 LIST_S_LINKS = [
@@ -74,7 +75,7 @@ type_rows = pd.DataFrame([un.get_type_row(ft, job_row) for ft in file_types])
 print(type_rows)
 
 name_list = un.skim_namelist_copy(
-    conf_path, job_path, date=job_row.date, prefix=job
+    conf_path, job_path, date=job_row.date, prefix=job, hours=hours
 )
 print(name_list)
 
