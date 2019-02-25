@@ -5,7 +5,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 0.8.6
+#       jupytext_version: 1.0.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -43,7 +43,7 @@ LIST_S_LINKS = [
 
 LIST_H_LINKS = [
 #     'Vtable',
-#     'env_WRFv4.bash'
+    'env_WRFv4.bash'
 ]
 
 
@@ -89,7 +89,9 @@ un.link_grub_files(ungrib_prefixes=ungrib_source_dirs, job_path=job_path)
 # %%
 # if gc.ID=='taito_login':
 un.copy_hard_links(conf_path,job_path,LIST_H_LINKS)
-un.copy_soft_links(gc.PATH_WPS,job_path,LIST_S_LINKS)
+un.copy_soft_links(
+    os.path.join(gc.PATH_WPS,'util'),
+    job_path,LIST_S_LINKS)
     
 
 
@@ -98,7 +100,7 @@ run_script = \
     """#!/bin/bash
     cd {job_path}
     source ./env_WRFv4.bash 
-    ./avg_tsfc.exe
+    ./avg_tsfc.exe > avg_tsfc.log
     exit $?
     """.format(job_path=job_path)
 print(run_script)
