@@ -13,6 +13,8 @@
 # ---
 
 # %%
+import wrf_management.run_utilities
+import wrf_management.utilities
 import wrf_management.utilities as ut
 import importlib
 importlib.reload(ut);
@@ -51,21 +53,21 @@ con = sq.connect(gc.PATH_DB)
 
 # %%
 importlib.reload(un)
-run_row = un.get_run_row()
+run_row = wrf_management.run_utilities.get_run_row()
 print(run_row)
 
-job_row = un.get_next_row(job=job)
+job_row = wrf_management.run_utilities.get_next_row(job=job)
 print(job_row)
-un.update_run_table(val=job_row[job]+1,
-                    job=job,
-                    date=job_row['date']
-                   )
-job_path = un.getmk_job_path(run_row,job_row,job)
+wrf_management.run_utilities.update_run_table(val=job_row[job] + 1,
+                                              job=job,
+                                              date=job_row['date']
+                                              )
+job_path = wrf_management.run_utilities.getmk_job_path(run_row, job_row, job)
 print(job_path)
 
 untar_path = os.path.join(job_path,'untar')
 
-conf_path = un.get_conf_path(run_row)
+conf_path = wrf_management.run_utilities.get_conf_path(run_row)
 print(conf_path)
 
 type_rows = pd.DataFrame([un.get_type_row(ft,job_row) for ft in file_types])
@@ -77,8 +79,8 @@ name_list = un.skim_namelist_copy(
 print(name_list)
 
 if gc.ID=='taito_login':
-    un.copy_hard_links(conf_path,job_path,LIST_H_LINKS)
-    un.copy_soft_links(gc.PATH_WPS,job_path,LIST_S_LINKS)
+    wrf_management.run_utilities.copy_hard_links(conf_path, job_path, LIST_H_LINKS)
+    wrf_management.run_utilities.copy_soft_links(gc.PATH_WPS, job_path, LIST_S_LINKS)
     importlib.reload(un)
     un.untar_the_files(type_rows,joba_path)
 
@@ -101,7 +103,7 @@ tf.getmembers()
 
 # %%
 importlib.reload(un)
-date_formated=un.date_file_format(job_row.date)
+date_formated= wrf_management.utilities.date_file_format(job_row.date)
 
 # %%
 job_row
