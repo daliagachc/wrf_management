@@ -5,7 +5,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 0.8.6
+#       jupytext_version: 1.0.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -26,7 +26,7 @@ import wrf_management.real as re
 print(gc.RUN_NAME)
 job = 'real'
 met_pref='metgrid'
-real = False
+real = True
 
 LIST_S_LINKS = [
     'real.exe',
@@ -75,7 +75,7 @@ print(conf_path)
 
 
 # %%
-duration_h = 24
+duration_h = 23.99
 importlib.reload(re)
 re.skim_namelist_copy_real(
     conf_path, job_path, date = job_row.date, 
@@ -95,7 +95,7 @@ re.link_met_files(
 # if gc.ID=='taito_login':
 ru.copy_hard_links(conf_path, job_path, LIST_H_LINKS)
 ru.copy_soft_links(
-    os.path.join(gc.PATH_WPS, ''),
+    os.path.join(gc.PATH_WRF, 'main'),
     job_path, LIST_S_LINKS)
 
 # %%
