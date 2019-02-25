@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/diego.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wrf_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wrf_management.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_20/namelist.input" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_20/namelist.input" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/scripts/ungrib_press-taito.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/scripts/ungrib_surf.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scripts/ungrib_surf.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/scripts/ungrib_surf.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scripts/ungrib_surf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/ungrib.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/ungrib.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +20,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wrf_management/ungrib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="439">
+              <caret line="296" column="30" selection-start-line="296" selection-start-column="30" selection-end-line="296" selection-end-column="30" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#86#99#0" expanded="true" />
+                <element signature="e#86#100#0" expanded="true" />
+                <element signature="e#741#1045#0" expanded="true" />
+                <element signature="e#752#847#0" expanded="true" />
+                <element signature="e#2040#2351#0" expanded="true" />
+                <element signature="e#5650#6489#0" expanded="true" />
+                <element signature="e#6156#6203#0" expanded="true" />
+                <element signature="e#7118#7314#0" expanded="true" />
+                <element signature="e#7398#7489#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrf_management/geogrid.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,11 +53,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wrf_management/ungrib.py" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1024" />
     <option name="y" value="23" />
     <option name="width" value="1024" />
     <option name="height" value="1129" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -63,6 +91,12 @@
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="file_templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
+              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
@@ -110,6 +144,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="mount_remotes.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="wrf_management" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wrf_management/scripts" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wrf_management/scripts/mount_remotes.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -119,6 +164,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Bash.mount_remotes.sh" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -128,32 +178,34 @@
       <option name="presentableId" value="Default" />
       <updated>1551050135460</updated>
       <workItem from="1551050142620" duration="982000" />
-      <workItem from="1551102477652" duration="366000" />
+      <workItem from="1551102477652" duration="5473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1348000" />
+    <option name="totallyTimeSpent" value="6455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1024" y="23" width="1024" height="1129" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
       <window_info id="Structure" order="4" sideWeight="0.4822485" side_tool="true" visible="true" weight="0.34826884" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.51775146" visible="true" weight="0.34826884" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.51775146" visible="true" weight="0.34826884" />
+      <window_info anchor="bottom" id="Messages" weight="0.32938856" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32870865" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32840237" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32977587" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32938856" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -174,13 +226,29 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wrf_management/ungrib.py">
+    <entry file="file://$PROJECT_DIR$/wrf_management/geogrid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state>
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#86#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/ungrib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="296" column="30" selection-start-line="296" selection-start-column="30" selection-end-line="296" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#86#100#0" expanded="true" />
+            <element signature="e#741#1045#0" expanded="true" />
+            <element signature="e#752#847#0" expanded="true" />
+            <element signature="e#2040#2351#0" expanded="true" />
+            <element signature="e#5650#6489#0" expanded="true" />
+            <element signature="e#6156#6203#0" expanded="true" />
+            <element signature="e#7118#7314#0" expanded="true" />
+            <element signature="e#7398#7489#0" expanded="true" />
           </folding>
         </state>
       </provider>

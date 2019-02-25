@@ -1,5 +1,6 @@
 # project name: wrf_management
 # created by diego aliaga daliaga_at_chacaltaya.edu.bo
+import pathlib
 import shutil
 import tarfile
 from collections import OrderedDict
@@ -183,7 +184,7 @@ def copy_hard_links(source_path, target_path, list_files):
 
 
 def skim_namelist_copy(
-        input_path, output_path, *, date, prefix
+        input_path, output_path, *, date, prefix,
 ):
     old_dic = f90nml.read(os.path.join(input_path, 'namelist.wps'))
 
@@ -197,6 +198,38 @@ def skim_namelist_copy(
     old_dic['share']['interval_seconds'] = 6 * 3600
     old_dic['ungrib']['prefix'] = prefix
     sections = ['share', 'ungrib']
+    drops = {}
+    new_dic = OrderedDict()
+    for s in sections:
+        new_dic[s] = old_dic[s]
+        if s in drops.keys():
+            for d in drops[s]:
+                new_dic[s].pop(d)
+    f90nml.write(
+        new_dic,
+        os.path.join(output_path, 'namelist.wps'),
+        force=True
+    )
+    return new_dic
+
+
+def skim_namelist_copy_avgtsfc(
+        input_path, output_path, *, date, prefix,
+):
+    old_dic = f90nml.read(os.path.join(input_path, 'namelist.wps'))
+
+    dt_object = pd.to_datetime(date)
+    d_init = dt_object.strftime('%Y-%m-%d_%T')
+    d_end = dt_object + pd.DateOffset(hours=18)
+    d_end = d_end.strftime('%Y-%m-%d_%T')
+
+    old_dic['share']['start_date'] = old_dic['share']['max_dom'] * [d_init]
+    old_dic['share']['end_date'] = old_dic['share']['max_dom'] * [d_end]
+    old_dic['share']['interval_seconds'] = 6 * 3600
+    old_dic['metgrid']['fg_name'] = ['ungrib_surf', 'ungrib_press']
+    sections = ['share',
+                # 'ungrib',
+                'metgrid']
     drops = {}
     new_dic = OrderedDict()
     for s in sections:
@@ -236,3 +269,34 @@ def update_run_table(
         con.commit()
     finally:
         con.close()
+
+
+def get_ungrib_files_for_avg(
+        *, job_path, pre
+):
+    pre_path = pathlib.Path(job_path).parent
+    pre_path = os.path.join(pre_path, pre)
+    # print(pre_path)
+    import glob
+    file_list = glob.glob(os.path.join(pre_path, pre + ':*'))
+    return file_list
+
+
+def relink(
+        source_file_path, dest_file_path
+):
+    if os.path.lexists(dest_file_path):
+        os.remove(dest_file_path)
+
+    os.symlink(source_file_path, dest_file_path)
+
+
+def link_grub_files(
+        *, ungrib_prefixes, job_path
+):
+    for pre in ungrib_prefixes:
+        ungrib_list = get_ungrib_files_for_avg(job_path=job_path, pre=pre)
+        df = pd.DataFrame(ungrib_list, columns=['source'])
+        df['base_name'] = df['source'].apply(lambda p: os.path.basename(p))
+        df['dest'] = df['base_name'].apply(lambda bn: os.path.join(job_path, bn))
+        df.apply(lambda r: relink(r['source'], r['dest']), axis=1)
