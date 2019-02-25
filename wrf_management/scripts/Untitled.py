@@ -15,5 +15,7 @@
 # %%
 ii = 50
 for i in range(50):
-    %run './ungrib_avgtsfc.py'
+    %run './metgrid.py'
     print (i)
+
+# %%

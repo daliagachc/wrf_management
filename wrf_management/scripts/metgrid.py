@@ -5,7 +5,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 0.8.6
+#       jupytext_version: 1.0.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -27,7 +27,7 @@ print(gc.RUN_NAME)
 job = 'metgrid'
 ungrib_source_dirs = ['ungrib_surf', 'ungrib_press']
 avg_pref = 'ungrib_avgtsfc'
-real = False
+real = True
 
 LIST_S_LINKS = [
     'metgrid.exe',

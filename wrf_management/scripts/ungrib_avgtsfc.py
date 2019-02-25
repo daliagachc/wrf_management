@@ -35,7 +35,7 @@ print(gc.RUN_NAME)
 job = 'ungrib_avgtsfc'
 ungrib_source_dirs = ['ungrib_surf', 'ungrib_press']
 real = True
-
+hours = 24
 LIST_S_LINKS = [
     'avg_tsfc.exe',
 #     'link_grib.csh',
@@ -78,7 +78,7 @@ print(conf_path)
 # %%
 importlib.reload(un)
 name_list = un.skim_namelist_copy_avgtsfc(
-    conf_path, job_path, date=job_row.date, prefix=job
+    conf_path, job_path, date=job_row.date, prefix=job, hours=24
 )
 pd.DataFrame(name_list)
 
