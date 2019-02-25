@@ -13,13 +13,13 @@ import f90nml
 
 
 def skim_namelist_copy_metgrid(
-        input_path, output_path, *, date, prefix,
+        input_path, output_path, *, date, prefix, hours = 18
 ):
     old_dic = f90nml.read(os.path.join(input_path, 'namelist.wps'))
 
     dt_object = pd.to_datetime(date)
     d_init = dt_object.strftime('%Y-%m-%d_%T')
-    d_end = dt_object + pd.DateOffset(hours=18)
+    d_end = dt_object + pd.DateOffset(hours=24)
     d_end = d_end.strftime('%Y-%m-%d_%T')
 
     old_dic['share']['start_date'] = old_dic['share']['max_dom'] * [d_init]
