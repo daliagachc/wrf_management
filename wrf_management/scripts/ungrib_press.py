@@ -33,7 +33,8 @@ import subprocess as su
 print(gc.RUN_NAME)
 job = 'ungrib_press'
 file_types=['press']
-real = False
+
+real = True
 hours = 24
 
 LIST_S_LINKS = [
