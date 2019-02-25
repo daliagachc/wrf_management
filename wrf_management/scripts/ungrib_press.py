@@ -85,7 +85,7 @@ if gc.ID=='taito_login':
     un.untar_the_files(type_rows, job_path, job_row=job_row)
     
     # in case we need to download the day before
-    if job == 'ungrib_surf':
+    if job == 'ungrib_press':
         pre_row = un.get_prev_row(job=job,job_row=job_row)
         trs = pd.DataFrame([un.get_type_row(ft, pre_row) for ft in file_types])
         un.untar_the_files_prev(trs, job_path, job_row=pre_row)
