@@ -110,7 +110,8 @@ bs_file.close()
 # %%
 if gc.ID == 'taito_login':
     res = su.run(['/bin/bash', bs_path], stdout=su.PIPE, stderr=su.PIPE)
-
+print(res.stdout)
+print(res.stderr)
 if gc.ID == 'taito_login' and res.returncode == 0:
     wrf_management.run_utilities.update_run_table(val=100,
                                                   job=job,

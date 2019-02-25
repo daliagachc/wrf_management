@@ -28,7 +28,7 @@ job = 'metgrid'
 ungrib_source_dirs = ['ungrib_surf', 'ungrib_press']
 avg_pref = 'ungrib_avgtsfc'
 real = True
-
+hours=24
 LIST_S_LINKS = [
     'metgrid.exe',
     #     'link_grib.csh',
@@ -75,7 +75,7 @@ print(conf_path)
 # %%
 importlib.reload(me)
 name_list = me.skim_namelist_copy_metgrid(
-    conf_path, job_path, date=job_row.date, prefix=job
+    conf_path, job_path, date=job_row.date, prefix=job, hours=hours
 )
 pd.DataFrame(name_list)
 
