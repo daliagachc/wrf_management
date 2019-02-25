@@ -163,8 +163,8 @@ def copy_soft_links(source_path, target_path, list_files):
 
         if os.path.lexists(target_file_path):
             print('unilinking')
-            os.unlink(target_file_path)
-            
+            os.remove(target_file_path)
+
         os.symlink(
             os.path.join(source_path, f, ),
             target_file_path
