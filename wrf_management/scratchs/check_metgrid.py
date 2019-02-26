@@ -25,10 +25,10 @@ df = df.sort_values('dom')
 df['path']=df.names.apply(
     lambda n: os.path.join(path,n)
 )
-df
+df = df.sort_values('names')
 
 # %%
-p = df[df.dom==3].iloc[0].path
+p = df[df.dom==3].iloc[-1].path
 
 # %%
 cols = [
@@ -129,6 +129,9 @@ list(ar.variables)
 
 # %%
 ar['TSLB'].description
+
+# %%
+ar.Times
 
 # %%
 
