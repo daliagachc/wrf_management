@@ -4,7 +4,7 @@
 #SBATCH -e array_job_err_%A_%a.txt
 #SBATCH -t 00:25:00
 #SBATCH --mem-per-cpu=4000
-#SBATCH --array=1-30
+#SBATCH --array=1-1
 #SBATCH -n 1
 #SBATCH -p serial
 
