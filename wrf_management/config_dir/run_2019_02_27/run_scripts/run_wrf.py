@@ -14,21 +14,21 @@
 
 # %%
 def imp():
-    import importlib as imp
+    import importlib 
     import os
 
     try:
         from . import init as it
     except:
         from wrf_management.config_dir.run_2019_02_27.run_scripts import init as it
-    imp.reload(it)
+    importlib.reload(it)
 
     import di_python.ya_esta as ye
     import wrf_management.run_wrf as rw
     import wrf_management.project_global_constants as gc
 
     imlist = [ye,it,rw,gc,]
-    for i in imlist: imp.reload(i)
+    for i in imlist: importlib.reload(i)
 imp()
 
 
