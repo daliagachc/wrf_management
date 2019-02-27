@@ -96,9 +96,9 @@ def link_metgrids(*, parent_run_path, dates, dest_path):
 
 
 def link_real(
-        *, wps_path=gc.PATH_WPS, dest_path
+        *, wrf_path=gc.PATH_WRF, dest_path
     ):
-    source = os.path.join(wps_path, 'main/real.exe')
+    source = os.path.join(wrf_path, 'main/real.exe')
     target = os.path.join(dest_path, 'real.exe')
     ru.relink(source_file_path=source,
               dest_file_path=target)
