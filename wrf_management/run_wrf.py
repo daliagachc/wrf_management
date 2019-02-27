@@ -54,7 +54,7 @@ def get_input_dic(file_path):
 
 
 def create_run_type_dir(data_path, run_path, type_path):
-    ret = os.path.join(data_path, run_path, type_path)
+    ret = os.path.join(data_path, 'runs', run_path, type_path)
     os.makedirs(ret, exist_ok=True)
     return ret
 
