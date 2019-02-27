@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "metgrid.py", line 85, in <module>
+    un.link_grub_files(ungrib_prefixes=ungrib_source_dirs, job_path=job_path)
+  File "/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/ungrib.py", line 180, in link_grub_files
+    df.apply(lambda r: relink(r['source'], r['dest']), axis=1)
+  File "/homeappl/home/aliagadi/appl_taito/miniconda3/envs/b36/lib/python3.6/site-packages/pandas/core/frame.py", line 6014, in apply
+    return op.get_result()
+  File "/homeappl/home/aliagadi/appl_taito/miniconda3/envs/b36/lib/python3.6/site-packages/pandas/core/apply.py", line 142, in get_result
+    return self.apply_standard()
+  File "/homeappl/home/aliagadi/appl_taito/miniconda3/envs/b36/lib/python3.6/site-packages/pandas/core/apply.py", line 248, in apply_standard
+    self.apply_series_generator()
+  File "/homeappl/home/aliagadi/appl_taito/miniconda3/envs/b36/lib/python3.6/site-packages/pandas/core/apply.py", line 277, in apply_series_generator
+    results[i] = self.f(v)
+  File "/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/ungrib.py", line 180, in <lambda>
+    df.apply(lambda r: relink(r['source'], r['dest']), axis=1)
+  File "/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/run_utilities.py", line 149, in relink
+    os.symlink(source_file_path, dest_file_path)
+FileExistsError: [Errno 17] File exists: '/wrk/aliagadi/DONOTREMOVE/wrf_management_data/runs/run_2019_02_20/2017_12_03/ungrib_surf/ungrib_surf:2017-12-03_00' -> '/wrk/aliagadi/DONOTREMOVE/wrf_management_data/runs/run_2019_02_20/2017_12_03/metgrid/ungrib_surf:2017-12-03_00'

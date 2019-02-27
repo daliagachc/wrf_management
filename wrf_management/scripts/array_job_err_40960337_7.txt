@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "metgrid.py", line 65, in <module>
+    date=job_row['date']
+  File "/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/run_utilities.py", line 138, in update_run_table
+    con.commit()
+sqlite3.OperationalError: disk I/O error
