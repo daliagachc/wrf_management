@@ -43,7 +43,7 @@ def modify_dt_input_dic(
     for k, dt in dt_dic.items():
         for p in pars:
             key = k + '_' + p
-            input_dic['time_control'][key] = getattr(dt, p)
+            input_dic['time_control'][key] = 4*[getattr(dt, p)]
     return input_dic
 
 
