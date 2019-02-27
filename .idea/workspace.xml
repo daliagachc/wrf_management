@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/plot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/plot/plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wrf_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wrf_management.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/plot/Untitled-Copy1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/plot/Untitled-Copy1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/plot/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/plot/plot.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,11 +23,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wrf_management/plot/plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="165">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
                 <element signature="e#87#96#0" expanded="true" />
-                <element signature="e#201#626#0" expanded="true" />
                 <element signature="e#689#1035#0" expanded="true" />
               </folding>
             </state>
@@ -80,9 +76,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="828" />
+    <option name="x" value="1024" />
     <option name="y" value="23" />
-    <option name="width" value="1220" />
+    <option name="width" value="1024" />
     <option name="height" value="1129" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -221,22 +217,23 @@
       <option name="presentableId" value="Default" />
       <updated>1551050135460</updated>
       <workItem from="1551050142620" duration="982000" />
-      <workItem from="1551102477652" duration="29153000" />
+      <workItem from="1551102477652" duration="30889000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30135000" />
+    <option name="totallyTimeSpent" value="31871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="828" y="23" width="1220" height="1129" extended-state="0" />
+    <frame x="1024" y="23" width="1024" height="1129" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
-      <window_info id="Structure" order="4" sideWeight="0.4822485" side_tool="true" visible="true" weight="0.27674022" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.51775146" visible="true" weight="0.27674022" />
+      <window_info id="Structure" order="4" sideWeight="0.4822485" side_tool="true" visible="true" weight="0.33197555" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.51775146" visible="true" weight="0.33197555" />
       <window_info anchor="bottom" id="Messages" weight="0.32938856" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32938856" />
@@ -413,11 +410,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/plot/plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="165">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
             <element signature="e#87#96#0" expanded="true" />
-            <element signature="e#201#626#0" expanded="true" />
             <element signature="e#689#1035#0" expanded="true" />
           </folding>
         </state>

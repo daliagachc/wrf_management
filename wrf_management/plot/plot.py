@@ -7,10 +7,10 @@ import wrf_management.project_global_constants as gc
 import xarray as xr
 
 
-def get_df_list(*, path):
+def get_df_list(*, path, pref='wrfout_d'):
     fs = os.listdir(path)
     df = pd.DataFrame(fs, columns=['fn'])
-    _b = df.fn.str.startswith('wrfout_d')
+    _b = df.fn.str.startswith(pref)
     df = df[_b].reset_index(drop=True)
     df['p'] = df.fn.apply(lambda f: os.path.join(path, f))
     df['d'] = df.fn.str.extract('d0(.)').astype(int)
