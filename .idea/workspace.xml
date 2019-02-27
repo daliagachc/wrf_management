@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrf_management/run_wrf.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/run_wrf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +23,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-947">
-                  <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+                <state relative-caret-position="220">
+                  <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -38,8 +41,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="394">
-                  <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+                <state relative-caret-position="409">
+                  <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
                   <folding>
                     <element signature="e#276#292#0" expanded="true" />
                   </folding>
@@ -79,13 +82,14 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/wrf_management/run_wrf.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="110">
-                      <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+                    <state relative-caret-position="131">
+                      <caret line="140" column="53" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
                       <folding>
                         <element signature="e#86#97#0" expanded="true" />
                         <element signature="e#463#570#0" expanded="true" />
                         <element signature="e#617#621#0" expanded="true" />
                         <element signature="e#670#674#0" expanded="true" />
+                        <element signature="e#586#854#0" expanded="true" />
                         <element signature="e#817#909#0" expanded="true" />
                         <element signature="e#945#974#0" expanded="true" />
                         <element signature="e#1139#1202#0" expanded="true" />
@@ -94,6 +98,8 @@
                         <element signature="e#1794#1985#0" expanded="true" />
                         <element signature="e#2166#2212#0" expanded="true" />
                         <element signature="e#2405#2518#0" expanded="true" />
+                        <element signature="e#2653#2826#0" expanded="true" />
+                        <element signature="e#2659#2748#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -148,7 +154,6 @@
         <option value="$PROJECT_DIR$/wrf_management/scripts/batch_metgrid.sh" />
         <option value="$PROJECT_DIR$/wrf_management/metgrid.py" />
         <option value="$PROJECT_DIR$/wrf_management/plot/plot.py" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/init.ipynb" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run.py" />
         <option value="$PROJECT_DIR$/../di-python/di_python/ya_esta.py" />
@@ -156,6 +161,7 @@
         <option value="$PROJECT_DIR$/wrf_management/run_utilities.py" />
         <option value="$PROJECT_DIR$/wrf_management/utilities.py" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.py" />
+        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input" />
         <option value="$PROJECT_DIR$/wrf_management/run_wrf.py" />
       </list>
     </option>
@@ -314,12 +320,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551050135460</updated>
       <workItem from="1551050142620" duration="982000" />
-      <workItem from="1551102477652" duration="48917000" />
+      <workItem from="1551102477652" duration="50816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49899000" />
+    <option name="totallyTimeSpent" value="51798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2048" height="1129" extended-state="6" />
@@ -570,8 +576,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="409">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="e#276#292#0" expanded="true" />
           </folding>
@@ -580,20 +586,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-947">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="220">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/run_wrf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+        <state relative-caret-position="131">
+          <caret line="140" column="53" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
           <folding>
             <element signature="e#86#97#0" expanded="true" />
             <element signature="e#463#570#0" expanded="true" />
             <element signature="e#617#621#0" expanded="true" />
             <element signature="e#670#674#0" expanded="true" />
+            <element signature="e#586#854#0" expanded="true" />
             <element signature="e#817#909#0" expanded="true" />
             <element signature="e#945#974#0" expanded="true" />
             <element signature="e#1139#1202#0" expanded="true" />
@@ -602,6 +609,8 @@
             <element signature="e#1794#1985#0" expanded="true" />
             <element signature="e#2166#2212#0" expanded="true" />
             <element signature="e#2405#2518#0" expanded="true" />
+            <element signature="e#2653#2826#0" expanded="true" />
+            <element signature="e#2659#2748#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -43,7 +43,7 @@ def modify_dt_input_dic(
     for k, dt in dt_dic.items():
         for p in pars:
             key = k + '_' + p
-            input_dic['time_control'][key] = 4*[getattr(dt, p)]
+            input_dic['time_control'][key] = 4 * [getattr(dt, p)]
     return input_dic
 
 
@@ -97,9 +97,50 @@ def link_metgrids(*, parent_run_path, dates, dest_path):
 
 def link_real(
         *, wrf_path=gc.PATH_WRF, dest_path
-    ):
+):
     source = os.path.join(wrf_path, 'main/real.exe')
     target = os.path.join(dest_path, 'real.exe')
     ru.relink(source_file_path=source,
               dest_file_path=target)
 
+
+def link_wrf(
+        *, wrf_path=gc.PATH_WRF, dest_path
+):
+    globlist = [
+        'main/*.exe',
+        'run/gribmap.txt',
+        'run/RRTM*',
+        'run/*TBL',
+        'run/*tbl',
+        'run/ozone*',
+    ]
+    for g in globlist:
+        glob_path = os.path.join(wrf_path, g)
+        print(glob_path)
+        sources = glob.glob(
+            glob_path
+        )
+        print(sources)
+        for source in sources:
+            target = os.path.join(
+                dest_path,
+                os.path.basename(source)
+            )
+            print(source)
+            print(target)
+
+            ru.relink(source_file_path=source,
+                      dest_file_path=target)
+
+
+def link_wrfs(
+        *, real_path, pref='wrf*',
+        dest_path
+):
+    sources = glob.glob(os.path.join(real_path, pref))
+    print(sources)
+    for s in sources:
+        dest = os.path.basename(s)
+        dest = os.path.join(dest_path, dest)
+        ru.relink(source_file_path=s, dest_file_path=dest)
