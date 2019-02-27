@@ -1,11 +1,14 @@
 # project name: wrf_management
 # created by diego aliaga daliaga_at_chacaltaya.edu.bo
+import glob
 import os
 
 import wrf_management.project_global_constants as gc
 from datetime import datetime as dt
 import pandas as pd
 import f90nml
+import wrf_management.run_utilities as ru
+import wrf_management.utilities as ut
 
 # %%
 NAMELIST_INPUT = 'namelist.input'
@@ -65,3 +68,38 @@ def write_input_dic(
     f90nml.write(new_input_dic,
                  os.path.join(run_type_dir, NAMELIST_INPUT),
                  run_type_dir)
+
+
+def get_metgrid_path(*, parent_run_path, date):
+    ds = date.strftime('%Y_%m_%d')
+    ret = os.path.join(parent_run_path, ds, 'metgrid')
+    return ret
+
+
+def link_metgrids_single(
+        *, parent_run_path, date, dest_path
+):
+    met_path = get_metgrid_path(parent_run_path=parent_run_path,
+                                date=date)
+    sources = glob.glob(met_path + '/met_em*')
+    for s in sources:
+        dest = os.path.basename(s)
+        dest = os.path.join(dest_path, dest)
+        ru.relink(source_file_path=s, dest_file_path=dest)
+
+
+def link_metgrids(*, parent_run_path, dates, dest_path):
+    for d in dates:
+        link_metgrids_single(parent_run_path=parent_run_path,
+                             date=d,
+                             dest_path=dest_path)
+
+
+def link_real(
+        *, wps_path=gc.PATH_WPS, dest_path
+    ):
+    source = os.path.join(wps_path, 'main/real.exe')
+    target = os.path.join(dest_path, 'real.exe')
+    ru.relink(source_file_path=source,
+              dest_file_path=target)
+
