@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "metgrid.py", line 107, in <module>
-    job_path, LIST_S_LINKS)
-  File "/homeappl/home/aliagadi/saltena_2018/wrf_management/wrf_management/run_utilities.py", line 84, in copy_soft_links
-    os.unlink(target_file_path)
-FileNotFoundError: [Errno 2] No such file or directory: '/wrk/aliagadi/DONOTREMOVE/wrf_management_data/runs/run_2019_02_20/2017_12_03/metgrid/metgrid.exe'
