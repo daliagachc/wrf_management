@@ -143,7 +143,13 @@ def update_run_table(
 def relink(
         source_file_path, dest_file_path
 ):
-    if os.path.lexists(dest_file_path):
-        os.remove(dest_file_path)
+    ifs = [
+        os.path.lexists,
+        os.path.isfile,
+        os.path.isdir,
+    ]
+    for f in ifs:
+        if f(dest_file_path):
+            os.remove(dest_file_path)
 
     os.symlink(source_file_path, dest_file_path)
