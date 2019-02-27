@@ -103,7 +103,7 @@ run_script = \
     """#!/bin/bash
     cd {job_path}
     source ./env_WRFv4.bash 
-    ./metgrid.exe
+    ./real.exe
     exit $?
     """.format(job_path=job_path)
 print(run_script)
@@ -115,7 +115,8 @@ bs_file.close()
 # %%
 if gc.ID == 'taito_login':
     res = su.run(['/bin/bash', bs_path], stdout=su.PIPE, stderr=su.PIPE)
-
+print(res.stdout)
+print(res.stderr)
 if gc.ID == 'taito_login' and res.returncode == 0:
     un.update_run_table(val=100,
                         job=job,
