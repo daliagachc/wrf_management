@@ -19,7 +19,7 @@ import os
 try:
     from . import init as it
 except:
-    from wrf_management.config_dir.run_2019_02_27.run_scripts import init as it
+    from wrf_management.config_dir.run_2019_02_28.run_scripts import init as it
 importlib.reload(it)
 
 import di_python.ya_esta as ye
