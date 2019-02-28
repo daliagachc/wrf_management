@@ -58,17 +58,21 @@ importlib.reload(un)
 run_row = wrf_management.run_utilities.get_run_row()
 print(run_row)
 
+# %%
 job_row = wrf_management.run_utilities.get_next_row(job=job)
 print(job_row)
 
-wrf_management.run_utilities.update_run_table(val=job_row[job] + 1,
-                                              job=job,
-                                              date=job_row['date']
-                                              )
+# %%
+if real:
+    wrf_management.run_utilities.update_run_table(val=job_row[job] + 1,
+                                                  job=job,
+                                                  date=job_row['date']
+                                                  )
 
 job_path = wrf_management.run_utilities.getmk_job_path(run_row, job_row, job)
 print(job_path)
 
+# %%
 conf_path = wrf_management.run_utilities.get_conf_path(run_row)
 print(conf_path)
 
