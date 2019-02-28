@@ -164,6 +164,7 @@ fig
 # %%
 
 
+
 # %%
 par = 'SKT'
 ndf = []
@@ -197,3 +198,4 @@ ax.set_title('t2 k at ttk lake ')
 ax.grid()
 
 # %%
+
