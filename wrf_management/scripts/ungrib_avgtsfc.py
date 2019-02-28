@@ -37,6 +37,7 @@ ungrib_source_dirs = ['ungrib_surf', 'ungrib_press']
 
 real = True
 hours = 24
+
 LIST_S_LINKS = [
     'avg_tsfc.exe',
 #     'link_grib.csh',
@@ -100,10 +101,12 @@ wrf_management.run_utilities.copy_soft_links(
 # %%
 run_script = \
     """#!/bin/bash
-    cd {job_path}
-    source ./env_WRFv4.bash 
-    ./avg_tsfc.exe > avg_tsfc.log
-    exit $?
+        
+cd {job_path}
+./link_grib.csh ./untar/*/*
+source ./env_WRFv4.bash 
+srun -t20 -p test --mem 1000 ./avg_tsfc.exe > avg_tsfc.log
+exit $?
     """.format(job_path=job_path)
 print(run_script)
 bs_path = os.path.join(job_path, 'run_me.sh')

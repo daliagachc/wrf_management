@@ -96,11 +96,13 @@ if gc.ID=='taito_login':
 # %%
 run_script = \
     """#!/bin/bash
-    cd {job_path}
-    ./link_grib.csh ./untar/*/*
-    source ./env_WRFv4.bash 
-    ./ungrib.exe
-    exit $?
+        
+cd {job_path}
+./link_grib.csh ./untar/*/*
+source ./env_WRFv4.bash 
+srun -t20 -p test --mem 1000 ./ungrib.exe
+exit $?
+    
     """.format(job_path=job_path)
 print(run_script)
 bs_path = os.path.join(job_path, 'run_me.sh')
@@ -111,6 +113,7 @@ bs_file.close()
 # %%
 if gc.ID == 'taito_login':
     res = su.run(['/bin/bash', bs_path], stdout=su.PIPE, stderr=su.PIPE)
+
 print(res.stdout)
 print(res.stderr)
 if gc.ID == 'taito_login' and res.returncode == 0:
