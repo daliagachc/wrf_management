@@ -5,7 +5,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 0.8.6
+#       jupytext_version: 1.0.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -27,7 +27,8 @@ import wrf_management.project_global_constants as gc
 import seaborn as sns
 
 # %%
-path = os.path.join(gc.PATH_DATA, '/runs/run_2019_02_27/wrf')
+path = os.path.join(gc.PATH_DATA, 'runs/run_2019_02_27/wrf')
+print(gc.PATH_DATA)
 df = wp.get_df_list(path=path, pref='wrfout_d')
 
 # %%
@@ -88,18 +89,16 @@ for l, r in ddd.iterrows():
 nndf = pd.concat(ndf, ignore_index=True)
 nndf
 
-import seaborn as sns
-
 fig, ax = plt.subplots()
 ax = sns.lineplot(y='SST', x='date', data=nndf, ax=ax)
 fig.autofmt_xdate()
 fig.set_figwidth(20)
 
 # %%
-list(ar.variables)
+wp.print_var_starting_with(row.p,'')
 
 # %%
-_d4 = df.index.get_level_values('d') == 3
+_d4 = df.index.get_level_values('d') == 2
 df4 = df[_d4]
 plist = ['SST']
 skim = ['T', 'TSLB']
@@ -164,20 +163,19 @@ fig
 # %%
 
 
-
 # %%
-par = 'SKT'
+par = 'TSK'
 ndf = []
 for l, r in ddd.iterrows():
     ar = xr.open_dataset(r.p)
     lam, laM, lom, loM = -17, -15, -70, -68
     arr = ar[[par, 'LAKEMASK']]
     b1 = arr.where(
-        (arr.XLONG > lom) &
-        (arr.XLONG < loM) &
-        (arr.XLAT > lam) &
-        (arr.XLAT < laM) &
-        (arr.LAKEMASK == 1)
+        (arr.XLONG > lom) 
+        &(arr.XLONG < loM) 
+        &(arr.XLAT > lam) 
+        &(arr.XLAT < laM) 
+#         &(arr.LAKEMASK == 1)
     )
     df1 = b1[par].to_dataframe()
     df1 = df1.dropna()
@@ -199,3 +197,6 @@ ax.grid()
 
 # %%
 
+# %%
+
+# %%
