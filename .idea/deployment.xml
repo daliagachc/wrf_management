@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="lfaServeRoot">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../di-python/di_python" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lfaServer">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../di-python/di_python" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lfaserverLocal">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../di-python/di_python" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="mac_linux">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../di-python/di_python" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
