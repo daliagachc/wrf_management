@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_real.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_real.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_real.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_real.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_wrf.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_wrf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/run_utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/run_utilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/run_wrf.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/run_wrf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_wrf_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_wrf_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/scripts/ungrib_surf.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scripts/ungrib_surf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +18,30 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_real.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="219">
                   <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_wrf.sh">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_wrf_test.sh">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/wrf_management/scripts/ungrib_surf.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -125,6 +141,8 @@
         <option value="$PROJECT_DIR$/wrf_management/run_wrf.py" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_wrf.py" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_real.py" />
+        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_wrf_test.sh" />
+        <option value="$PROJECT_DIR$/wrf_management/scripts/ungrib_surf.py" />
       </list>
     </option>
   </component>
@@ -163,29 +181,7 @@
               <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="config_dir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="config_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="run_2019_02_28" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="config_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="run_2019_02_28_2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="config_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="run_2019_02_28_2" type="462c0819:PsiDirectoryNode" />
-              <item name="run_scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,12 +295,12 @@
       <updated>1551050135460</updated>
       <workItem from="1551050142620" duration="982000" />
       <workItem from="1551102477652" duration="55435000" />
-      <workItem from="1551347425819" duration="7508000" />
+      <workItem from="1551347425819" duration="9310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63925000" />
+    <option name="totallyTimeSpent" value="65727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2048" height="1129" extended-state="6" />
@@ -675,6 +671,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_wrf.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_wrf_test.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/scripts/ungrib_surf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
         </state>
       </provider>
     </entry>

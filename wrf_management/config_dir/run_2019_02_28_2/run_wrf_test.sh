@@ -17,7 +17,6 @@ export WRFIO_NCD_LARGE_FILE_SUPPORT=1
 
 
 exe_wrf=wrf.exe
-cd ${run_dir}
 
 ## run my MPI executable
 srun ${exe_wrf}
