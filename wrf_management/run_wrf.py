@@ -2,6 +2,7 @@
 # created by diego aliaga daliaga_at_chacaltaya.edu.bo
 import glob
 import os
+import shutil
 
 import wrf_management.project_global_constants as gc
 from datetime import datetime as dt
@@ -144,3 +145,14 @@ def link_wrfs(
         dest = os.path.basename(s)
         dest = os.path.join(dest_path, dest)
         ru.relink(source_file_path=s, dest_file_path=dest)
+
+
+def cp_sbatch(
+        *, source_dir, target_dir, pat
+):
+    glob_pat = os.path.join(source_dir, pat)
+    sources = glob.glob(glob_pat)
+    bnames = [os.path.basename(file) for file in sources]
+    targets = [os.path.join(target_dir, bname) for bname in bnames]
+    for s,t in zip(sources,targets):
+        shutil.copy(s,t)

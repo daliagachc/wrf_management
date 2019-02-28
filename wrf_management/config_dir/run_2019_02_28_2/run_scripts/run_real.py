@@ -5,7 +5,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 1.0.0
+#       jupytext_version: 0.8.6
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -17,6 +17,7 @@ import importlib
 import os
 
 import init as it
+
 print(it.run_name)
 importlib.reload(it)
 
@@ -52,10 +53,15 @@ parent_run_dir
 dates = list(df.dt)
 dates
 
-
 # %%
 rw.link_metgrids(parent_run_path=parent_run_dir, dates=dates,
                  dest_path=run_type_dir)
 
 # %%
 rw.link_real(dest_path=run_type_dir)
+
+# %%
+
+rw.cp_sbatch(source_dir='../', target_dir=run_type_dir, pat='*real.sh')
+
+# %%
