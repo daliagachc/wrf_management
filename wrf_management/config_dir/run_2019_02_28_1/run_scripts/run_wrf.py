@@ -5,7 +5,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 0.8.6
+#       jupytext_version: 1.0.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -65,4 +65,3 @@ importlib.reload(rw)
 rw.link_wrf(dest_path=run_type_dir)
 
 # %%
-'/tmp/wrf_management/app_folder/WRF4/WRF/main/real.exe'
