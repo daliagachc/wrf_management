@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/Vtable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/env_WRFv4.bash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/namelist.input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/namelist.wps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/init.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/init.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/run_real.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/run_real.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/run_wrf.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/run_wrf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/run_real.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/run_real.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/run_real.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/run_real.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/plot/check_lake_temp.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/plot/check_lake_temp.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/plot/check_lake_temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/plot/check_lake_temp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,45 +20,77 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/init.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="409">
-                  <caret line="57" selection-start-line="57" selection-end-line="57" />
-                  <folding>
-                    <element signature="e#276#292#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-283" />
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="vertical" split-proportion="0.5">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="490">
+                      <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/wrf_management/plot/check_lake_temp.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state>
+                      <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+                      <folding>
+                        <element signature="e#272#309#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/init.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="390">
+                      <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run_wrf.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="409">
+                      <caret line="57" selection-start-line="57" selection-end-line="57" />
+                      <folding>
+                        <element signature="e#276#292#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/wrf_management/project_global_constants.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="-283" />
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/wrf_management/plot/check_lake_temp.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="240">
+                      <caret line="26" selection-start-line="26" selection-end-line="26" />
+                      <folding>
+                        <element signature="e#272#309#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-first>
       <split-second>
         <splitter split-orientation="vertical" split-proportion="0.5">
@@ -86,11 +112,11 @@
           </split-first>
           <split-second>
             <leaf>
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/wrf_management/run_wrf.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="131">
-                      <caret line="140" column="53" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
+                    <state relative-caret-position="-859">
+                      <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
                       <folding>
                         <element signature="e#86#97#0" expanded="true" />
                         <element signature="e#463#570#0" expanded="true" />
@@ -107,6 +133,7 @@
                         <element signature="e#2405#2518#0" expanded="true" />
                         <element signature="e#2653#2826#0" expanded="true" />
                         <element signature="e#2659#2748#0" expanded="true" />
+                        <element signature="e#3345#3592#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -121,10 +148,10 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/init.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="263">
+                    <state relative-caret-position="450">
                       <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
                     </state>
                   </provider>
@@ -150,12 +177,13 @@
       <find>^</find>
       <find>,</find>
       <find>12,</find>
-      <find>6</find>
       <find>link</find>
       <find>'namelist.input'</find>
       <find>dom</find>
       <find>0</find>
       <find>8</find>
+      <find>lake_pa</find>
+      <find>6</find>
     </findStrings>
     <replaceStrings>
       <replace>',</replace>
@@ -193,6 +221,7 @@
         <option value="$PROJECT_DIR$/wrf_management/run_wrf.py" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/namelist.input" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/init.py" />
+        <option value="$PROJECT_DIR$/wrf_management/plot/check_lake_temp.py" />
       </list>
     </option>
   </component>
@@ -229,33 +258,7 @@
               <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="config_dir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="config_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="run_2019_02_27" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="config_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="run_2019_02_28" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="config_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="run_2019_02_28" type="462c0819:PsiDirectoryNode" />
-              <item name="run_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="plot" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -366,12 +369,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551050135460</updated>
       <workItem from="1551050142620" duration="982000" />
-      <workItem from="1551102477652" duration="51622000" />
+      <workItem from="1551102477652" duration="55435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52604000" />
+    <option name="totallyTimeSpent" value="56417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2048" height="1129" extended-state="6" />
@@ -630,17 +633,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input">
+    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/namelist.input">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="68">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/run_wrf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="140" column="53" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
+        <state relative-caret-position="-859">
+          <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
           <folding>
             <element signature="e#86#97#0" expanded="true" />
             <element signature="e#463#570#0" expanded="true" />
@@ -657,21 +667,25 @@
             <element signature="e#2405#2518#0" expanded="true" />
             <element signature="e#2653#2826#0" expanded="true" />
             <element signature="e#2659#2748#0" expanded="true" />
+            <element signature="e#3345#3592#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/namelist.input">
+    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="490">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/init.py">
+    <entry file="file://$PROJECT_DIR$/wrf_management/plot/check_lake_temp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state>
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+          <folding>
+            <element signature="e#272#309#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

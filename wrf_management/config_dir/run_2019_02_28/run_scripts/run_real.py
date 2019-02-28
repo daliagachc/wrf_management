@@ -52,7 +52,7 @@ parent_run_dir
 
 # %%
 dates = list(df.dt)
-dates[0]
+dates
 
 
 # %%
