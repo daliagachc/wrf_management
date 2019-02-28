@@ -17,6 +17,7 @@ import importlib
 import os
 
 import init as it
+
 print(it.run_name)
 importlib.reload(it)
 
@@ -52,7 +53,6 @@ parent_run_dir
 dates = list(df.dt)
 dates
 
-
 # %%
 rw.link_metgrids(parent_run_path=parent_run_dir, dates=dates,
                  dest_path=run_type_dir)
@@ -61,4 +61,7 @@ rw.link_metgrids(parent_run_path=parent_run_dir, dates=dates,
 rw.link_real(dest_path=run_type_dir)
 
 # %%
-'/tmp/wrf_management/app_folder/WRF4/WRF/main/real.exe'
+
+rw.cp_sbatch(source_dir='../', target_dir=run_type_dir, pat='*real.sh')
+
+# %%
