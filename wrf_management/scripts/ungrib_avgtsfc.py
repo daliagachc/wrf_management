@@ -60,7 +60,7 @@ run_row = wrf_management.run_utilities.get_run_row()
 print(run_row)
 
 # %%
-job_row = wrf_management.run_utilities.get_next_row(job=job)
+job_row = wrf_management.run_utilities.get_next_row(job=job, i_max=10)
 print(job_row)
 
 # %%
@@ -72,6 +72,10 @@ if real:
 
 job_path = wrf_management.run_utilities.getmk_job_path(run_row, job_row, job)
 print(job_path)
+
+wrf_management.run_utilities.rm_if_path_exists(
+    os.path.join(job_path, 'avg_tsfc.log')
+)
 
 # %%
 conf_path = wrf_management.run_utilities.get_conf_path(run_row)
@@ -103,11 +107,10 @@ run_script = \
     """#!/bin/bash
         
 cd {job_path}
-./link_grib.csh ./untar/*/*
 source ./env_WRFv4.bash 
-srun -t20 -p test --mem 1000 ./avg_tsfc.exe > avg_tsfc.log
+srun -t10 -p serial --mem 1000 -J'{date}' ./avg_tsfc.exe > avg_tsfc.log
 exit $?
-    """.format(job_path=job_path)
+    """.format(job_path=job_path, date = job_row.date)
 print(run_script)
 bs_path = os.path.join(job_path, 'run_me.sh')
 bs_file = open(bs_path, 'w')
@@ -125,6 +128,22 @@ if gc.ID == 'taito_login' and res.returncode == 0:
                                                   job=job,
                                                   date=job_row['date']
                                                   )
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
 
 # %%
 

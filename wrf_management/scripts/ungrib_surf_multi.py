@@ -20,7 +20,9 @@ ress = {}
 ii=0
 
 # %%
-for i in range(50):
+import time 
+for i in range(10):
+    time.sleep(1)
     res = su.Popen(['python','-u','ungrib_surf.py'], stdout=su.PIPE, stderr=su.PIPE)
     ress[ii]=res
     ii=ii+1

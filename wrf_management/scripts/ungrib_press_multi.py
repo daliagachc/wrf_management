@@ -21,15 +21,28 @@ ii=0
 
 # %%
 import time
-for i in range(40):
+for i in range(10):
     time.sleep(1)
-    res = su.Popen(['python','-u','metgrid.py'], stdout=su.PIPE, stderr=su.PIPE)
+    res = su.Popen(['python','-u','ungrib_press.py'], stdout=su.PIPE, stderr=su.PIPE)
     ress[ii]=res
     ii=ii+1
 
 # %%
-res.communicate(timeout=1)
+rr = {}
+
+# %%
+for i in range(len(ress)):
+    try:
+        r = ress[i].communicate(timeout=.1)
+        rr[i]=r
+    except: 
+        pass
+        
+    
+    
 
 # %%
 pu = su.run(['squeue', '-u', 'aliagadi'],stdout=su.PIPE, stderr=su.PIPE)
 pu.stdout
+
+# %%

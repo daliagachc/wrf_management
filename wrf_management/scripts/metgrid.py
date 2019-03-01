@@ -112,7 +112,7 @@ ru.copy_soft_links(
 run_script = \
    """#!/bin/bash
    source ./env_WRFv4.bash
-   srun -n1 -t10 ./metgrid.exe""".format(job_path=job_path)
+   srun -n1 -t10 -p serial -J'm{date}' ./metgrid.exe""".format(job_path=job_path,date=job_row.date)
 print(run_script)
 bs_path = os.path.join(job_path, 'run_me.sh')
 bs_file = open(bs_path, 'w')

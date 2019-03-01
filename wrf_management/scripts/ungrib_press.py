@@ -58,16 +58,22 @@ importlib.reload(un)
 run_row = wrf_management.run_utilities.get_run_row()
 print(run_row)
 
-job_row = wrf_management.run_utilities.get_next_row(job=job)
+job_row = wrf_management.run_utilities.get_next_row(job=job,i_max=10)
 print(job_row)
+
+
+
+job_path = wrf_management.run_utilities.getmk_job_path(run_row, job_row, job)
+print(job_path)
+
+wrf_management.run_utilities.rm_if_path_exists(
+    os.path.join(job_path, 'ungrib.log')
+)
 
 wrf_management.run_utilities.update_run_table(val=job_row[job] + 1,
                                               job=job,
                                               date=job_row['date']
                                               )
-
-job_path = wrf_management.run_utilities.getmk_job_path(run_row, job_row, job)
-print(job_path)
 
 conf_path = wrf_management.run_utilities.get_conf_path(run_row)
 print(conf_path)
@@ -94,16 +100,18 @@ if gc.ID=='taito_login':
         un.untar_the_files_prev(trs, job_path, job_row=pre_row)
 
 # %%
+str(job_row.date)
+
+# %%
 run_script = \
     """#!/bin/bash
         
 cd {job_path}
 ./link_grib.csh ./untar/*/*
 source ./env_WRFv4.bash 
-srun -t20 -p test --mem 1000 ./ungrib.exe
+srun -t20 -p serial --mem 1000 -n1 -J'{date}' ./ungrib.exe
 exit $?
-    
-    """.format(job_path=job_path)
+    """.format(job_path=job_path, date=str(job_row.date))
 print(run_script)
 bs_path = os.path.join(job_path, 'run_me.sh')
 bs_file = open(bs_path, 'w')
@@ -114,8 +122,14 @@ bs_file.close()
 if gc.ID == 'taito_login':
     res = su.run(['/bin/bash', bs_path], stdout=su.PIPE, stderr=su.PIPE)
 
+# %%
 print(res.stdout)
 print(res.stderr)
+
+# %%
+print(res.returncode)
+
+# %%
 if gc.ID == 'taito_login' and res.returncode == 0:
     wrf_management.run_utilities.update_run_table(val=100,
                                                   job=job,
@@ -123,4 +137,6 @@ if gc.ID == 'taito_login' and res.returncode == 0:
                                                   )
 
 # %%
+job
 
+# %%
