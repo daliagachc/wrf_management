@@ -68,6 +68,9 @@ wrf_management.run_utilities.update_run_table(val=job_row[job] + 1,
 
 job_path = wrf_management.run_utilities.getmk_job_path(run_row, job_row, job)
 print(job_path)
+wrf_management.run_utilities.rm_if_path_exists(
+    job_path, 'ungrib.log'
+)
 
 conf_path = wrf_management.run_utilities.get_conf_path(run_row)
 print(conf_path)

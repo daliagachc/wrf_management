@@ -157,3 +157,88 @@ def rm_if_path_exists(dest_file_path):
     for f in ifs:
         if f(dest_file_path):
             os.remove(dest_file_path)
+
+
+def is_log_success(log_path, succes_str):
+    try:
+        with open(log_path, 'r') as f:
+            log_str = f.read()
+            success = (succes_str in log_str)
+    except:
+        success = False
+
+    return success
+
+
+def get_logpath(log_name, row_date, run_name, ungrib_type):
+    path_run = os.path.join(
+        gc.PATH_DATA, 'runs', run_name, date_file_format(row_date), ungrib_type
+    )
+    path_run
+    log_path = os.path.join(path_run, log_name)
+    log_path
+    return log_path
+
+
+def get_1_df(tb_name, ungrib_type, lim=1):
+    sql = '''
+    select * from {tb} where {ut}<{lim} 
+    '''
+    sql = sql.format(tb=tb_name, ut=ungrib_type, lim=lim)
+    con = sq.connect(gc.PATH_DB)
+    try:
+        df = pd.read_sql(sql, con)
+        con.commit()
+    finally:
+        con.close()
+    return df
+
+
+def is_log_success_from_row(log_name, row, run_name, succes_str, ungrib_type):
+    row_date = row.date
+    log_path = get_logpath(log_name, row_date, run_name, ungrib_type)
+    success = is_log_success(log_path, succes_str)
+    return success
+
+
+def update_table_True(*,
+                      row, tb_name, path_db=gc.PATH_DB,
+                      ungrib_type, true_val=100
+                      ):
+    update_table(path_db, row, tb_name, true_val, ungrib_type)
+
+
+def update_table_False(*,
+                       row, tb_name, path_db=gc.PATH_DB,
+                       ungrib_type, true_val=5
+                       ):
+    update_table(path_db, row, tb_name, true_val, ungrib_type)
+
+
+def update_table(path_db, row, tb_name, true_val, ungrib_type):
+    sql = '''
+    update {tb_name}
+    set {ungrib_type}={true_val}
+    where date(date)=date('{date}')
+    '''
+    sql = sql.format(tb_name=tb_name, ungrib_type=ungrib_type,
+                     date=row.date, true_val=true_val)
+    # print(sql)
+    con = sq.connect(path_db)
+    try:
+        p = con.cursor()
+        p.execute(sql)
+        con.commit()
+    finally:
+        con.close()
+
+
+def update_rows(
+        row, tb_name, ungrib_type, true_val=100,false_val=5
+):
+    if row.success:
+        update_table_True(
+            row=row, tb_name=tb_name, ungrib_type=ungrib_type, true_val=true_val)
+    else:
+        update_table_False(
+            row=row, tb_name=tb_name, ungrib_type=ungrib_type, true_val=false_val)
