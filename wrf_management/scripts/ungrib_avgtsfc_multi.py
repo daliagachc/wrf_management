@@ -21,9 +21,9 @@ ii=0
 
 # %%
 import time
-for i in range(40):
+for i in range(20):
     time.sleep(1)
-    res = su.Popen(['python','-u','metgrid.py'], stdout=su.PIPE, stderr=su.PIPE)
+    res = su.Popen(['python','-u','ungrib_avgtsfc.py'], stdout=su.PIPE, stderr=su.PIPE)
     ress[ii]=res
     ii=ii+1
 
@@ -33,3 +33,5 @@ res.communicate(timeout=1)
 # %%
 pu = su.run(['squeue', '-u', 'aliagadi'],stdout=su.PIPE, stderr=su.PIPE)
 pu.stdout
+
+# %%
