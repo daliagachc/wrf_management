@@ -2,9 +2,9 @@
 #SBATCH -e ./error%j.txt
 #SBATCH -o ./output%j.txt
 #SBATCH -J WRF_forecast
-#SBATCH -n 64
-#SBATCH -t 60:00:00
-#SBATCH -p parallel
+#SBATCH -n 16
+#SBATCH -t 00:20:00
+#SBATCH -p test
 #SBATCH --mem-per-cpu=1000
 #SBATCH --mail-type=END
 #SBATCH --mail-user=diego.aliaga@helsinki.fi
@@ -20,3 +20,4 @@ exe_wrf=wrf.exe
 
 ## run my MPI executable
 srun ${exe_wrf}
+
