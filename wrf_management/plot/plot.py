@@ -34,3 +34,39 @@ def print_var_starting_with(path, start_string):
             des = ''
         print(l, '-', des)
         print('---------------')
+
+
+def get_subdf_in_multin(df: pd.DataFrame, ind: str, val):
+    _bool = df.index.get_level_values(ind) == val
+    return df[_bool]
+
+
+def get_index_from_xr(xd, par, lm, lM, sel1):
+    # lm, lM = -21, -20
+    # par = 'XLAT'
+    # sel1 = 'west_east'
+    arr = xd[par].isel({'Time': 0, sel1: 0})
+    arr = arr.drop(par)
+    adf = arr.to_dataframe()
+    c1 = adf[par] > lm
+    c2 = adf[par] < lM
+    ind = adf[c1 & c2].index
+    im, iM = ind.min(), ind.max()
+    return im, iM
+
+
+def get_coords_from_la_lo(xd, ll_dic):
+    lam = ll_dic['lam']
+    laM = ll_dic['laM']
+    lom = ll_dic['lom']
+    loM = ll_dic['loM']
+    par = 'XLAT'
+    sel1 = 'west_east'
+    snm, snM = get_index_from_xr(xd, par, lam, laM, sel1)
+
+    par = 'XLONG'
+    sel1 = 'south_north'
+    wem, weM = get_index_from_xr(xd, par, lom, loM, sel1)
+
+    rd = {'wem': wem, 'weM': weM, 'snm': snm, 'snM': snM}
+    return rd
