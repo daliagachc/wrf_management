@@ -29,17 +29,19 @@ from wrf_management.run_utilities import get_1_df, is_log_success_from_row, upda
 tb_name = gc.RUN_NAME
 run_name = gc.RUN_NAME
 ungrib_type = 'ungrib_surf'
+
 ungrib_type = 'ungrib_press'
+
 log_name = 'ungrib.log'
 succes_str = '*** Successful completion of program ungrib.exe ***'
 
-# ungrib_type = 'ungrib_avgtsfc'
-# log_name = 'avg_tsfc.log'
-# succes_str = '*** Successful completion of program avg_tsfc.exe ***'
+ungrib_type = 'ungrib_avgtsfc'
+log_name = 'avg_tsfc.log'
+succes_str = '*** Successful completion of program avg_tsfc.exe ***'
 
-# ungrib_type = 'metgrid'
-# log_name = 'metgrid.log'
-# succes_str = '*** Successful completion of program metgrid.exe ***'
+ungrib_type = 'metgrid'
+log_name = 'metgrid.log'
+succes_str = '*** Successful completion of program metgrid.exe ***'
 # %%
 df = get_1_df(tb_name, ungrib_type,lim=150)
 # %%
@@ -72,5 +74,6 @@ res = df.apply(
 row = df.iloc[20]
 
 # %%
+
 
 

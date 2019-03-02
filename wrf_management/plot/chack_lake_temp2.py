@@ -7,8 +7,9 @@
 #       format_version: '1.2'
 #       jupytext_version: 0.8.6
 #   kernelspec:
-#     display_name: ''
-#     name: ''
+#     display_name: Python 3
+#     language: python
+#     name: python3
 # ---
 
 # %%
@@ -108,7 +109,7 @@ for d,r in fdf2[:].iterrows():
         'south_north':slice(wesn_dic['snm'],wesn_dic['snM']),
     })
     patchs[d]=xd.swap_dims({'Time':'XTIME'})
-    
+
 
 # %%
 dl = list(patchs.values())
@@ -206,5 +207,8 @@ for p in ['LAKEMASK','LANDMASK']:
 # %%
 
 
+
 # %%
+
+
 
