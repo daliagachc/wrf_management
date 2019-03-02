@@ -55,7 +55,7 @@ run_path = os.path.join(gc.PATH_DATA, run_row.data_path)
 print(run_path)
 
 # %%
-job_row = ru.get_next_row(job=job)
+job_row = ru.get_next_row(job=job,i_max=10)
 print(job_row)
 
 # %%

@@ -108,7 +108,7 @@ run_script = \
         
 cd {job_path}
 source ./env_WRFv4.bash 
-srun -t10 -p serial --mem 1000 -J'{date}' ./avg_tsfc.exe > avg_tsfc.log
+srun -t10 -p serial --mem 1000 -J'a{date}' ./avg_tsfc.exe > avg_tsfc.log
 exit $?
     """.format(job_path=job_path, date = job_row.date)
 print(run_script)
