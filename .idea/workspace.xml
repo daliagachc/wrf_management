@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/Vtable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/env_WRFv4.bash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/namelist.input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/namelist.wps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_real.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_scripts/init.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_scripts/init.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_scripts/run_real.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_scripts/run_real.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_scripts/run_wrf.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_scripts/run_wrf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_wrf.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_wrf_test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02/run_wrf.sh" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02/run_wrf.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_scripts/init.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+            <state relative-caret-position="62">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -154,10 +140,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="1417" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -203,14 +189,6 @@
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="config_dir" type="462c0819:PsiDirectoryNode" />
               <item name="run_2019_03_02_1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="config_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="run_2019_03_02_1" type="462c0819:PsiDirectoryNode" />
-              <item name="run_scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -327,23 +305,23 @@
       <workItem from="1551050142620" duration="982000" />
       <workItem from="1551102477652" duration="55435000" />
       <workItem from="1551347425819" duration="23005000" />
-      <workItem from="1551439757760" duration="8969000" />
+      <workItem from="1551439757760" duration="11129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88391000" />
+    <option name="totallyTimeSpent" value="90551000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="1417" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
-      <window_info id="Structure" order="4" sideWeight="0.48387095" side_tool="true" visible="true" weight="0.26979" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.516129" visible="true" weight="0.26979" />
+      <window_info id="Structure" order="4" sideWeight="0.48489425" side_tool="true" visible="true" weight="0.26979" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.5151057" visible="true" weight="0.26979" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32840237" />
@@ -353,7 +331,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32872504" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.6465257" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -368,8 +346,8 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="LuaJ" order="8" />
       <window_info anchor="right" id="Data View" order="9" />
-      <window_info anchor="right" x="1039" y="77" width="416" height="1014" id="SciView" order="10" sideWeight="0.49462366" visible="true" weight="0.1292407" />
-      <window_info anchor="right" x="0" y="0" width="462" height="929" id="Documentation" order="11" sideWeight="0.50537634" side_tool="true" visible="true" weight="0.1292407" />
+      <window_info anchor="right" x="1039" y="77" width="416" height="1014" id="SciView" order="10" sideWeight="0.4939577" visible="true" weight="0.1292407" />
+      <window_info anchor="right" x="0" y="0" width="462" height="929" id="Documentation" order="11" sideWeight="0.5060423" side_tool="true" visible="true" weight="0.1292407" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -740,8 +718,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_scripts/init.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        <state relative-caret-position="62">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
