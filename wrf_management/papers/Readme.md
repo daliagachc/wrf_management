@@ -1,1 +1,2 @@
-Short summary of literature should go in the file : literature_summary.txt
+- Short summary of literature should go in the file : literature_summary.txt
+- literature documents go to ./docs
