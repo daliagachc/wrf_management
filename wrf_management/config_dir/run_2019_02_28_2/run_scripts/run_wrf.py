@@ -5,7 +5,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 1.0.0
+#       jupytext_version: 0.8.6
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -68,3 +68,4 @@ rw.link_wrf(dest_path=run_type_dir)
 rw.cp_sbatch(source_dir='../', target_dir=run_type_dir, pat='*wrf*.sh')
 
 # %%
+

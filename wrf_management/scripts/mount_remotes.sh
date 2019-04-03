@@ -21,3 +21,11 @@ log_addr='aliagadi@taito-login3.csc.fi'
 mkdir -p $mount_dir
 umount -f $mount_dir
 sshfs -oreconnect $log_addr:$remote_dir $mount_dir
+
+
+mount_dir='/tmp/wrf_management/atm_folder'
+remote_dir='/proj/atm/saltena/'
+log_addr='aliagadi@taito-login3.csc.fi'
+mkdir -p $mount_dir
+umount -f $mount_dir
+sshfs -oreconnect $log_addr:$remote_dir $mount_dir
