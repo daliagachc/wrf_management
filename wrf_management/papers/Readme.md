@@ -1,1 +1,1 @@
-Short summary of literature should in the file : literature_summary.txt
+Short summary of literature should go in the file : literature_summary.txt
