@@ -10,4 +10,10 @@
 - Norris, J. et al.: The spatiotemporal variability of precipitation over the Himalaya: evaluation of one-year WRF model simulation. Climate Dynamics 49, 2179–2204 (2017).
   - 1 year simulation with spectral nudginng in the outter domain //diego 
   - resolution 6.2 km for inner domain // diego
-  
+ 
+ 
+ 
+- Wang, W. NCAR/NESL/MMM January 2014. 38
+  - SST is indeed used for long simulations (pp 11) as it allows control of sea ice, monthly vegetation fraction, albedo.  // diego
+  - I wonder if we should look into the other options for long simulations pp. 12 
+
