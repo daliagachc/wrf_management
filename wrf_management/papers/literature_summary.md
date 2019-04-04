@@ -12,8 +12,11 @@
   - resolution 6.2 km for inner domain // diego
  
  
- 
 - Wang, W. NCAR/NESL/MMM January 2014. 38
   - SST is indeed used for long simulations (pp 11) as it allows control of sea ice, monthly vegetation fraction, albedo.  // diego
-  - I wonder if we should look into the other options for long simulations pp. 12 
+  - I wonder if we should look into the other options for long simulations pp. 12 // diego 
+  
+- Ma, Y. et al. Comparison of Analysis and Spectral Nudging Techniques for Dynamical Downscaling with the WRF Model over China. Advances in Meteorology 17
+  - regarding spectral vs analysis (grid) nudging they conclude: "Compared with observations, the results show that both of the nudging experiments decrease the bias of conventional meteorological elements near the surface and at different heights during the process of dynamical downscaling. However, spectral nudging outperforms analysis nudging for predicting precipitation, and analysis nudging outperforms spectral nudging for the simulation of air humidity and wind speed". Since we are interested in wind I guess its safe to stick to grid nudging // diego 
+
 
