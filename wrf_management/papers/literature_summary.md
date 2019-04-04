@@ -4,3 +4,8 @@
 - Gálvez et al., 2005: The WRF model as a tool to understand mesoscale processes on the poorly sampled South American Altiplano (https://ams.confex.com/ams/32Rad11Meso/webprogram/Paper97415.html)
   - Extended abstract for 11th Conference on Mesoscale Processes (AMS) on modelling Altiplano region with WRF focusing mesoscale circulations and rainfall patterns. I couldn't find any peer-reviewed papers and NOAA's project site seems to be down (http://www.nssl.noaa.gov/projects/pacs/web/ALTIPLANO/NF/)(*). Anyway authors disclosed and fixed revealed boundary condition problems (Lake Titicaca surf. temp.) in default WRF and demonstrated model improvements. More links here: http://josemanuelgalvez.net/    // Evgeny
   - Link (*) seems to be here now: https://www.eol.ucar.edu/field_projects/salljex //Diego
+  
+- Norris, J. et al.: The spatiotemporal variability of precipitation over the Himalaya: evaluation of one-year WRF model simulation. Climate Dynamics 49, 2179–2204 (2017).
+  - 1 year simulation with spectral nudginng in the outter domain //diego 
+  - resolution 6.2 km for inner domain // diego
+  
