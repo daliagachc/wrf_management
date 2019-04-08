@@ -44,7 +44,13 @@ def plt_sst(pathTest):
 
 
 # %%
+pathTest = '/proj/atm/saltena/runs/run_2019_04_03_1/wrf2'
+plt_sst(pathTest)
 
+# %%
+
+# %%
+pathTest = '/proj/atm/saltena/runs/run_2019_04_03_1/wrf'
 plt_sst(pathTest)
 
 # %%
