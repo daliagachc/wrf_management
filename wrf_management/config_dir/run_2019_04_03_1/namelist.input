@@ -87,18 +87,18 @@
 /
 
 &fdda
-    grid_fdda = 1, 0, 0, 0,
-    gfdda_inname = "wrffdda_d",
-    gfdda_end_h = 120, 0, 0, 0,
-    gfdda_interval_m = 360, 360, 360, 360,
-    io_form_gfdda = 2,
-    fgdt = 0, 0, 0, 0,
-    if_no_pbl_nudging_uv = 1, 1, 1, 1,
-    if_no_pbl_nudging_t = 1, 1, 1, 1,
-    if_no_pbl_nudging_q = 1, 1, 1, 1,
-    guv = 0.0003, 0.0003, 0.0003, 0.0003,
-    gt = 0.0003, 0.0003, 0.0003, 0.0003,
-    gq = 0.0003, 0.0003, 0.0003, 0.0003,
+    grid_fdda = 1, 0, 0, 0
+    gfdda_inname = "wrffdda_d<domain>"
+    gfdda_end_h = 500, 0, 0, 0
+    gfdda_interval_m = 360, 360, 360, 360
+    io_form_gfdda = 2
+    fgdt = 0, 0, 0, 0
+    if_no_pbl_nudging_uv = 1, 1, 1, 1
+    if_no_pbl_nudging_t = 1, 1, 1, 1
+    if_no_pbl_nudging_q = 1, 1, 1, 1
+    guv = 0.0003, 0.0003, 0.0003, 0.0003
+    gt = 0.0003, 0.0003, 0.0003, 0.0003
+    gq = 0.0003, 0.0003, 0.0003, 0.0003
 /
 
 &dynamics
