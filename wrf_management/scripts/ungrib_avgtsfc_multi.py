@@ -18,10 +18,11 @@ import subprocess as su
 # %%
 ress = {}
 ii=0
+i_runs = 16
 
 # %%
 import time
-for i in range(20):
+for i in range(i_runs):
     time.sleep(1)
     res = su.Popen(['python','-u','ungrib_avgtsfc.py'], stdout=su.PIPE, stderr=su.PIPE)
     ress[ii]=res

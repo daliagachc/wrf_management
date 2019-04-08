@@ -108,10 +108,10 @@ run_script = \
 cd {job_path}
 ./link_grib.csh ./untar/*/*
 source ./env_WRFv4.bash 
-srun -t20 -p serial --mem 1000 ./ungrib.exe
+srun -t20 -p serial --mem 1000 -J's{date}' ./ungrib.exe
 exit $?
     
-    """.format(job_path=job_path)
+    """.format(job_path=job_path, date=job_row.date)
 print(run_script)
 bs_path = os.path.join(job_path, 'run_me.sh')
 bs_file = open(bs_path, 'w')

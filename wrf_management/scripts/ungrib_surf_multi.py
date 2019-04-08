@@ -21,7 +21,7 @@ ii=0
 
 # %%
 import time 
-for i in range(10):
+for i in range(13):
     time.sleep(1)
     res = su.Popen(['python','-u','ungrib_surf.py'], stdout=su.PIPE, stderr=su.PIPE)
     ress[ii]=res

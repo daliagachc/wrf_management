@@ -127,7 +127,7 @@ for l in plist:
         ll = ll + 1
 
 # %%
-par = 'T2'
+par = 'TSK'
 ndf = []
 for l, r in ddd.iterrows():
     ar = xr.open_dataset(r.p)
@@ -156,7 +156,11 @@ fig.autofmt_xdate()
 fig.set_figwidth(20)
 
 # %%
-ax.set_title('t2 k at ttk lake ')
+tit=ar[par]
+tit = tit.description
+
+# %%
+ax.set_title(tit)
 ax.grid()
 fig
 
@@ -175,7 +179,7 @@ for l, r in ddd.iterrows():
         &(arr.XLONG < loM) 
         &(arr.XLAT > lam) 
         &(arr.XLAT < laM) 
-#         &(arr.LAKEMASK == 1)
+        &(arr.LAKEMASK == 0)
     )
     df1 = b1[par].to_dataframe()
     df1 = df1.dropna()

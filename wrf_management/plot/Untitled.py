@@ -5,7 +5,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 0.8.6
+#       jupytext_version: 1.0.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -118,7 +118,7 @@ for d in [1,2,3,4]:
             ll = ll+1
     # fig.tight_layout()
     fig.savefig('./plot_vert'+str(d)+'.jpg')
-    
+
 
 # %%
 

@@ -21,7 +21,7 @@ ii=0
 
 # %%
 import time
-for i in range(40):
+for i in range(1):
     time.sleep(1)
     res = su.Popen(['python','-u','metgrid.py'], stdout=su.PIPE, stderr=su.PIPE)
     ress[ii]=res
