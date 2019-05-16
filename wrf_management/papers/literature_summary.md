@@ -19,4 +19,11 @@
 - Ma, Y. et al. Comparison of Analysis and Spectral Nudging Techniques for Dynamical Downscaling with the WRF Model over China. Advances in Meteorology 17
   - regarding spectral vs analysis (grid) nudging they conclude: "Compared with observations, the results show that both of the nudging experiments decrease the bias of conventional meteorological elements near the surface and at different heights during the process of dynamical downscaling. However, spectral nudging outperforms analysis nudging for predicting precipitation, and analysis nudging outperforms spectral nudging for the simulation of air humidity and wind speed". Since we are interested in wind I guess its safe to stick to grid nudging // diego 
 
-
+- Recent papers on WRF model PBL schemes // Evgeny
+  - Avolio et al., 2017: Sensitivity analysis of WRF model PBL schemes in simulating boundary-layer variables in southern Italy: An experimental campaign (https://doi.org/10.1016/j.atmosres.2017.04.003).
+    - 5 different WRF PBLs vs Measurement campain (surface station and meteo.mast + Lidar and Sodar + ceilometer) in Calabria region (southern Italy)
+  - Banks et al., 2017: Sensitivity of boundary-layer variables to PBL schemes in the WRF modelbased on surface meteorological observations, lidar, and radiosondesduring the HygrA-CD campaign (https://doi.org/10.1016/j.atmosres.2016.02.024).
+    - 8 different WRF PBLs vs multiple meteorological stations, multiwavelength Raman lidar, radiosonde launches over the complex, urban terrain of the Greater Athens Area
+  - Banks et al., 2015: Performance Evaluation of the Boundary-Layer Height from Lidar and the Weather Research and Forecasting Model at an Urban Coastal Site in the North-East Iberian Peninsula (https://doi.org/10.1007/s10546-015-0056-2).
+    - 8 different WRF PBLs over Iberian Peninsula; three-day back-trajectories cluster analysis algorithm for a 16-year period over Barcelona; PBL heights are validated against lidar estimates: ACM2 is the most reliable, with the widely-tested MYJ (we are using it) showing the weakest correlations with lidar retrievals
+  - ACM2 scheme showed the best results in all 3 papers.
