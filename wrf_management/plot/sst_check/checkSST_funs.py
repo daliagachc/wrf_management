@@ -75,8 +75,8 @@ def plot_lake_example():
 
 
 # %%
-def add_isttcc(ds):
-#     ds = dsO.copy()
+def add_isttcc(dsO):
+    ds = dsO
     ds['lat']=ds.XLAT
     ds['lon']=ds.XLONG
 
@@ -96,14 +96,54 @@ def add_isttcc(ds):
 
 
 # %%
-def get_sst_ttcc(f1):
+def get_sst_ttcc(f1,sst='SST'):
     ds = xr.open_dataset(f1.path)
     ds = add_isttcc(ds)
-    ds = ds[['SST']].where(ds.is_ttcc,drop=True)
+    ds = ds[[sst]].where(ds.is_ttcc,drop=True)
     ds = ds.swap_dims({'Time':'XTIME'})
 #     ds = ds.swap_dims({'south_north':'XLAT'})
 #     ds = ds.swap_dims({'west_east':'XLONG'})
     return ds
+
+
+# %%
+test_time = dt.datetime.now()
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
 
 # %%
 

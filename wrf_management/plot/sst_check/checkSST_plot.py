@@ -14,11 +14,14 @@
 
 # %%
 from useful_scit.imps import * 
+import checkSST_funs
+il.reload(checkSST_funs)
 from checkSST_funs import *
+print(test_time)
 
 
 # %%
-def plt_sst(pathTest):
+def plt_sst(pathTest, sst='SST'):
 #     pathTest = '/proj/atm/saltena/runs/run_2019_04_03_1/wrf2'
     # pathCont = '/proj/atm/saltena/runs/run_2019_02_28_2/wrf' # as in control 
     paths = (pathTest,pathCont)
@@ -32,16 +35,19 @@ def plt_sst(pathTest):
         outFs = get_specific_files([['kind','wrfout'],['dom',d]],dfT)
 
         outF1[d] = outFs[::12].copy()
-        outF1[d]['sst'] = outF1[d].apply(lambda r: get_sst_ttcc(r),axis=1)
-        merge[d] = xr.merge(outF1[d].sst.values)
+        outF1[d][sst] = outF1[d].apply(lambda r: get_sst_ttcc(r,sst),axis=1)
+        merge[d] = xr.merge(outF1[d][sst].values)
 
     for d in doms:
         plt.subplots()
-        l2ds = merge[d].SST.mean(dim=['south_north','west_east']).plot()
+        l2ds = merge[d][sst].mean(dim=['south_north','west_east']).plot()
         l2d = l2ds[0]
-        l2d.axes.set_title('SST mean output at TTCC lake - {}'.format(d))
+        l2d.axes.set_title('{sst} mean output at TTCC lake - {d}'.format(sst=sst,d=d))
         l2d.axes.grid(True)
 
+
+# %%
+plot_lake_example()
 
 # %%
 pathTest = '/proj/atm/saltena/runs/run_2019_04_03_1/wrf2'
