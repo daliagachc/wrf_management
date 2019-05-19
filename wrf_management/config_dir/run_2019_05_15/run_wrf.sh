@@ -3,7 +3,7 @@
 #SBATCH -o ./output%j.txt
 #SBATCH -J WRF_forecast
 #SBATCH -n 48
-#SBATCH -t 20:00:00
+#SBATCH -t 72:00:00
 #SBATCH -p parallel
 #SBATCH --mem-per-cpu=1000
 #SBATCH --mail-type=END
