@@ -1,0 +1,39 @@
+&share
+    wrf_core = 'ARW'
+    max_dom = 4
+    start_date = '2018-04-05_06:00:00', '2018-04-05_06:00:00', '2018-04-05_06:00:00',
+                 '2018-04-05_06:00:00'
+    end_date = '2018-04-08_06:00:00', '2018-04-08_06:00:00', '2018-04-08_06:00:00',
+               '2018-04-08_06:00:00'
+    interval_seconds = 21600
+    io_form_geogrid = 2
+/
+
+&geogrid
+    parent_id = 1, 1, 2, 3
+    parent_grid_ratio = 1, 4, 3, 3
+    i_parent_start = 1, 28, 80, 61
+    j_parent_start = 1, 18, 65, 110
+    e_we = 118, 253, 274, 154
+    e_sn = 86, 205, 214, 151
+    geog_data_res = 'default', 'default', 'default', 'default'
+    dx = 38000
+    dy = 38000
+    map_proj = 'mercator'
+    ref_lat = -17
+    ref_lon = -66.3
+    truelat1 = 30.0
+    truelat2 = 60.0
+    stand_lon = -66.3
+    geog_data_path = '/proj/atm/WRF/WPS_GEOG/'
+/
+
+&ungrib
+    out_format = 'WPS'
+    prefix = 'PRESSURE'
+/
+
+&metgrid
+    fg_name = 'SURFACE', 'PRESSURE'
+    io_form_metgrid = 2
+/
