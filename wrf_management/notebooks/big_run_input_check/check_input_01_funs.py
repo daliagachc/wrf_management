@@ -58,20 +58,122 @@ def get_cluster(xa_low,p,nc):
     return df.flags.to_xarray()
 
 # %%
-def plot_clus(xa_low, p_clus , nc,x='XLONG',y='XLAT'):
+def plot_clus(xa_low, p_clus , nc,x='XLONG',y='XLAT',pargs=dict()):
     xa_low[p_clus].plot(
         x=x,y=y,
-        levels=nc+1, colors=sns.color_palette('Set1',nc),vmin=-.5,vmax=nc-.5)
+        levels=nc+1, 
+        colors=sns.color_palette('Dark2',nc),
+        vmin=-.5,vmax=nc-.5,
+        **pargs
+    )
+
+
+
+
 
 # %%
-def line_plot_clus(xa_low,nc,p,p_c):
-    pal = sns.color_palette('Set1',nc)
+
+
+# %%
+
+
+# %%
+
+
+def multiplot(va, f1, f2, arg1, arg2, col, ax, dim):
+    va1 =getattr(va,f1)(dim=dim, **arg1).to_series()
+    va2 =getattr(va,f2)(dim=dim, **arg2).to_series()
+    ax.fill_between(va1.index,va1,va2, color = col, alpha=.3)
+    return ax
+
+# %%
+
+def plot_histograms(xa,p, ax):
+    desc = xa[p].description
+    ser = xa[p].to_series()
+    sns.distplot(ser,ax=ax)
+    ax.set_title(desc)
+
+def plot_lowinp_pars(xa):
+    pars = ['SST','ALBBCK','LAI','VEGFRA','SEAICE']
+    fig, axs = plt.subplots(3,2)
+    # plt.close(fig)
+    axsf = axs.flatten()
+    for p,ax in zip(pars,axsf):
+    #     fig, ax = plt.subplots()
+        plot_histograms(xa,p, ax)
+    fig.tight_layout()
+
+def plot_clus_with_uncer(xa_low, p, p_c, i, nc, ax=False):
+    if ax is False:
+        fig, ax = plt.subplots()
+    else:
+        fig = ax.figure
+    # i = 0
+    pal = sns.color_palette('Dark2',nc)
+    va  = xa_low[p].where(xa_low[p_c]==i)
+    dim = ['south_north', 'west_east']
+    col = pal[i]
+
+
+    min_max = dict(
+        col = col,
+        f1 = 'min',
+        f2 = 'max',
+        arg1 = {},
+        arg2 = {},
+        va = va,
+        ax =ax,
+        dim=dim
+    )
+
+    per = dict(
+        col = col,
+        f1 = 'quantile',
+        f2 = 'quantile',
+        arg1 = {'q':.05},
+        arg2 = {'q':.95},
+        va = va,
+        ax =ax,
+        dim=dim
+    )
+
+
+    dics = [min_max,per]
+
+
+    for d in dics: multiplot(**d)
+
+    va1 = va.median(dim).to_series()
+    ax.plot_date(va1.index,va1.values,
+                 color = col, marker=None, linestyle='-.',linewidth=3)
+
+    va1 = va.mean(dim).to_series()
+    ax.plot_date(va1.index,va1.values,
+                 color = col, marker=None, linestyle='-',linewidth=3)
+
+    fig
+
+
+
+
+
+def plot_clus_sig(xa_low,p,p_c,nc,cols=2):
+    xa_low[p_c] = get_cluster(xa_low, p, nc)
+    rows = int(np.ceil((nc + 1) / cols))
+    fig = plt.figure(figsize=(cols * 3.5, rows * 3))
+    ax = fig.add_subplot(rows, cols, 1)
+    # ax.set_title(p_c)
+    plot_clus(xa_low, p_c, nc, pargs=dict(ax=ax))
     for i in range(nc):
-        va = xa_low[p].where(xa_low[p_c]==i)
-        va = va.mean(dim=['south_north','west_east'])
-        res = va.plot(color=pal[i])
-    ax = res[0].figure.axes[0]
-    ax.grid()
-
-# %%
+        if i > 0:
+            ss = ax
+        else:
+            ss = None
+        ax = fig.add_subplot(rows, cols, i + 2, sharey=ss, sharex=ss)
+        plot_clus_with_uncer(xa_low, p, p_c, i, nc, ax=ax)
+        ax.grid(True, axis='y')
+        for tick in ax.get_xticklabels():
+            tick.set_rotation(45)
+    fig.tight_layout()
 
