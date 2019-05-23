@@ -2,9 +2,9 @@
 #SBATCH -e ./error%j.txt
 #SBATCH -o ./output%j.txt
 #SBATCH -n 1
-#SBATCH -t 30:00:00
-#SBATCH -p serial
-#SBATCH --mem-per-cpu=16000
+#SBATCH -t 00:20:00
+#SBATCH -p test
+#SBATCH --mem-per-cpu=8000
 #SBATCH --mail-type=END
 #SBATCH --mail-user=diego.aliaga@helsinki.fi
 
