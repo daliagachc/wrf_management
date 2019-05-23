@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="" />
+    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
@@ -67,6 +69,15 @@
                 <element signature="e#2232#3137#0" expanded="true" />
                 <element signature="e#3251#3857#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -120,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_20/namelist.input" />
         <option value="$PROJECT_DIR$/wrf_management/real.py" />
         <option value="$PROJECT_DIR$/wrf_management/ungrib.py" />
         <option value="$PROJECT_DIR$/wrf_management/scripts/batch_slurm_ungrib_avg.sh" />
@@ -171,6 +181,7 @@
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.ipynb" />
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.ipynb" />
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.py" />
+        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.py" />
       </list>
     </option>
   </component>
@@ -344,12 +355,12 @@
       <workItem from="1554813830242" duration="2746000" />
       <workItem from="1557861875269" duration="5303000" />
       <workItem from="1558307354430" duration="2329000" />
-      <workItem from="1558544847620" duration="7201000" />
+      <workItem from="1558544847620" duration="7223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125976000" />
+    <option name="totallyTimeSpent" value="125998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="400" y="1103" width="1680" height="1027" extended-state="6" />
@@ -359,8 +370,8 @@
       <window_info id="UI Designer" order="1" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
-      <window_info active="true" id="Structure" order="4" sideWeight="0.49451753" side_tool="true" visible="true" weight="0.22039072" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.50548244" visible="true" weight="0.22039072" />
+      <window_info id="Structure" order="4" sideWeight="0.49451753" side_tool="true" visible="true" weight="0.22039072" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.50548244" visible="true" weight="0.22039072" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32840237" />
@@ -394,13 +405,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/namelist.input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_wrf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -722,6 +726,13 @@
             <element signature="e#2232#3137#0" expanded="true" />
             <element signature="e#3251#3857#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
         </state>
       </provider>
     </entry>
