@@ -19,3 +19,4 @@ IMPORTANT: You may need to close and restart your shell after running 'conda ini
 
 [NbConvertApp] Converting notebook check_lowinp_02.ipynb to notebook
 [NbConvertApp] Executing notebook with kernel: python3
+[NbConvertApp] Writing 442143 bytes to check_lowinp_02.ipynb
