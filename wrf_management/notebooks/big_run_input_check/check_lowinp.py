@@ -44,7 +44,8 @@ plot_lowinp_pars(xa)
 # - max>320 K
 
 # %%
-
+file_input = os.path.join(path,'wrfinput_d01')
+xa_low = import_lowinp(file_path,file_input)
 
 # %%
 p = 'SST'

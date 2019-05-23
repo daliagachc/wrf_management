@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/Untitled.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/Untitled.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.py" afterDir="false" />
-    </list>
+    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,12 +344,12 @@
       <workItem from="1554813830242" duration="2746000" />
       <workItem from="1557861875269" duration="5303000" />
       <workItem from="1558307354430" duration="2329000" />
-      <workItem from="1558544847620" duration="6627000" />
+      <workItem from="1558544847620" duration="7201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125402000" />
+    <option name="totallyTimeSpent" value="125976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="400" y="1103" width="1680" height="1027" extended-state="6" />
