@@ -26,7 +26,7 @@ import check_input_01_funs as pp
 from check_input_01_funs import *
 
 # %%
-path = '/wrk/kadantse/wrfimp_longrun/wrf'
+path = '/wrk/kadantse/wrfimp_longrun'
 out_path = '/proj/atm/saltena/runs/run_2019_05_15/wrf'
 fn_low = 'wrflowinp_d02'
 fn_inp = 'wrfinput_d02'

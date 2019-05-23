@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="" />
+    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice_batch.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,22 +63,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-303" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="59">
@@ -89,11 +80,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="90" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="91" />
+              <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice_batch.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -149,8 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wrf_management/scripts/batch_slurm_metgrid.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/scripts/batch_metgrid.sh" />
         <option value="$PROJECT_DIR$/wrf_management/metgrid.py" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/init.ipynb" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run.py" />
@@ -200,6 +207,8 @@
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py" />
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py" />
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh" />
+        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice_batch.sh" />
+        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py" />
       </list>
     </option>
   </component>
@@ -387,16 +396,15 @@
       <workItem from="1557861875269" duration="5303000" />
       <workItem from="1558307354430" duration="2329000" />
       <workItem from="1558544847620" duration="8131000" />
-      <workItem from="1558625985491" duration="772000" />
+      <workItem from="1558625985491" duration="1168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127678000" />
+    <option name="totallyTimeSpent" value="128074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="240" y="23" width="1680" height="1049" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -437,13 +445,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/run_wrf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -733,11 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -762,7 +758,21 @@
     <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="90" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="91" />
+          <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice_batch.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
         </state>
       </provider>
     </entry>
