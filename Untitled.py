@@ -5,7 +5,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.2'
-#       jupytext_version: 1.0.0
+#       jupytext_version: 0.8.6
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -27,3 +27,4 @@ df['mem']=np.round(df['mem']/1000000)
 df.sort_values('mem',ascending=False)
 
 # %%
+
