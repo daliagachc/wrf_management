@@ -39,7 +39,7 @@ glob.glob(path+'/wrf*')
 xr.set_options(keep_attrs=True)
 file_path = os.path.join(path,fn_low)
 file_input = os.path.join(path,fn_inp)
-xa_help =  import_lowinp('/tmp/xa1',file_input)
+xa_help =  import_lowinp(file_path,file_input)
 xa_raw = xr.open_dataset(file_path)
 xa_cop = xa_raw.copy()
 

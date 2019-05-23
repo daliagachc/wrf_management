@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.py" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.py" afterDir="false" />
-    </list>
+    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <caret line="19" column="90" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -398,12 +387,12 @@
       <workItem from="1557861875269" duration="5303000" />
       <workItem from="1558307354430" duration="2329000" />
       <workItem from="1558544847620" duration="8131000" />
-      <workItem from="1558625985491" duration="228000" />
+      <workItem from="1558625985491" duration="772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127170000" />
+    <option name="totallyTimeSpent" value="127678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="240" y="23" width="1680" height="1049" extended-state="0" />
@@ -414,7 +403,7 @@
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
       <window_info id="Structure" order="4" sideWeight="0.49571735" side_tool="true" visible="true" weight="0.22283272" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.50428265" visible="true" weight="0.22283272" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.50428265" visible="true" weight="0.22283272" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32840237" />
@@ -424,7 +413,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4850107" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4850107" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -773,7 +762,7 @@
     <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="106" selection-start-line="19" selection-start-column="106" selection-end-line="19" selection-end-column="106" />
+          <caret line="19" column="90" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="91" />
         </state>
       </provider>
     </entry>
