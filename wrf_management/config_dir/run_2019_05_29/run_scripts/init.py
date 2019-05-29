@@ -25,7 +25,7 @@ from datetime import datetime as dt
 
 # %%
 run_name = 'run_2019_05_29'
-init_date = dt(2017, 12, 26, 3)
+init_date = dt(2017, 12, 26, 0)
 end_date = dt(2017, 12, 27, 0)
 
 # %%
