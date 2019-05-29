@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice_batch.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="390">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -74,36 +73,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="390">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh">
+        <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/check_out_grid_4_flexpart/out_grid_funs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+            <state relative-caret-position="600">
+              <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice_batch.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_20/run_wrf.sh">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py">
+        <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_20/namelist.input">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-            </state>
+            <state relative-caret-position="-770" />
           </provider>
         </entry>
       </file>
@@ -158,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wrf_management/metgrid.py" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/init.ipynb" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts/run.py" />
         <option value="$PROJECT_DIR$/../di-python/di_python/ya_esta.py" />
@@ -203,20 +195,20 @@
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.ipynb" />
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.py" />
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.py" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py" />
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh" />
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice_batch.sh" />
         <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py" />
+        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py" />
+        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py" />
+        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py" />
+        <option value="$PROJECT_DIR$/wrf_management/notebooks/check_out_grid_4_flexpart/out_grid_funs.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="240" />
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1049" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -226,6 +218,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,7 +247,7 @@
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="config_dir" type="462c0819:PsiDirectoryNode" />
-              <item name="run_2019_05_15" type="462c0819:PsiDirectoryNode" />
+              <item name="run_2019_05_20" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
@@ -266,14 +260,12 @@
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
               <item name="notebooks" type="462c0819:PsiDirectoryNode" />
-              <item name="big_run_input_check" type="462c0819:PsiDirectoryNode" />
+              <item name="check_out_grid_4_flexpart" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,22 +388,24 @@
       <workItem from="1557861875269" duration="5303000" />
       <workItem from="1558307354430" duration="2329000" />
       <workItem from="1558544847620" duration="8131000" />
-      <workItem from="1558625985491" duration="1168000" />
+      <workItem from="1558625985491" duration="2254000" />
+      <workItem from="1558661741749" duration="700000" />
+      <workItem from="1558830607085" duration="1511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128074000" />
+    <option name="totallyTimeSpent" value="131371000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="240" y="23" width="1680" height="1049" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
-      <window_info id="Structure" order="4" sideWeight="0.49571735" side_tool="true" visible="true" weight="0.22283272" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.50428265" visible="true" weight="0.22283272" />
+      <window_info id="Structure" order="4" sideWeight="0.49780703" side_tool="true" visible="true" weight="0.22771673" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.502193" visible="true" weight="0.22771673" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32840237" />
@@ -421,7 +415,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4850107" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.49671054" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -445,58 +439,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wrf_management/run_wrf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
-          <folding>
-            <element signature="e#86#97#0" expanded="true" />
-            <element signature="e#1177#1206#0" expanded="true" />
-            <element signature="e#1800#2111#0" expanded="true" />
-            <element signature="e#3654#3913#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/run_utilities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="243" column="81" selection-start-line="243" selection-start-column="81" selection-end-line="243" selection-end-column="81" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#86#95#0" expanded="true" />
-            <element signature="e#310#576#0" expanded="true" />
-            <element signature="e#321#379#0" expanded="true" />
-            <element signature="e#640#944#0" expanded="true" />
-            <element signature="e#651#746#0" expanded="true" />
-            <element signature="e#1008#1431#0" expanded="true" />
-            <element signature="e#1142#1222#0" expanded="true" />
-            <element signature="e#1481#1665#0" expanded="true" />
-            <element signature="e#1700#1811#0" expanded="true" />
-            <element signature="e#1877#2428#0" expanded="true" />
-            <element signature="e#2494#2863#0" expanded="true" />
-            <element signature="e#3003#3344#0" expanded="true" />
-            <element signature="e#3003#3025#0" expanded="true" />
-            <element signature="e#3053#3136#0" expanded="true" />
-            <element signature="e#3407#3490#0" expanded="true" />
-            <element signature="e#3536#3707#0" expanded="true" />
-            <element signature="e#3542#3621#0" expanded="true" />
-            <element signature="e#3756#3932#0" expanded="true" />
-            <element signature="e#3999#4203#0" expanded="true" />
-            <element signature="e#4246#4494#0" expanded="true" />
-            <element signature="e#4252#4300#0" expanded="true" />
-            <element signature="e#5250#5631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_01/namelist.input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_01/namelist.wps">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -734,27 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -771,9 +692,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="390">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/check_out_grid_4_flexpart/out_grid_funs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_20/run_wrf.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_20/namelist.input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-770" />
       </provider>
     </entry>
   </component>

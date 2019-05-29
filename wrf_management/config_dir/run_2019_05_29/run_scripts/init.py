@@ -12,19 +12,23 @@
 #     name: python3
 # ---
 
-# %%
-path = './du.log'
+# %% [markdown]
+# imports
+#
 
 # %%
-import pandas as pd
-df = pd.read_csv(path,
-                names=['mem','path'],
-                 sep='\t'
-                )
-import numpy as np
+import os
+from datetime import datetime as dt
 
-df['mem']=np.round(df['mem']/1000000)
-df.sort_values('mem',ascending=False)
+# %% [markdown]
+# init configs
+
+# %%
+run_name = 'run_2019_05_29'
+init_date = dt(2017, 12, 26, 03)
+end_date = dt(2018, 12, 27, 00)
 
 # %%
 
+run_type = 'real'
+parent_run = 'run_2019_02_20'
