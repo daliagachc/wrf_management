@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wrf_management/modules/blayer_wind.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_03.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_03.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_03.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/Untitled.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/Untitled.py" afterDir="false" />
-    </list>
+    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -398,12 +388,12 @@
       <workItem from="1558830607085" duration="1511000" />
       <workItem from="1559166117198" duration="5436000" />
       <workItem from="1559272224045" duration="8594000" />
-      <workItem from="1559777069110" duration="5284000" />
+      <workItem from="1559777069110" duration="6132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150685000" />
+    <option name="totallyTimeSpent" value="151533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
