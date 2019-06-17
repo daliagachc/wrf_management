@@ -58,6 +58,7 @@ class Compresser:
         self.files_table_name = files_table_name
         self.set_df_from_file_list()
         try:
+            logging.debug('creating db table')
             self.create_db_table_from_df()
         except:
             logging.debug('file table already exist in db')
