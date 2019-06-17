@@ -103,10 +103,11 @@ class Compresser:
         con.close()
 
     def create_db_table_from_df(self):
+        db_dir = os.path.dirname(self.db_path)
+        os.makedirs(db_dir,exist_ok=True)
         df = self.compress_out_df
-        con = sqlite3.connect(self.db_path)
-        df.to_sql(self.files_table_name, con=con, index=True, index_label=NAME_COL)
-        con.close()
+        with sqlite3.connect(self.db_path) as con:
+            df.to_sql(self.files_table_name, con=con, index=True, index_label=NAME_COL)
 
     def set_df_from_file_list(self):
         glob_patt = os.path.join(self.source_path,
