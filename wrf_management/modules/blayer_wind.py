@@ -3,6 +3,7 @@
 import wrf
 from useful_scit.imps import *
 from netCDF4 import Dataset
+from useful_scit.util.zarray import compressed_netcdf_save
 
 CHC_LAT = -15.713716
 CHC_LON = -68.082038
@@ -27,15 +28,6 @@ bottom_top_stag = 'bottom_top_stag'
 
 end_point = wrf.CoordPair(lat=CHC_LAT, lon=CHC_LON)
 start_point = wrf.CoordPair(lat=LPB_LAT, lon=LPB_LON)
-
-
-def compressed_netcdf_save(ds, path):
-    encoding = {}
-    for k, v in ds.variables.items():
-        encoding[k] = {'zlib': True, 'shuffle': True}
-        if v.dtype.kind == 'U':
-            encoding[k]['dtype'] = 'S1'
-    ds.to_netcdf(path, encoding=encoding)
 
 
 def get_ver_cross(path):
@@ -127,11 +119,17 @@ def read_and_spit(
     if drop_last:
         files=files[:-1]
 
+    for_in_read_and_spit(files, path_out)
 
+
+def for_in_read_and_spit(files, path_out):
     for file in files:
         print(file)
-    # file = files[0]
+        # file = files[0]
         base_name = os.path.basename(file)
-        file_out = os.path.join(path_out,base_name)
+        file_out = os.path.join(path_out, base_name)
         ver_cross = get_ver_cross(file)
-        compressed_netcdf_save(ver_cross,file_out)
+        compressed_netcdf_save(ver_cross, file_out)
+
+
+

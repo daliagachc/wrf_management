@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../di-python/di_python/di_python.iml" filepath="$PROJECT_DIR$/../di-python/di_python/di_python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../useful-scit/useful-scit.iml" filepath="$PROJECT_DIR$/../useful-scit/useful-scit.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/wrf_management.iml" filepath="$PROJECT_DIR$/.idea/wrf_management.iml" />
     </modules>
   </component>

@@ -25,3 +25,4 @@ bw.read_and_spit(glob_pat,path_out)
 
 
 # %%
+import xarray.core.indexing
