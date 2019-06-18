@@ -84,7 +84,7 @@ class Compresser:
 
     def get_and_zip_next_row(self):
         r = self.get_next_unzipped_row()
-        logging.debug('compressing:',r.name)
+        logging.debug('compressing:' + r.name)
         zip_row(self, r)
 
     def get_next_unzipped_row(self):
