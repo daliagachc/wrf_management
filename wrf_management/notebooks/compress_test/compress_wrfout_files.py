@@ -38,7 +38,7 @@ path_out  = '/proj/atm/saltena/runs/run_2019_05_15/wrf_compressed'
 db_path = os.path.join(path_out,'zip.sqlite')
 # patt = 'd01*'
 patt = '2017-12-0*'
-self = CO.Compresser(path,path_out,db_path)
+self = CO.Compresser(path,path_out,db_path,pattern=patt)
 
 # %%
 self.merge_update_dfs()

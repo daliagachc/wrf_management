@@ -7,5 +7,18 @@
       <auth-required>false</auth-required>
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
+    <data-source name="zip.sqlite" uuid="48ffb49f-2272-408f-9d1e-0e7ec3a57b81">
+      <database-info product="SQLite" version="3.16.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" dbms="SQLITE" exact-version="3.16.1" exact-driver-version="1.1" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+      <ssh-properties>
+        <enabled>false</enabled>
+        <user>aliagadi</user>
+        <use-password>false</use-password>
+        <auth-type>KEY_PAIR</auth-type>
+      </ssh-properties>
+    </data-source>
   </component>
 </project>

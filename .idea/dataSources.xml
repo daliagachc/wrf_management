@@ -18,5 +18,14 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="zip.sqlite" uuid="48ffb49f-2272-408f-9d1e-0e7ec3a57b81">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:/private/tmp/zip.sqlite</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>

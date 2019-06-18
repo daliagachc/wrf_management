@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../useful-scit/useful_scit/imps/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../useful-scit/useful_scit/imps/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../useful-scit/useful_scit/util/zarray.py" beforeDir="false" afterPath="$PROJECT_DIR$/../useful-scit/useful_scit/util/zarray.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,30 +32,18 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="wrf_man" type="feb32156:DbDataSourceImpl" />
+        <item name="zip.sqlite" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="wrf_man" type="feb32156:DbDataSourceImpl" />
+        <item name="zip.sqlite" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="wrf_man" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="wrf_man" type="feb32156:DbDataSourceImpl" />
+        <item name="zip.sqlite" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="runs_table: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="wrf_man" type="feb32156:DbDataSourceImpl" />
-        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -71,37 +62,16 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_output_check/back_erase.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="511">
-                  <caret line="116" selection-start-line="116" selection-end-line="132" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrf_management/modules/Untitled.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#272#319#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="96">
-                  <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+                <state relative-caret-position="130">
+                  <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#91#121#0" expanded="true" />
+                    <element signature="e#1315#2164#0" expanded="true" />
                     <element signature="e#1699#1724#0" expanded="true" />
                     <element signature="e#1843#2231#0" expanded="true" />
-                    <element signature="e#1812#1869#0" expanded="true" />
                     <element signature="e#1776#2036#0" expanded="true" />
                     <element signature="e#1515#1635#0" expanded="true" />
                     <element signature="e#3074#3238#0" expanded="true" />
@@ -114,10 +84,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../miniconda3/envs/b36/lib/python3.6/site-packages/dask/array/core.py">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/48ffb49f-2272-408f-9d1e-0e7ec3a57b81/console.sql">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2505">
-                  <caret line="1043" column="72" selection-start-line="1043" selection-start-column="72" selection-end-line="1043" selection-end-column="72" />
+                <state relative-caret-position="15">
+                  <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="das://48ffb49f-2272-408f-9d1e-0e7ec3a57b81/schema/main/table/files_table">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" text="dom==3">
+                    <filter text="dom==2" />
+                    <filter text="dom==1" />
+                  </filtering>
                 </state>
               </provider>
             </entry>
@@ -173,8 +155,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="172">
-                  <caret line="162" column="45" lean-forward="true" selection-start-line="162" selection-start-column="45" selection-end-line="162" selection-end-column="45" />
+                <state relative-caret-position="139">
+                  <caret line="163" column="45" selection-start-line="163" selection-start-column="45" selection-end-line="163" selection-end-column="45" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#91#121#0" expanded="true" />
@@ -253,7 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28/run_scripts/init.py" />
         <option value="$PROJECT_DIR$/wrf_management/plot/check_lake_temp.py" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_1/namelist.input" />
         <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_1/run_scripts/init.py" />
@@ -304,6 +285,7 @@
         <option value="$PROJECT_DIR$/wrf_management/modules/blayer_wind.py" />
         <option value="$PROJECT_DIR$/../useful-scit/useful_scit/util/zarray.py" />
         <option value="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/48ffb49f-2272-408f-9d1e-0e7ec3a57b81/console.sql" />
       </list>
     </option>
   </component>
@@ -362,6 +344,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT&#10;GenericSQL" />
     <property name="database.console.LAST_STATE" value="true" />
@@ -489,12 +472,12 @@
       <workItem from="1559777069110" duration="17698000" />
       <workItem from="1560040444871" duration="5323000" />
       <workItem from="1560801648700" duration="930000" />
-      <workItem from="1560802586570" duration="9885000" />
+      <workItem from="1560802586570" duration="11972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179237000" />
+    <option name="totallyTimeSpent" value="181324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
@@ -515,12 +498,12 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4957537" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4957537" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32938856" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.32894737" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.3280255" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -539,23 +522,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02/namelist.wps">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_scripts/init.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02/run_scripts/init.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02/run_wrf.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -817,8 +783,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/modules/Untitled.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="315">
+          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
           <folding>
             <element signature="e#272#319#0" expanded="true" />
           </folding>
@@ -853,14 +819,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+        <state relative-caret-position="130">
+          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#91#121#0" expanded="true" />
+            <element signature="e#1315#2164#0" expanded="true" />
             <element signature="e#1699#1724#0" expanded="true" />
             <element signature="e#1843#2231#0" expanded="true" />
-            <element signature="e#1812#1869#0" expanded="true" />
             <element signature="e#1776#2036#0" expanded="true" />
             <element signature="e#1515#1635#0" expanded="true" />
             <element signature="e#3074#3238#0" expanded="true" />
@@ -868,6 +834,30 @@
             <element signature="e#3581#4018#0" expanded="true" />
             <element signature="e#3653#3683#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48ffb49f-2272-408f-9d1e-0e7ec3a57b81/schema/main/table/files_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/48ffb49f-2272-408f-9d1e-0e7ec3a57b81/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48ffb49f-2272-408f-9d1e-0e7ec3a57b81/schema/main/table/files_table">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" text="dom==3">
+            <filter text="dom==2" />
+            <filter text="dom==1" />
+          </filtering>
         </state>
       </provider>
     </entry>
