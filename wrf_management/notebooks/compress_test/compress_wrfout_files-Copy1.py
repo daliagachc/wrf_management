@@ -35,28 +35,60 @@ if pc is 'taito':
     path_out  = '/proj/atm/saltena/runs/run_2019_05_15/wrf_compressed'
     db_path = os.path.join(path_out,'zip.sqlite')
     patt = '2017-12-0*'
-    wrfout_patt = 'wrfout'
-    
-if pc is 'taito':
-    path = '/homeappl/home/aliagadi/wrk/DONOTREMOVE/flexpart_management_data/runs/run_2019-06-18_17-40-56_/2017-12-08'
-    path_out  = os.path.join(path,'.compressed_log')
-    db_path = os.path.join(path_out,'zip.sqlite')
-    patt = '*.nc'
-    wrfout_patt = ''
+    last_date_lock = True
     
 if pc is 'mac':
     path = '/Volumes/mbProD/Downloads/wrf_test_d01/'
     path_out  = '/private/tmp/co_out/'
     db_path = os.path.join(path_out,'zip.sqlite')
     patt = 'd01*'
-    wrfout_patt = 'wrfout'
-self = CO.Compresser(path,path_out,db_path,pattern=patt,wrfout_patt=wrfout_patt)
+    last_date_lock = False
+self = CO.Compresser(path,
+                     path_out,
+                     db_path,
+                     pattern=patt, 
+                     lock_last_date = last_date_lock,
+                    )
 
 # %%
-# self.drop_files_table()
+row = self.compress_out_df.iloc[0]
+
+# %%
+self.get_and_zip_next_row(move=True)
+
+# %%
+self.merge_update_dfs()
+
+# %%
+
+query = f'''
+    select {CO.DATE_COL} from {self.files_table_name}
+    order by {CO.DATE_COL} desc limit 1
+    '''
+with sqlite3.connect(self.db_path) as con:
+    last_date = pd.read_sql_query(query,con).iloc[0][CO.DATE_COL]
+    
+
+# %%
+last_date
+
+# %%
+query = f'''
+    delete from {self.files_table_name} where {CO.DATE_COL}=={last_date}
+    '''
+with sqlite3.connect(self.db_path) as con:
+    cursor = con.cursor()
+    cursor.execute(query)
+    con.commit()
+
+
+# %%
 
 # %%
 while True:
-    self.get_and_zip_next_row(move=True)
+    self.get_and_zip_next_row()
+
+# %%
+sadf
 
 # %%

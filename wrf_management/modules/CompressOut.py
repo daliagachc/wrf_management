@@ -1,22 +1,29 @@
 # project name: flexpart_management
 # created by diego aliaga daliaga_at_chacaltaya.edu.bo
+import shutil
+
 from useful_scit.imps import *
 from useful_scit.util import zarray as za
 import sqlite3
 import logging
-
-LOG_LEVEL=logging.DEBUG
-
+LOG_LEVEL = logging.DEBUG
 logging.basicConfig(level=LOG_LEVEL, format='%(asctime)s - %(levelname)s - %(message)s')
 
+LAST_DATE_COL = 'last_date_lock'
 
-DELETED_COL = 'deleted'
+DATE_COL = 'unix_time'
+
+LOCKED_COL = 'locked'
+
+MOVED_COL = 'moved'
 
 ZIPPED_COL = 'zipped'
 
 ZIP_PATH_COL = 'zip_path'
 
-NAME_COL = 'name'
+NAME_COL = 'file_name'
+
+INDEX_COL = 'index_col'
 
 DOM_COL = 'dom'
 
@@ -50,13 +57,26 @@ class Compresser:
     pattern: str = None
     '''optional pattern to subset via glob the source path. added after wrfout_patt'''
 
-    def __init__(self, source_path, zip_path, db_path, pattern='', files_table_name='files_table'):
+    lock_last_date: bool = True
+    '''avoid any modification on the last date (in case a program is running'''
+
+    def __init__(self,
+                 source_path,
+                 zip_path,
+                 db_path,
+                 pattern='',
+                 files_table_name='files_table',
+                 lock_last_date = True,
+                 wrfout_patt='wrfout'):
+        self.wrfout_patt = wrfout_patt
         self.db_path = db_path
         self.source_path = source_path
         self.zip_path = zip_path
         self.pattern = pattern
         self.files_table_name = files_table_name
+        self.lock_last_date = lock_last_date
         self.set_df_from_file_list()
+        # return None
         try:
             logging.debug('creating db table')
             self.create_db_table_from_df()
@@ -64,6 +84,7 @@ class Compresser:
             logging.debug('file table already exist in db')
 
         self.get_set_sql_df()
+        self.set_reset_lock_last_date()
 
         # self.merge_update_dfs()
 
@@ -74,42 +95,95 @@ class Compresser:
     def merge_update_dfs(self):
         self.get_set_sql_df()
         dfs = self.sqlite_df
+        self.set_df_from_file_list()
         dff = self.compress_out_df
+        # return [dfs, dff]
         joined_df = pd.merge(dfs, dff, how='outer')
         self.compress_out_df = joined_df
         df2append = dff[~dff.index.isin(dfs.index)]
+        # return df2append
         with sqlite3.connect(self.db_path) as con:
             df2append.to_sql(self.files_table_name, con, if_exists='append')
         self.get_set_sql_df()
 
-    def get_and_zip_next_row(self):
+    def get_and_zip_next_row(self, move=False):
         r = self.get_next_unzipped_row()
         logging.debug('compressing:' + r.name)
         zip_row(self, r)
+        if move:
+            self.move_zip_file_to_source_file(r)
 
     def get_next_unzipped_row(self):
-        query = f'select * from {self.files_table_name} where {ZIPPED_COL}==0 order by {NAME_COL} limit 1'
-        with sqlite3.connect(self.db_path) as con:
-            df = pd.read_sql_query(query, con, index_col=NAME_COL)
-        if len(df) == 0:
-            logging.fatal('we are done! no more files to compress')
-            sys.exit(0)
+        query = f"""
+        select * from {self.files_table_name} 
+        where {ZIPPED_COL}==0 and {LOCKED_COL}==0 and {LAST_DATE_COL} == 0 and {MOVED_COL} == 0 
+        order by {DATE_COL} limit 1
+        """
 
-        row = df.iloc[0]
+        with sqlite3.connect(self.db_path) as con:
+            # con: sqlite3.Connection = con
+            con.isolation_level = 'EXCLUSIVE'
+            con.execute('BEGIN EXCLUSIVE')
+
+            df = pd.read_sql_query(query, con, index_col=NAME_COL)
+            if len(df) == 0:
+                logging.fatal('we are done! no more files to compress')
+                sys.exit(0)
+            row = df.iloc[0]
+            query = f"update {self.files_table_name} set {LOCKED_COL}=1 where {NAME_COL}=='{row.name}'"
+            cu = con.cursor()
+            cu.execute(query)
+
+
+            con.commit()
+            # conn.close()
         return row
 
+    def drop_files_table(self):
+        query = f"""
+        drop table {self.files_table_name}
+        """
+        with sqlite3.connect(self.db_path) as con:
+            cursor: sqlite3.Cursor = con.cursor()
+            cursor.execute(query)
+            con.commit()
+
     def get_set_sql_df(self):
-        query = 'select * from {} order by {}'.format(self.files_table_name,NAME_COL)
+        # todo change name_col to date_col
+        query = 'select * from {} order by {}'.format(self.files_table_name, DATE_COL)
         con = sqlite3.connect(self.db_path)
-        self.sqlite_df = pd.read_sql_query(query, con,index_col=NAME_COL)
+        self.sqlite_df = pd.read_sql_query(query, con, index_col=INDEX_COL)
         con.close()
+
+    def set_reset_lock_last_date(self):
+        query1 = f'''
+        update {self.files_table_name}
+        set {LAST_DATE_COL} = 0
+        '''
+        query2 = f'''
+        select {DATE_COL} from {self.files_table_name}
+        order by {DATE_COL} desc limit 1
+        '''
+        with sqlite3.connect(self.db_path) as con:
+            last_date = pd.read_sql_query(query2,con).iloc[0][DATE_COL]
+            query3 = f'''
+            update {self.files_table_name}
+            set {LAST_DATE_COL} = 1
+            where {DATE_COL} == {last_date}
+            '''
+            cursor:sqlite3.Cursor = con.cursor()
+            cursor.execute(query1)
+            if self.lock_last_date:
+                cursor.execute(query3)
+            con.commit()
+
 
     def create_db_table_from_df(self):
         db_dir = os.path.dirname(self.db_path)
-        os.makedirs(db_dir,exist_ok=True)
+        os.makedirs(db_dir, exist_ok=True)
         df = self.compress_out_df
         with sqlite3.connect(self.db_path) as con:
-            df.to_sql(self.files_table_name, con=con, index=True, index_label=NAME_COL)
+            df.to_sql(self.files_table_name, con=con, index=True, index_label=INDEX_COL)
 
     def set_df_from_file_list(self):
         glob_patt = os.path.join(self.source_path,
@@ -121,13 +195,69 @@ class Compresser:
 
         col = df[SOURCE_PATH_COL]
         df[NAME_COL] = col.apply(lambda p: os.path.basename(p))
-        df = df.set_index(NAME_COL)
+        df = df.set_index(NAME_COL, drop=False)
+        df.index.name = INDEX_COL
+        str_col = df[NAME_COL].str
+        str_col = str_col.extract('(\d\d\d\d-\d\d-\d\d_\d\d:\d\d:\d\d)')
+        str_col = pd.to_datetime(str_col[0], format='%Y-%m-%d_%H:%M:%S')
+        str_col = str_col.astype(np.int64)
+        df[DATE_COL] = str_col
 
         df[ZIP_PATH_COL] = df.apply(lambda r: os.path.join(self.zip_path, r.name), axis=1)
         df[ZIPPED_COL] = 0
-        df[DELETED_COL] = 0
+        df[MOVED_COL] = 0
+        df[LOCKED_COL] = 0
+        df[LAST_DATE_COL] = 0
 
         self.compress_out_df = df
+
+    def move_zip_file_to_source_file(self, row):
+        #check row is not locked
+        with sqlite3.connect(self.db_path) as con:
+            con.isolation_level = 'EXCLUSIVE'
+            con.execute('BEGIN EXCLUSIVE')
+
+            query = f"select {LOCKED_COL} from {self.files_table_name} where {INDEX_COL}=='{row.name}'"
+            df = pd.read_sql_query(query,con)
+            locked = df.iloc[0][LOCKED_COL]
+            # return locked
+            if locked == 1:
+                logging.critical(f'row {row.name} is locked. aborting')
+                sys.exit(1)
+
+            query = f"update {self.files_table_name} set {LOCKED_COL}=1 where {INDEX_COL}=='{row.name}'"
+
+            cursor:sqlite3.Cursor = con.cursor()
+            cursor.execute(query)
+            con.commit()
+
+        original = row[SOURCE_PATH_COL]
+        zipped = row[ZIP_PATH_COL]
+        original_back_up = f'{zipped}_source_back_up'
+        check = check_source_zip_identical(original,zipped)
+        if check:
+            shutil.move(original,original_back_up)
+            shutil.move(zipped,original)
+            logging.debug({f'moving {zipped} to {original}'})
+            check_again = check_source_zip_identical(original,original_back_up)
+            if check_again:
+                logging.debug(f'double check fine. deleting {original_back_up}')
+                os.remove(original_back_up)
+                query = f"update {self.files_table_name} set {MOVED_COL}=1, {LOCKED_COL}=0 where {INDEX_COL}=='{row.name}'"
+                self.execute_query(query)
+            else:
+                logging.critical(f'critical error {original} and {original_back_up} are not identical. aborting')
+                sys.exit(1)
+        else:
+            logging.critical(f'{original} and {zipped} are not identical. We aer aborting')
+            sys.exit(1)
+
+    def execute_query(self,query):
+        with sqlite3.connect(self.db_path) as con:
+            c:sqlite3.Connection = con
+            cursor = c.cursor()
+            cursor.execute(query)
+            c.commit()
 
 
 class CompressOut:
@@ -148,19 +278,27 @@ class CompressOut:
 
     def save_zip(self, complevel=4):
         zip_dir = os.path.dirname(self.zip_path)
-        os.makedirs(zip_dir,exist_ok=True)
+        os.makedirs(zip_dir, exist_ok=True)
         za.compressed_netcdf_save(self.ds, self.zip_path, complevel=complevel, fletcher32=True, encode_u=False)
 
-def zip_row(compresser:Compresser, r):
-    co = CompressOut(r.source_path,r.zip_path)
+
+
+
+def zip_row(compresser: Compresser, r):
+    co = CompressOut(r.source_path, r.zip_path)
     co.save_zip()
     qdic = {
         'table_name': compresser.files_table_name,
-        'zipped': ZIPPED_COL,
-        'name_col': NAME_COL,
-        'name': r.name
+        'zipped'    : ZIPPED_COL,
+        'name_col'  : NAME_COL,
+        'name'      : r.name,
+        'lock'      : LOCKED_COL,
     }
-    query = "update {table_name} set {zipped}=1 where {name_col}=='{name}'".format(**qdic)
+    query = """
+    update {table_name} 
+    set {zipped}=1, {lock}=0
+    where {name_col}=='{name}'
+    """.format(**qdic)
     con = sqlite3.connect(compresser.db_path)
     try:
         cursor = con.cursor()
@@ -168,9 +306,19 @@ def zip_row(compresser:Compresser, r):
         con.commit()
     except:
         logging.debug('could not update')
+        sys.exit(1)
     finally:
         con.close()
 
 
+def check_source_zip_identical(path1,path2):
+    ds1 = xr.open_dataset(path1)
+    ds2 = xr.open_dataset(path2)
+    return ds1.identical(ds2)
 
 
+
+
+#todo: do the moving file
+#todo: rename deleted to moved
+#todo: add option to get_next_row_and_compress

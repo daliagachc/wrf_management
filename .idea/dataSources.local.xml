@@ -20,5 +20,12 @@
         <auth-type>KEY_PAIR</auth-type>
       </ssh-properties>
     </data-source>
+    <data-source name="zip.sqlite [2]" uuid="56b34e39-31cc-40b8-b3b2-19b2ac89ed37">
+      <database-info product="SQLite" version="3.16.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" dbms="SQLITE" exact-version="3.16.1" exact-driver-version="1.1" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
   </component>
 </project>
