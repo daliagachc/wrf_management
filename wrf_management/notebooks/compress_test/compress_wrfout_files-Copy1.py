@@ -92,3 +92,6 @@ while True:
 sadf
 
 # %%
+CO.run_srun('hola',time_minutes=20,memory=4000,parallel_type='serial',n_cpus=1)
+
+# %%

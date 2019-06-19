@@ -5,6 +5,7 @@ import shutil
 from useful_scit.imps import *
 from useful_scit.util import zarray as za
 import sqlite3
+import subprocess
 import logging
 LOG_LEVEL = logging.DEBUG
 logging.basicConfig(level=LOG_LEVEL, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -325,7 +326,21 @@ def check_source_zip_identical(path1,path2):
 
 
 
+def run_srun(exe:str, *,
+             time_minutes,
+             memory,
+             parallel_type,
+             n_cpus,
+             message = 'jup '
 
-#todo: do the moving file
-#todo: rename deleted to moved
-#todo: add option to get_next_row_and_compress
+             ):
+    cmd = ['srun',
+           '-t',f'{time_minutes}',
+           '-p',parallel_type,
+           '-c',f'{n_cpus}',
+           '--mem', f'{memory}',
+           exe
+           ]
+    logging.debug(cmd)
+    subprocess.Popen(cmd)
+    return cmd
