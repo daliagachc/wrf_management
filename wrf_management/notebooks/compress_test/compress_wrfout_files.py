@@ -64,6 +64,7 @@ self = CO.Compresser(path,path_out,db_path,pattern=patt,wrfout_patt=wrfout_patt,
 # self.drop_files_table()
 
 # %%
+self.reset_locks()
 while True:
     self.get_and_zip_next_row(move=True)
 
