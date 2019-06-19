@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.py" afterDir="false" />
     </list>
@@ -70,8 +67,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="181">
-                  <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+                <state relative-caret-position="142">
+                  <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#91#104#0" expanded="true" />
@@ -489,12 +486,12 @@
       <workItem from="1559777069110" duration="17698000" />
       <workItem from="1560040444871" duration="5323000" />
       <workItem from="1560801648700" duration="930000" />
-      <workItem from="1560802586570" duration="29434000" />
+      <workItem from="1560802586570" duration="30140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198786000" />
+    <option name="totallyTimeSpent" value="199492000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -522,10 +519,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39940828" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.32908705" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32908705" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.1762208" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.1762208" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -538,7 +535,7 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Remote Host" order="5" sideWeight="0.49893844" weight="0.32960597" />
       <window_info anchor="right" id="Mathematica REPL" order="6" />
-      <window_info active="true" anchor="right" id="Database" order="7" sideWeight="0.49044585" visible="true" weight="0.18743344" />
+      <window_info anchor="right" id="Database" order="7" sideWeight="0.49044585" visible="true" weight="0.18743344" />
       <window_info anchor="right" id="LuaJ" order="8" />
       <window_info anchor="right" id="Data View" order="9" />
       <window_info anchor="right" x="1039" y="77" width="416" height="1014" id="SciView" order="10" sideWeight="0.4868421" weight="0.1978022" />
@@ -866,8 +863,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+        <state relative-caret-position="142">
+          <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#91#104#0" expanded="true" />

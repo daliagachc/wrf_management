@@ -190,6 +190,8 @@ class Compresser:
                                  self.wrfout_patt + '*' + self.pattern
                                  )
         file_list = glob.glob(glob_patt)
+        logging.debug(f'number of files is {len(file_list)}')
+
         df = pd.DataFrame(file_list, columns=[SOURCE_PATH_COL])
         df[DOM_COL] = df[SOURCE_PATH_COL].str.extract('d0(\d)').astype(int)
 

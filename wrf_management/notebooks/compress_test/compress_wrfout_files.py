@@ -28,7 +28,7 @@ import sqlite3
 # %%
 # path  = '/Volumes/mbProD/Downloads/wrf_test_d01/'
 pc = 'taito'
-pc = 'mac'
+# pc = 'mac'
 
 if pc is 'taito':
     path = '/proj/atm/saltena/runs/run_2019_05_15/wrf'
