@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-conda activate b36
-
 glob_patt=$1
+echo $glob_patt
 
 for f in $glob_patt
 do
