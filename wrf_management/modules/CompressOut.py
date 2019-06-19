@@ -267,6 +267,17 @@ class Compresser:
             cursor.execute(query)
             c.commit()
 
+    def reset_locks(self):
+        '''
+        setting all locks to 0
+        Returns
+        -------
+
+        '''
+        query = f"update {self.files_table_name} set {LOCKED_COL}=0"
+        logging.debug('resetting all locks to 0')
+        self.execute_query(query)
+
 
 class CompressOut:
     source_path: str = None

@@ -4,8 +4,6 @@
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files-Copy1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files-Copy1.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files-Copy1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +66,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="310">
-                  <caret line="340" column="30" selection-start-line="340" selection-start-column="30" selection-end-line="340" selection-end-column="30" />
+                <state relative-caret-position="148">
+                  <caret line="271" column="30" selection-start-line="271" selection-start-column="30" selection-end-line="271" selection-end-column="30" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#91#104#0" expanded="true" />
@@ -91,11 +89,13 @@
                     <element signature="e#5432#6434#0" expanded="true" />
                     <element signature="e#6493#8000#0" expanded="true" />
                     <element signature="e#6479#6644#0" expanded="true" />
-                    <element signature="e#4917#5112#0" expanded="true" />
-                    <element signature="e#7159#7787#0" expanded="true" />
-                    <element signature="e#5229#5370#0" expanded="true" />
-                    <element signature="e#5447#5520#0" expanded="true" />
-                    <element signature="e#7741#7766#0" expanded="true" />
+                    <element signature="e#9692#9888#0" expanded="true" />
+                    <element signature="e#9937#10565#0" expanded="true" />
+                    <element signature="e#10010#10198#0" expanded="true" />
+                    <element signature="e#10211#10307#0" expanded="true" />
+                    <element signature="e#10617#10708#0" expanded="true" />
+                    <element signature="e#10885#11119#0" expanded="true" />
+                    <element signature="e#10891#11055#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -472,12 +472,12 @@
       <workItem from="1559777069110" duration="17698000" />
       <workItem from="1560040444871" duration="5323000" />
       <workItem from="1560801648700" duration="930000" />
-      <workItem from="1560802586570" duration="33886000" />
+      <workItem from="1560802586570" duration="35662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203238000" />
+    <option name="totallyTimeSpent" value="205014000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -498,7 +498,7 @@
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
       <window_info id="Structure" order="4" sideWeight="0.5063694" side_tool="true" visible="true" weight="0.18317358" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4936306" visible="true" weight="0.18317358" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4936306" visible="true" weight="0.18317358" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32840237" />
@@ -508,7 +508,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32908705" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.1762208" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.1762208" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -849,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="340" column="30" selection-start-line="340" selection-start-column="30" selection-end-line="340" selection-end-column="30" />
+        <state relative-caret-position="148">
+          <caret line="271" column="30" selection-start-line="271" selection-start-column="30" selection-end-line="271" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#91#104#0" expanded="true" />
@@ -872,11 +872,13 @@
             <element signature="e#5432#6434#0" expanded="true" />
             <element signature="e#6493#8000#0" expanded="true" />
             <element signature="e#6479#6644#0" expanded="true" />
-            <element signature="e#4917#5112#0" expanded="true" />
-            <element signature="e#7159#7787#0" expanded="true" />
-            <element signature="e#5229#5370#0" expanded="true" />
-            <element signature="e#5447#5520#0" expanded="true" />
-            <element signature="e#7741#7766#0" expanded="true" />
+            <element signature="e#9692#9888#0" expanded="true" />
+            <element signature="e#9937#10565#0" expanded="true" />
+            <element signature="e#10010#10198#0" expanded="true" />
+            <element signature="e#10211#10307#0" expanded="true" />
+            <element signature="e#10617#10708#0" expanded="true" />
+            <element signature="e#10885#11119#0" expanded="true" />
+            <element signature="e#10891#11055#0" expanded="true" />
           </folding>
         </state>
       </provider>
