@@ -3,3 +3,4 @@ __pycache__
 auth.rda.ucar.edu
 wrf_management/pc_id.py
 *.swp
+core.*
