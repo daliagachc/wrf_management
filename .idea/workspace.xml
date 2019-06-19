@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +65,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="142">
-                  <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+                <state relative-caret-position="253">
+                  <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#91#104#0" expanded="true" />
@@ -142,7 +140,7 @@
             <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="156">
-                  <caret line="245" column="122" selection-start-line="245" selection-start-column="122" selection-end-line="245" selection-end-column="122" />
+                  <caret line="252" column="122" selection-start-line="252" selection-start-column="122" selection-end-line="252" selection-end-column="122" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#91#104#0" expanded="true" />
@@ -486,12 +484,12 @@
       <workItem from="1559777069110" duration="17698000" />
       <workItem from="1560040444871" duration="5323000" />
       <workItem from="1560801648700" duration="930000" />
-      <workItem from="1560802586570" duration="30140000" />
+      <workItem from="1560802586570" duration="30753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199492000" />
+    <option name="totallyTimeSpent" value="200105000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -863,8 +861,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+        <state relative-caret-position="253">
+          <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#91#104#0" expanded="true" />

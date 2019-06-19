@@ -60,6 +60,8 @@ class Compresser:
     lock_last_date: bool = True
     '''avoid any modification on the last date (in case a program is running'''
 
+    date_pattern:str = None
+
     def __init__(self,
                  source_path,
                  zip_path,
@@ -67,7 +69,10 @@ class Compresser:
                  pattern='',
                  files_table_name='files_table',
                  lock_last_date = True,
-                 wrfout_patt='wrfout'):
+                 wrfout_patt='wrfout',
+                 date_pattern='%Y-%m-%d_%H:%M:%S',
+                 ):
+        self.date_pattern = date_pattern
         self.wrfout_patt = wrfout_patt
         self.db_path = db_path
         self.source_path = source_path
@@ -201,7 +206,7 @@ class Compresser:
         df.index.name = INDEX_COL
         str_col = df[NAME_COL].str
         str_col = str_col.extract('(\d\d\d\d-\d\d-\d\d_\d\d:\d\d:\d\d)')
-        str_col = pd.to_datetime(str_col[0], format='%Y-%m-%d_%H:%M:%S')
+        str_col = pd.to_datetime(str_col[0], format=self.date_pattern)
         str_col = str_col.astype(np.int64)
         df[DATE_COL] = str_col
 

@@ -43,6 +43,14 @@ if pc is 'taito':
     db_path = os.path.join(path_out,'zip.sqlite')
     patt = '*.nc'
     wrfout_patt = ''
+    date_pattern = ''
+    
+if pc is 'taito':
+    path = '/proj/atm/saltena/runs/run_2019_03_01/wrf'
+    path_out  = os.path.join(path,'wrf_compressed')
+    db_path = os.path.join(path_out,'zip.sqlite')
+    patt = ''
+    wrfout_patt = 'wrfout'
     
 if pc is 'mac':
     path = '/Volumes/mbProD/Downloads/wrf_test_d01/'
@@ -50,7 +58,7 @@ if pc is 'mac':
     db_path = os.path.join(path_out,'zip.sqlite')
     patt = 'd01*'
     wrfout_patt = 'wrfout'
-self = CO.Compresser(path,path_out,db_path,pattern=patt,wrfout_patt=wrfout_patt)
+self = CO.Compresser(path,path_out,db_path,pattern=patt,wrfout_patt=wrfout_patt,lock_last_date=False)
 
 # %%
 # self.drop_files_table()
