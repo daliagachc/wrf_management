@@ -1,12 +1,18 @@
 # project name: flexpart_management
 # created by diego aliaga daliaga_at_chacaltaya.edu.bo
 import shutil
+import uuid
+from pathlib import Path
 
 from useful_scit.imps import *
 from useful_scit.util import zarray as za
 import sqlite3
 import subprocess
 import logging
+
+SYMLINK_COL = 'symlink'
+
+ORIG_COMP_LEVEL_COL = 'orig_comp_level'
 LOG_LEVEL = logging.DEBUG
 logging.basicConfig(level=LOG_LEVEL, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -63,6 +69,12 @@ class Compresser:
 
     date_pattern:str = None
 
+    compress_level_target = 4
+    '''the compress level target'''
+
+    source_path_is_file = False
+    '''is source_path true, no pattern matching is used'''
+
     def __init__(self,
                  source_path,
                  zip_path,
@@ -72,7 +84,11 @@ class Compresser:
                  lock_last_date = True,
                  wrfout_patt='wrfout',
                  date_pattern='%Y-%m-%d_%H:%M:%S',
+                 compress_level_target = 4,
+                 source_path_is_file = False
                  ):
+        self.source_path_is_file = source_path_is_file
+        self.compress_level_target = compress_level_target
         self.date_pattern = date_pattern
         self.wrfout_patt = wrfout_patt
         self.db_path = db_path
@@ -115,7 +131,7 @@ class Compresser:
     def get_and_zip_next_row(self, move=False):
         r = self.get_next_unzipped_row()
         logging.debug('compressing:' + r.name)
-        zip_row(self, r)
+        zip_row(self, r,complevel=self.compress_level_target)
         if move:
             self.move_zip_file_to_source_file(r)
 
@@ -195,10 +211,42 @@ class Compresser:
         glob_patt = os.path.join(self.source_path,
                                  self.wrfout_patt + '*' + self.pattern
                                  )
+        if self.source_path_is_file:
+            glob_patt = self.source_path
+
         file_list = glob.glob(glob_patt)
         logging.debug(f'number of files is {len(file_list)}')
 
+        if len(file_list)==0:
+            logging.debug('no match. aborting')
+            sys.exit(1)
+
         df = pd.DataFrame(file_list, columns=[SOURCE_PATH_COL])
+
+        df[SYMLINK_COL] = df[SOURCE_PATH_COL].apply(lambda p: check_if_path_symlink(p))
+
+        df = df[~df[SYMLINK_COL]]
+        df = df.drop(SYMLINK_COL,axis=1)
+
+        logging.debug(f'number of file remaining after dropping symlinks is {len(df)}')
+
+        is_netcdf = 'is_netcdf'
+        df[is_netcdf]=df[SOURCE_PATH_COL].apply(lambda p: check_net_cdf(p))
+        df = df[df[is_netcdf]]
+        df = df.drop(is_netcdf,axis=1)
+        logging.debug(f'number of file remaining after dropping not cdf files is {len(df)}')
+
+
+        df[ORIG_COMP_LEVEL_COL] = df[SOURCE_PATH_COL].apply(lambda p: get_compression_level(p))
+
+        df = df[df[ORIG_COMP_LEVEL_COL]<self.compress_level_target]
+
+        logging.debug(f'number of files with compress level lower than target is {len(df)}')
+
+        if len(df) == 0:
+            logging.critical(f'all files already compressed or no files matched pattern. exiting')
+            sys.exit(1)
+
         df[DOM_COL] = df[SOURCE_PATH_COL].str.extract('d0(\d)').astype(int)
 
         col = df[SOURCE_PATH_COL]
@@ -241,10 +289,10 @@ class Compresser:
 
         original = row[SOURCE_PATH_COL]
         zipped = row[ZIP_PATH_COL]
-        original_back_up = f'{zipped}_source_back_up'
+        original_back_up = f'{zipped}_source_back_up_{get_unique_id()}'
         check = check_source_zip_identical(original,zipped)
         if check:
-            shutil.move(original,original_back_up)
+            shutil.copy(original,original_back_up)
             shutil.move(zipped,original)
             logging.debug({f'moving {zipped} to {original}'})
             check_again = check_source_zip_identical(original,original_back_up)
@@ -303,9 +351,9 @@ class CompressOut:
 
 
 
-def zip_row(compresser: Compresser, r):
+def zip_row(compresser: Compresser, r, complevel):
     co = CompressOut(r.source_path, r.zip_path)
-    co.save_zip()
+    co.save_zip(complevel=complevel)
     qdic = {
         'table_name': compresser.files_table_name,
         'zipped'    : ZIPPED_COL,
@@ -355,3 +403,33 @@ def run_srun(exe:str, *,
     logging.debug(cmd)
     subprocess.Popen(cmd)
     return cmd
+
+def get_compression_level(path):
+    ds = xr.open_dataset(path)
+    variables = list(ds.variables)
+    compression_list = []
+    for var in variables:
+        c = ds[var].encoding.get('complevel', 0)
+        compression_list.append(c)
+    compression_list = np.array(compression_list)
+    mean = np.mean(compression_list)
+    ds.close()
+
+    logging.debug(f'mean compresion level for {path} is {mean}')
+    return mean
+
+def get_unique_id():
+    id = uuid.uuid4()
+    return id
+
+def check_if_path_symlink(path):
+    return Path(path).is_symlink()
+
+def check_net_cdf(path):
+    try:
+        ds = xr.open_dataset(path)
+        is_netcdf = True
+        ds.close()
+    except:
+        is_netcdf = False
+    return is_netcdf

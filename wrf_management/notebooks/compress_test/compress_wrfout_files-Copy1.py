@@ -41,13 +41,14 @@ if pc is 'mac':
     path = '/Volumes/mbProD/Downloads/wrf_test_d01/'
     path_out  = '/private/tmp/co_out/'
     db_path = os.path.join(path_out,'zip.sqlite')
-    patt = 'd01*'
+    patt = 'd0*'
     last_date_lock = False
 self = CO.Compresser(path,
                      path_out,
                      db_path,
                      pattern=patt, 
                      lock_last_date = last_date_lock,
+                     source_path_is_file=False
                     )
 
 # %%
@@ -93,5 +94,19 @@ sadf
 
 # %%
 CO.run_srun('hola',time_minutes=20,memory=4000,parallel_type='serial',n_cpus=1)
+
+# %%
+path = '/Volumes/mbProD/Downloads/wrf_test_d01/wrfout_d01_2017-12-25_10:00:00'
+# path = '/private/tmp/co_out/wrfout_d01_2017-12-25_18:00:00'
+ds = xr.open_dataset(path)
+variables = list(ds.variables)
+compression_list = []
+for var in variables:
+    c = ds[var].encoding.get('complevel', 0)
+    compression_list.append(c)
+compression_list = np.array(compression_list)
+
+# %%
+np.mean(compression_list)
 
 # %%
