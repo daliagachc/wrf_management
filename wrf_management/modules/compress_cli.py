@@ -1,6 +1,6 @@
 # project name: wrf_management
 # created by diego aliaga daliaga_at_chacaltaya.edu.bo
-
+# todo still under construction
 import sys
 import wrf_management.modules.CompressOut as CO
 import os

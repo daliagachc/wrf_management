@@ -87,6 +87,43 @@ class Compresser:
                  compress_level_target = 4,
                  source_path_is_file = False
                  ):
+        '''
+        This creates the compresser object
+
+        Parameters
+        ----------
+        source_path:str
+            path where the original netcdf files are stored
+
+        zip_path:str
+            path where the zip files will be stored temporarily
+
+        db_path:str
+            path where the database will be created
+
+        pattern:str
+            extra pattern to filter the netcdf files
+
+        files_table_name:str
+            name of the files table
+
+        lock_last_date:bool
+            if true, avoid compressing the last file
+
+        wrfout_patt:str
+            default pattern of the wrfout files
+
+        date_pattern:str
+            pattern to extract the date from the file name
+
+        compress_level_target:int
+            compress level target, usually 4
+
+        source_path_is_file:bool
+            if the source path is just one file, set this to true
+        '''
+
+        #set attributes
         self.source_path_is_file = source_path_is_file
         self.compress_level_target = compress_level_target
         self.date_pattern = date_pattern
@@ -97,6 +134,8 @@ class Compresser:
         self.pattern = pattern
         self.files_table_name = files_table_name
         self.lock_last_date = lock_last_date
+
+
         self.set_df_from_file_list()
         # return None
         try:
@@ -426,6 +465,7 @@ def check_if_path_symlink(path):
     return Path(path).is_symlink()
 
 def check_net_cdf(path):
+    logging.debug(f'checking file: {path}')
     try:
         ds = xr.open_dataset(path)
         is_netcdf = True

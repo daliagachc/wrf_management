@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#todo this is still unders construction
 glob_patt="$1"
 echo $glob_patt
 
