@@ -21,7 +21,7 @@ import init as it
 print(it.run_name)
 importlib.reload(it)
 
-import di_python.ya_esta as ye
+# import di_python.ya_esta as ye
 import wrf_management.run_wrf as rw
 import wrf_management.project_global_constants as gc
 

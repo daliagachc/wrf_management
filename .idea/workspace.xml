@@ -2,21 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files_run_2019_02_28_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/Vtable" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/env_WRFv4.bash" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/namelist.input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/namelist.wps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_real.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/init.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/init.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/run_real.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/run_real.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/run_wrf.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/run_wrf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_wrf.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_wrf_test.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/PBLH_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/PBLH_recalc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/wrf_basic_analysis_vars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/wrf_variable_io.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/modules/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/explore_restart_issues/explore_restart_issues.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/explore_restart_issues/funs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48ffb49f-2272-408f-9d1e-0e7ec3a57b81.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56b34e39-31cc-40b8-b3b2-19b2ac89ed37.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/595b2164-012f-4d46-ac5b-6284844b2244.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/diego.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/diego.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/modules/compress_cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/modules/compress_cli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/modules/compressor_glob_srun.sh" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/modules/compressor_glob_srun.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wrf_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wrf_management.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_scripts/run_real.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_scripts/run_real.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/db_folder/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/db_folder/._wrf_man.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/check_out_grid_4_flexpart/out_grid.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/check_out_grid_4_flexpart/out_grid.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/papers/docs/Avolio et al. 2017 Sensitivity analysis of WRF model PBL schemes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/papers/docs/Avolio et al. 2017 Sensitivity analysis of WRF model PBL schemes.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/wrf_management$run.coverage" NAME="run Coverage Results" MODIFIED="1551280487046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts" />
+    <SUITE FILE_PATH="coverage/wrf_management$run_me_to_create.coverage" NAME="run_me_to_create Coverage Results" MODIFIED="1568632146212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir/run_2019-09-14_08-43-03_" />
+    <SUITE FILE_PATH="coverage/wrf_management$run.coverage" NAME="run Coverage Results" MODIFIED="1568440760098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/run_scripts" />
+    <SUITE FILE_PATH="coverage/wrf_management$plot_date.coverage" NAME="plot_date Coverage Results" MODIFIED="1568997503843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../useful-scit/useful_scit/scratch" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -63,339 +100,75 @@
     </expand>
     <select />
   </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="287">
-                  <caret line="131" column="38" lean-forward="true" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#91#104#0" expanded="true" />
-                    <element signature="e#2913#2938#0" expanded="true" />
-                    <element signature="e#3597#3804#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-169" />
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrf_management/modules/compress_cli.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#87#97#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrf_management/modules/compressor_glob_srun.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="das://48ffb49f-2272-408f-9d1e-0e7ec3a57b81/schema/main/table/files_table">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state>
-                  <filtering enabled="true">
-                    <filter text="dom==2" />
-                    <filter text="dom==1" />
-                  </filtering>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="das://56b34e39-31cc-40b8-b3b2-19b2ac89ed37/schema/main/table/files_table">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state>
-                  <filtering enabled="true" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files_run_2019_02_28_2.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="82">
-                  <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-                  <folding>
-                    <element signature="e#317#347#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Setup Script" />
         <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="README" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>^</find>
-      <find>,</find>
-      <find>12,</find>
-      <find>link</find>
-      <find>'namelist.input'</find>
-      <find>dom</find>
-      <find>0</find>
-      <find>8</find>
-      <find>lake_pa</find>
-      <find>6</find>
-      <find>print_</find>
-      <find>row.date</find>
-      <find>\\n</find>
-      <find>reli</find>
-      <find>&lt;&lt;&lt;* HEAD$</find>
-      <find>&gt;&gt;&gt;.*\n</find>
-      <find>Set1</find>
-      <find>get_ver_cross</find>
-      <find>save</find>
-      <find>rpy2</find>
-      <find>conn.c</find>
-      <find>retur</find>
-      <find>srun</find>
-      <find>back</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>',</replace>
-      <replace>'</replace>
-      <replace>,\t],</replace>
-      <replace>12</replace>
-      <replace>18</replace>
-      <replace>row_date</replace>
-      <replace>\r</replace>
-      <replace>Dark2</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_1/run_real.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_1/run_wrf_test.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_1/run_wrf.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/init.py" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_27/namelist.input" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/namelist.input" />
-        <option value="$PROJECT_DIR$/wrf_management/run_wrf.py" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_wrf.py" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_scripts/run_real.py" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_02_28_2/run_wrf_test.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/scripts/ungrib_avgtsfc.py" />
-        <option value="$PROJECT_DIR$/wrf_management/scripts/ungrib_surf.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.txt" />
-        <option value="$PROJECT_DIR$/wrf_management/scripts/ungrib_press.py" />
-        <option value="$PROJECT_DIR$/wrf_management/scripts/check_ungrib_press.py" />
-        <option value="$PROJECT_DIR$/wrf_management/run_utilities.py" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_01/namelist.input" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_01/run_wrf.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_01/run_scripts/init.py" />
-        <option value="$PROJECT_DIR$/wrf_management/plot/check_lake_temp.json" />
-        <option value="$PROJECT_DIR$/wrf_management/plot/Untitled1.py" />
-        <option value="$PROJECT_DIR$/wrf_management/plot/plot.py" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02/run_scripts/init.py" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02/run_wrf.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_03_02_1/run_scripts/init.py" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_04_03_1/run_scripts/init.py" />
-        <option value="$PROJECT_DIR$/wrf_management/scripts/mount_remotes.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_04_03_1/namelist.input" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.ipynb" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.ipynb" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.py" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.py" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice_batch.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/check_out_grid_4_flexpart/out_grid_funs.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_wrf.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_scripts/init.py" />
-        <option value="$PROJECT_DIR$/wrf_management/modules/Untitled.py" />
-        <option value="$PROJECT_DIR$/../miniconda3/envs/b36/lib/python3.6/site-packages/xarray/core/indexing.py" />
-        <option value="$PROJECT_DIR$/wrf_management/modules/blayer_wind.py" />
-        <option value="$PROJECT_DIR$/../useful-scit/useful_scit/util/zarray.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/48ffb49f-2272-408f-9d1e-0e7ec3a57b81/console.sql" />
-        <option value="$PROJECT_DIR$/wrf_management/modules/compressor_glob_srun.sh" />
-        <option value="$PROJECT_DIR$/wrf_management/modules/compress_cli.py" />
-        <option value="$PROJECT_DIR$/wrf_management/modules/CompressOut.py" />
-        <option value="$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files_run_2019_02_28_2.py" />
-      </list>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../FLEXPART-WRF_v3.3.2" value="master" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
-  </component>
+  <component name="JupyterTrust" id="eb5f1465-adbc-40ac-a492-5f2603a913fd" />
+  <component name="ProjectId" id="1TA1h4Ke5NmhLgGhcG3EiEj6MoX" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="notebooks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wrf_management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="wrf_management" type="462c0819:PsiDirectoryNode" />
-              <item name="notebooks" type="462c0819:PsiDirectoryNode" />
-              <item name="compress_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
     <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT&#10;GenericSQL" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT&#10;Python&#10;GenericSQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.6 (base)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wrf_management/config_dir" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wrf_management/notebooks/compress_test" />
-      <recent name="$PROJECT_DIR$/wrf_management/modules" />
-      <recent name="$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29" />
       <recent name="$PROJECT_DIR$/wrf_management/config_dir" />
-      <recent name="$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check" />
+      <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir" />
+      <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir/run_2019-10-01_14-21-54_" />
+      <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/notebooks/run_2019-09-25_15-25-01_" />
+      <recent name="$PROJECT_DIR$/../FLEXPART-WRF_v3.3.2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir" />
+      <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir/run_2019-09-25_15-25-01_" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.plot_date">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mount_remotes.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
-      <module name="wrf_management" />
-      <option name="INTERPRETER_OPTIONS" value="bash" />
-      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
-      <option name="PROJECT_INTERPRETER" value="false" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wrf_management/scripts" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wrf_management/scripts/mount_remotes.sh" />
-      <option name="PARAMETERS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="useful-scit" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="useful-scit" />
@@ -470,6 +243,63 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compile_ssh.bash" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="FLEXPART-WRF_v3.3.2" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../FLEXPART-WRF_v3.3.2/utils_diego" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../FLEXPART-WRF_v3.3.2/utils_diego/compile_ssh.bash" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mount_remotes.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="wrf_management" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wrf_management/scripts" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wrf_management/scripts/mount_remotes.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="useful-scit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="useful-scit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -484,6 +314,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plot_date" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="wrf_management" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../useful-scit/useful_scit/scratch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../useful-scit/useful_scit/scratch/plot_date.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -514,7 +366,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Python.FlaskServer" factoryName="Flask server">
+    <configuration name="run_me_to_create" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="flexpart_management" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir/run_2019-09-14_08-43-03_" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir/run_2019-09-14_08-43-03_/run_me_to_create.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
       <module name="useful-scit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -539,15 +413,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <module name="useful-scit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -568,15 +433,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Bash.mount_remotes.sh" />
+      <item itemvalue="Python.plot_date" />
       <item itemvalue="Python.run" />
+      <item itemvalue="Python.run_me_to_create" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.plot_date" />
+        <item itemvalue="Python.run_me_to_create" />
         <item itemvalue="Python.run" />
-        <item itemvalue="Bash.mount_remotes.sh" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -610,14 +481,49 @@
       <workItem from="1560802586570" duration="45969000" />
       <workItem from="1561410312947" duration="124000" />
       <workItem from="1561410443680" duration="7000" />
-      <workItem from="1561410486178" duration="1983000" />
+      <workItem from="1561410486178" duration="3840000" />
+      <workItem from="1563811532407" duration="322000" />
+      <workItem from="1566048931593" duration="3737000" />
+      <workItem from="1566724497076" duration="5083000" />
+      <workItem from="1567109454974" duration="5199000" />
+      <workItem from="1567584986550" duration="48422000" />
+      <workItem from="1568018458383" duration="44944000" />
+      <workItem from="1568364598712" duration="37201000" />
+      <workItem from="1568566591747" duration="8358000" />
+      <workItem from="1568630665230" duration="11905000" />
+      <workItem from="1568712988776" duration="36212000" />
+      <workItem from="1568877085799" duration="18233000" />
+      <workItem from="1568963962176" duration="11279000" />
+      <workItem from="1569084541094" duration="5569000" />
+      <workItem from="1569252779564" duration="2413000" />
+      <workItem from="1569308238258" duration="27237000" />
+      <workItem from="1569768507362" duration="57187000" />
+      <workItem from="1570177621723" duration="1379000" />
+      <workItem from="1570581277036" duration="2763000" />
+      <workItem from="1570619534688" duration="4592000" />
+      <workItem from="1570650569940" duration="3190000" />
+      <workItem from="1570698539904" duration="250000" />
+      <workItem from="1570880034363" duration="570000" />
+      <workItem from="1572888204922" duration="259000" />
+      <workItem from="1575882740832" duration="1435000" />
+      <workItem from="1578609870056" duration="637000" />
+      <workItem from="1579038796243" duration="16000" />
+      <workItem from="1579525552853" duration="1609000" />
+      <workItem from="1579788683471" duration="688000" />
+      <workItem from="1580290908423" duration="646000" />
+      <workItem from="1580303902531" duration="910000" />
+      <workItem from="1580815278484" duration="997000" />
+      <workItem from="1581012356266" duration="1583000" />
+      <workItem from="1582213722027" duration="3203000" />
+      <workItem from="1583429152444" duration="81000" />
+      <workItem from="1591007771319" duration="4217000" />
+      <workItem from="1591090486417" duration="1607000" />
+      <workItem from="1601452412123" duration="1005000" />
+      <workItem from="1617193161684" duration="727000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217435000" />
-  </component>
-  <component name="TodoView" selected-index="1">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -627,493 +533,36 @@
       <is-preview-enabled value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="DB Browser" order="2" />
-      <window_info id="Favorites" order="3" sideWeight="0.51867664" side_tool="true" weight="0.26797387" />
-      <window_info id="Structure" order="4" sideWeight="0.50955415" side_tool="true" visible="true" weight="0.21618743" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49044585" visible="true" weight="0.21618743" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32840237" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39940828" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32908705" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.18152866" />
-      <window_info anchor="bottom" id="DB Execution Console" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32938856" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3280255" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Remote Host" order="5" sideWeight="0.49893844" weight="0.32960597" />
-      <window_info anchor="right" id="Mathematica REPL" order="6" />
-      <window_info anchor="right" id="Database" order="7" sideWeight="0.48726115" weight="0.21458998" />
-      <window_info anchor="right" id="LuaJ" order="8" />
-      <window_info anchor="right" id="Data View" order="9" />
-      <window_info active="true" anchor="right" x="1039" y="77" width="416" height="1014" id="SciView" order="10" sideWeight="0.4868421" side_tool="true" visible="true" weight="0.19755058" />
-      <window_info anchor="right" x="0" y="0" width="462" height="929" id="Documentation" order="11" sideWeight="0.5127388" side_tool="true" weight="0.21458998" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../di-python/di_python/ya_esta.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../di-python/di_python/scalebar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://595b2164-012f-4d46-ac5b-6284844b2244/schema/main/table/run_2019_02_20">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/scripts/mount_remotes.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="50" selection-start-line="2" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/Untitled1.ipynb" />
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_04_03_1/namelist.input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_04_03_1/namelist.wps">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_04_03_1/run_scripts/run_real.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_04_03_1/run_scripts/init.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_lowinp_02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/check_input_01_funs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="160" column="42" selection-start-line="160" selection-start-column="42" selection-end-line="160" selection-end-column="42" />
-          <folding>
-            <element signature="e#272#302#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/run_fix_ice.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice_batch.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_20/namelist.input">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_20/run_wrf.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/check_out_grid_4_flexpart/out_grid_funs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_input_check/fix_ice03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_scripts/run_real.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_scripts/run_real.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-515" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_real.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/namelist.input">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_wrf.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/check_out_grid_4_flexpart/out_grid.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_15/namelist.input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://595b2164-012f-4d46-ac5b-6284844b2244/schema/main/table/runs_table">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_scripts/init.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_wrf_test.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../miniconda3/envs/b36/lib/python3.6/site-packages/xarray/core/indexing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2775">
-          <caret line="651" column="37" selection-start-line="651" selection-start-column="37" selection-end-line="651" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../miniconda3/envs/b36/lib/python3.6/site-packages/xarray/core/pycompat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../miniconda3/envs/b36/lib/python3.6/site-packages/dask/array/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2505">
-          <caret line="1043" column="72" selection-start-line="1043" selection-start-column="72" selection-end-line="1043" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/big_run_output_check/back_erase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="116" selection-start-line="116" selection-end-line="132" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../useful-scit/useful_scit/plot/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../useful-scit/useful_scit/util/zarray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#282#416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://48ffb49f-2272-408f-9d1e-0e7ec3a57b81/schema/main/table/files_table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/48ffb49f-2272-408f-9d1e-0e7ec3a57b81/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/56b34e39-31cc-40b8-b3b2-19b2ac89ed37/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://48ffb49f-2272-408f-9d1e-0e7ec3a57b81/schema/main/table/files_table">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="dom==2" />
-            <filter text="dom==1" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../useful-scit/useful-scit.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/modules/blayer_wind.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#86#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/modules/compressor_glob_srun.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/modules/compress_cli.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#87#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/modules/Untitled.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-          <folding>
-            <element signature="e#272#319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-169" />
-      </provider>
-    </entry>
-    <entry file="das://56b34e39-31cc-40b8-b3b2-19b2ac89ed37/schema/main/table/files_table">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/notebooks/compress_test/compress_wrfout_files_run_2019_02_28_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-          <folding>
-            <element signature="e#317#347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrf_management/modules/CompressOut.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="131" column="38" lean-forward="true" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#91#104#0" expanded="true" />
-            <element signature="e#2913#2938#0" expanded="true" />
-            <element signature="e#3597#3804#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Python (wrf_management)|Python</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Python 3.6 (b36) interpreter library</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>Python 3.6 (b36)</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>di_python</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="654" y="360" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617193508508">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="654" y="360" key="#com.intellij.fileTypes.FileTypeChooser/-1280.317.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1617193508508" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../useful-scit/useful_scit/scratch/plot_date.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
