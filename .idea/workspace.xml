@@ -2,48 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/Vtable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/env_WRFv4.bash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/namelist.input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/namelist.wps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_real.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/init.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/init.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/run_real.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/run_real.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/run_wrf.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_scripts/run_wrf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_wrf.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2020_06_01/run_wrf_test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/PBLH_plot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/PBLH_recalc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/wrf_basic_analysis_vars.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/modules/pblh_recalc/wrf_variable_io.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/modules/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/explore_restart_issues/explore_restart_issues.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrf_management/notebooks/explore_restart_issues/funs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48ffb49f-2272-408f-9d1e-0e7ec3a57b81.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56b34e39-31cc-40b8-b3b2-19b2ac89ed37.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/595b2164-012f-4d46-ac5b-6284844b2244.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/diego.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/diego.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wrf_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wrf_management.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_scripts/run_real.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/config_dir/run_2019_05_29/run_scripts/run_real.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/db_folder/._.DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/db_folder/._wrf_man.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/notebooks/check_out_grid_4_flexpart/out_grid.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/notebooks/check_out_grid_4_flexpart/out_grid.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/papers/docs/Avolio et al. 2017 Sensitivity analysis of WRF model PBL schemes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/papers/docs/Avolio et al. 2017 Sensitivity analysis of WRF model PBL schemes.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/scratchs/check_metgrid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrf_management/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/wrf_management/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +105,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/wrf_management/config_dir" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -519,7 +480,7 @@
       <workItem from="1591007771319" duration="4217000" />
       <workItem from="1591090486417" duration="1607000" />
       <workItem from="1601452412123" duration="1005000" />
-      <workItem from="1617193161684" duration="727000" />
+      <workItem from="1617193161684" duration="3558000" />
     </task>
     <servers />
   </component>

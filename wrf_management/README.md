@@ -1,8 +1,10 @@
 ## list of directories/files 
 - wrf_management
     - base_namelists
-    - config_dir  
+    - [config_dir](wrf_management/config_dir)    
     directory where all the namelists for each run are stored along with other configuration files
+        - the most important run is: 
+          - [wrf_management/config_dir/run_2019_05_15](wrf_management/config_dir/run_2019_05_15)  
     - db_folder
     - download
     - file_templates
