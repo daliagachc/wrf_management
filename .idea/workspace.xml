@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="" />
+    <list default="true" id="1ee9ff87-32ee-4c10-992e-e8de1a6badcb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,16 +111,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir" />
+      <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir/run_2019-09-25_15-25-01_" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wrf_management/config_dir" />
       <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir" />
       <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir/run_2019-10-01_14-21-54_" />
       <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/notebooks/run_2019-09-25_15-25-01_" />
       <recent name="$PROJECT_DIR$/../FLEXPART-WRF_v3.3.2" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir" />
-      <recent name="$PROJECT_DIR$/../flexpart_management/flexpart_management/runs_config_dir/run_2019-09-25_15-25-01_" />
     </key>
   </component>
   <component name="RunManager" selected="Python.plot_date">
@@ -478,7 +481,8 @@
       <workItem from="1591090486417" duration="1607000" />
       <workItem from="1601452412123" duration="1005000" />
       <workItem from="1617193161684" duration="3558000" />
-      <workItem from="1617365994002" duration="938000" />
+      <workItem from="1617365994002" duration="1596000" />
+      <workItem from="1617446113554" duration="4067000" />
     </task>
     <servers />
   </component>

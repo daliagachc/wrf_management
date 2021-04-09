@@ -1,23 +1,7 @@
-# ---
-# jupyter:
-#   jupytext:
-#     text_representation:
-#       extension: .py
-#       format_name: percent
-#       format_version: '1.3'
-#       jupytext_version: 1.11.1
-#   kernelspec:
-#     display_name: Python 3
-#     language: python
-#     name: python3
-# ---
-
-# %%
 from useful_scit.imps import *
 from matplotlib.patches import Polygon
 
 
-# %%
 def get_ll(file):
     xd = xr.open_dataset(file)
     loM = float(xd.XLONG_U.max())
@@ -34,7 +18,6 @@ def get_ll(file):
     return ll_dic
 
 
-# %%
 def plot_pol(ll,ax):
     pol_points = [
         [ll['lom'],ll['lam']],
@@ -47,7 +30,6 @@ def plot_pol(ll,ax):
     ax.add_patch(polygon)
 
 
-# %%
 def get_files(path):
     path = '/Users/diego/Downloads/wrf_out_sample/'
     file_pat = dict(
@@ -64,7 +46,7 @@ def get_files(path):
     
     
 
-# %%
+
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
 import matplotlib.pyplot as plt
@@ -87,7 +69,6 @@ def get_map(lom,loM,lam,laM,pargs={}):
     return ax, proj
 
 
-# %%
 def add_text(t,x,y,ax):
     ax.text(x, y, t, size=8,
              ha="center", va="center",
@@ -98,7 +79,6 @@ def add_text(t,x,y,ax):
              )
 
 
-# %%
 def add_text_ll(ll,ax):
     pol_points = [
         [ll['lom'],ll['lam']],
@@ -111,4 +91,5 @@ def add_text_ll(ll,ax):
         pr = [np.round(pp,1) for pp in p]
         add_text(pr,*p,ax)
 
-# %%
+
+
